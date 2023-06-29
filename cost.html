@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Главная</title>
+    <style>
+        * {
+         margin: 0;
+         padding: 0;
+        }
+       </style>
+
+<link rel="stylesheet" href="my.css"
+    type="text/css">
+    <script src="myscript.js"></script>
+</head>
+ 
+<body>
+    <header> 
+        <img src="X.png" class="logoImg">
+        <ul class="menu-main">
+            <li><a href="main.html">Главная</a></li>
+            <li><a href="cost.html" class="current">Карты</a></li>
+            <li><a href="chart.html">Графики</a></li>
+            <li><a onclick="alert('pochta@gmail.com')">Обратная связь</a></li>
+        </ul>
+    </header>
+    
+    <div class="costDivFilter">
+        <p class="costPh1">Фильтры</p>
+        <p class="costPh2">Количество комнат</p>
+        <input type="radio" id="radioButton1" name="radioButton" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+        <input type="radio" id="radioButton2" name="radioButton" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+        <input type="radio" id="radioButton3" name="radioButton" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+        <input type="radio" id="radioButton4" name="radioButton" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+        <p class="radioButtonText1">20-40 м²</p>
+        <p class="radioButtonText2">40-60 м²</p>
+        <p class="radioButtonText3">60-80 м²</p>
+        <p class="radioButtonText4">80+ м²</p>       
+        <button type="button" class="costButton" onclick="changePicture()">Поиск</button>
+    </div>
+    <p class="costph3">карта стоимости недвижимости</p>
+    <div class="mapCostDiv">
+        <object type="text/html" data="карта 1.html" id="mapCost"></object>
+    </div>
+   </body>
+
+</html>

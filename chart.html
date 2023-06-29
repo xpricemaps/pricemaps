@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Главная</title>
+    <style>
+        * {
+         margin: 0;
+         padding: 0;
+        }
+       </style>
+
+<link rel="stylesheet" href="my.css"
+    type="text/css">
+</head>
+ 
+<body>
+    <header>
+        <img src="X.png" class="logoImg">
+        <ul class="menu-main">
+            <li><a href="main.html">Главная</a></li>
+            <li><a href="cost.html">Карты</a></li>
+            <li><a href="chart.html" class="current">Графики</a></li>
+            <li><a onclick="alert('pochta@gmail.com')">Обратная связь</a></li>
+        </ul>
+    </header>
+    
+    <p class="costph3">рост стоимости жилья</p>
+        <div class="chartMapDiv">
+            <object type="text/html" data="карта дохода.html" class="chartMap"></object>
+        </div>
+        <div class="chartDiv">
+            <object type="text/html" data="график.html" class="chart"></object>
+        </div>
+        <button type="button" class="chartButton" onclick="window.location.href='cost.html'">Перейти к графику</button>
+   </body>
+
+</html>

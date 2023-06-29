@@ -1,0 +1,2112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a0c23f2c116064de3e4cb976ff0dec22 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a0c23f2c116064de3e4cb976ff0dec22" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a0c23f2c116064de3e4cb976ff0dec22 = L.map(
+                "map_a0c23f2c116064de3e4cb976ff0dec22",
+                {
+                    center: [58.00104, 56.2144],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c3c6474fb971c42bec354b2a3862fe61 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+            var tile_layer_8e72340b22acd0677706d652edc60f55 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+            var circle_marker_6eb946d3eac8c38c6dc6695ab1b0e195 = L.circleMarker(
+                [58.00026827361978, 56.33938670158387],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#41BAC2", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_a25a6336f5e18337b85eaaccc26b412e = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_279c83284020f2a9d3cf9358b6a379c8 = $(`<div id="html_279c83284020f2a9d3cf9358b6a379c8" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.332% в год<br><br>Пермский край, Пермь, Агатовая ул., 36</div>`)[0];
+                popup_a25a6336f5e18337b85eaaccc26b412e.setContent(html_279c83284020f2a9d3cf9358b6a379c8);
+            
+        
+
+        circle_marker_6eb946d3eac8c38c6dc6695ab1b0e195.bindPopup(popup_a25a6336f5e18337b85eaaccc26b412e)
+        ;
+
+        
+    
+    
+            var circle_marker_3cfa8e053f5e39e2c7df43092c87db33 = L.circleMarker(
+                [58.000202, 56.173622],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F8E8BF", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_b383205d1d8be77aca2d219bad693400 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_20db5471502a6c2239c06719c533171e = $(`<div id="html_20db5471502a6c2239c06719c533171e" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.793% в год<br><br>Пермский край, Пермь, Боровая ул., 2</div>`)[0];
+                popup_b383205d1d8be77aca2d219bad693400.setContent(html_20db5471502a6c2239c06719c533171e);
+            
+        
+
+        circle_marker_3cfa8e053f5e39e2c7df43092c87db33.bindPopup(popup_b383205d1d8be77aca2d219bad693400)
+        ;
+
+        
+    
+    
+            var circle_marker_1e740e5ee22fad2fe76268b75e5aea0f = L.circleMarker(
+                [58.051093, 56.087492],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#79D5C3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_949973f21294e91a9afa95fb49b5a252 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_25c49cbbab933474bb319df2d543621b = $(`<div id="html_25c49cbbab933474bb319df2d543621b" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.767% в год<br><br>Пермский край, Пермь, Вагонная ул., 25</div>`)[0];
+                popup_949973f21294e91a9afa95fb49b5a252.setContent(html_25c49cbbab933474bb319df2d543621b);
+            
+        
+
+        circle_marker_1e740e5ee22fad2fe76268b75e5aea0f.bindPopup(popup_949973f21294e91a9afa95fb49b5a252)
+        ;
+
+        
+    
+    
+            var circle_marker_0237c89b033eead778b0cee6389392e5 = L.circleMarker(
+                [58.052469, 56.088336],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F8E8BF", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_2fe79616571ba751c4adb0c5abdaef83 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_aa3fd5e9ba712fa8af42aa181a1c50c1 = $(`<div id="html_aa3fd5e9ba712fa8af42aa181a1c50c1" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.533% в год<br><br>Пермский край, Пермь, Вагонная ул., 30</div>`)[0];
+                popup_2fe79616571ba751c4adb0c5abdaef83.setContent(html_aa3fd5e9ba712fa8af42aa181a1c50c1);
+            
+        
+
+        circle_marker_0237c89b033eead778b0cee6389392e5.bindPopup(popup_2fe79616571ba751c4adb0c5abdaef83)
+        ;
+
+        
+    
+    
+            var circle_marker_6831c10ff1c931047aec003fcac37383 = L.circleMarker(
+                [57.99821090698242, 56.2265739440918],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#79D5C3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_23b073f2952f1011c13acc6635c08024 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_943c5e5849ed8d180130b28692bfd1be = $(`<div id="html_943c5e5849ed8d180130b28692bfd1be" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.607% в год<br><br>Пермский край, Пермь, Вильвенская ул., 2</div>`)[0];
+                popup_23b073f2952f1011c13acc6635c08024.setContent(html_943c5e5849ed8d180130b28692bfd1be);
+            
+        
+
+        circle_marker_6831c10ff1c931047aec003fcac37383.bindPopup(popup_23b073f2952f1011c13acc6635c08024)
+        ;
+
+        
+    
+    
+            var circle_marker_ab1f6a7ab61993365ae56041d5802ec4 = L.circleMarker(
+                [57.990553, 56.2346],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FD9A98", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_41e9553fa37312f00ce8eaaf17bec1cd = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_8ededc03928c87ac127d36b944c690f9 = $(`<div id="html_8ededc03928c87ac127d36b944c690f9" style="width: 100.0%; height: 100.0%;">Возможный доход: 6.246% в год<br><br>Пермский край, Пермь, Вильвенская ул., 21</div>`)[0];
+                popup_41e9553fa37312f00ce8eaaf17bec1cd.setContent(html_8ededc03928c87ac127d36b944c690f9);
+            
+        
+
+        circle_marker_ab1f6a7ab61993365ae56041d5802ec4.bindPopup(popup_41e9553fa37312f00ce8eaaf17bec1cd)
+        ;
+
+        
+    
+    
+            var circle_marker_a4cb8a01e05b9177eaea49e1fa71d451 = L.circleMarker(
+                [58.007608, 56.231932],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D8175C", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_7f0459c33bf9080154a7aef865fc7ad5 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_5fa2b480d80373355df177a7d47dad4b = $(`<div id="html_5fa2b480d80373355df177a7d47dad4b" style="width: 100.0%; height: 100.0%;">Возможный доход: 9.226% в год<br><br>Пермский край, Пермь, Екатерининская ул., 122</div>`)[0];
+                popup_7f0459c33bf9080154a7aef865fc7ad5.setContent(html_5fa2b480d80373355df177a7d47dad4b);
+            
+        
+
+        circle_marker_a4cb8a01e05b9177eaea49e1fa71d451.bindPopup(popup_7f0459c33bf9080154a7aef865fc7ad5)
+        ;
+
+        
+    
+    
+            var circle_marker_602f6fab338796a50e1ac07062620a95 = L.circleMarker(
+                [58.005328999999996, 56.217002],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FDC7BA", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_7655b20f8083f65ccfa2abb79e2f1447 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_159571ff9b8f5073d8470ba593110f9c = $(`<div id="html_159571ff9b8f5073d8470ba593110f9c" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.932% в год<br><br>Пермский край, Пермь, Екатерининская ул., 184</div>`)[0];
+                popup_7655b20f8083f65ccfa2abb79e2f1447.setContent(html_159571ff9b8f5073d8470ba593110f9c);
+            
+        
+
+        circle_marker_602f6fab338796a50e1ac07062620a95.bindPopup(popup_7655b20f8083f65ccfa2abb79e2f1447)
+        ;
+
+        
+    
+    
+            var circle_marker_6d6f0142a7effa1e276048fcb253602c = L.circleMarker(
+                [58.00976966666667, 56.241752],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D8175C", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_fa30b2f0fd9b224d6512e2067292c709 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_7f4db571296abf0d11d1118514f73ed7 = $(`<div id="html_7f4db571296abf0d11d1118514f73ed7" style="width: 100.0%; height: 100.0%;">Возможный доход: 7.916% в год<br><br>Пермский край, Пермь, Екатерининская ул., 88</div>`)[0];
+                popup_fa30b2f0fd9b224d6512e2067292c709.setContent(html_7f4db571296abf0d11d1118514f73ed7);
+            
+        
+
+        circle_marker_6d6f0142a7effa1e276048fcb253602c.bindPopup(popup_fa30b2f0fd9b224d6512e2067292c709)
+        ;
+
+        
+    
+    
+            var circle_marker_bd323d6ec9060a674d35293467558a14 = L.circleMarker(
+                [58.042924, 56.09051],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#249AB4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_1efe17c38700ed1673aec1f8303a4779 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_ce9181a23709da5e9494be26e81e3818 = $(`<div id="html_ce9181a23709da5e9494be26e81e3818" style="width: 100.0%; height: 100.0%;">Возможный доход: 3.979% в год<br><br>Пермский край, Пермь, Заречная ул., 162</div>`)[0];
+                popup_1efe17c38700ed1673aec1f8303a4779.setContent(html_ce9181a23709da5e9494be26e81e3818);
+            
+        
+
+        circle_marker_bd323d6ec9060a674d35293467558a14.bindPopup(popup_1efe17c38700ed1673aec1f8303a4779)
+        ;
+
+        
+    
+    
+            var circle_marker_009bf6c5bbf5afeaf656d9be5ff2a4cd = L.circleMarker(
+                [58.023784, 56.302009],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#41BAC2", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_7b4a17a091a55b2a967894e742fcb178 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_d0871e40b83dfeabd4c1be186a2893cd = $(`<div id="html_d0871e40b83dfeabd4c1be186a2893cd" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.317% в год<br><br>Пермский край, Пермь, Инженерная ул., 6</div>`)[0];
+                popup_7b4a17a091a55b2a967894e742fcb178.setContent(html_d0871e40b83dfeabd4c1be186a2893cd);
+            
+        
+
+        circle_marker_009bf6c5bbf5afeaf656d9be5ff2a4cd.bindPopup(popup_7b4a17a091a55b2a967894e742fcb178)
+        ;
+
+        
+    
+    
+            var circle_marker_836e1a44714eae9860d0df753fcc1cb2 = L.circleMarker(
+                [58.0462995, 56.082538],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B9EABD", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_52f0571917a89dcd0382bac40089d01f = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_6410f4ec2d71501b244b66ef1b5a8874 = $(`<div id="html_6410f4ec2d71501b244b66ef1b5a8874" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.293% в год<br><br>Пермский край, Пермь, Красноводская ул., 18</div>`)[0];
+                popup_52f0571917a89dcd0382bac40089d01f.setContent(html_6410f4ec2d71501b244b66ef1b5a8874);
+            
+        
+
+        circle_marker_836e1a44714eae9860d0df753fcc1cb2.bindPopup(popup_52f0571917a89dcd0382bac40089d01f)
+        ;
+
+        
+    
+    
+            var circle_marker_9e9c52d4c5f90622cfb771805558945a = L.circleMarker(
+                [58.046582, 56.08397],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#249AB4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_4e54eb3bca040a427e1c7848e4d09726 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_63c67ffcc46305a8ee48d1ee556b5ff3 = $(`<div id="html_63c67ffcc46305a8ee48d1ee556b5ff3" style="width: 100.0%; height: 100.0%;">Возможный доход: 3.633% в год<br><br>Пермский край, Пермь, Красноводская ул., 24</div>`)[0];
+                popup_4e54eb3bca040a427e1c7848e4d09726.setContent(html_63c67ffcc46305a8ee48d1ee556b5ff3);
+            
+        
+
+        circle_marker_9e9c52d4c5f90622cfb771805558945a.bindPopup(popup_4e54eb3bca040a427e1c7848e4d09726)
+        ;
+
+        
+    
+    
+            var circle_marker_c0a70b541640a1bf1c1afcc1f6fcef88 = L.circleMarker(
+                [57.997980000000005, 56.204758],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F8E8BF", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_8627ebdd9522132194b445859559b1e5 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_c82eb0fa9df7da31f74bb5748410fa22 = $(`<div id="html_c82eb0fa9df7da31f74bb5748410fa22" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.618% в год<br><br>Пермский край, Пермь, Кронштадтская ул., 31</div>`)[0];
+                popup_8627ebdd9522132194b445859559b1e5.setContent(html_c82eb0fa9df7da31f74bb5748410fa22);
+            
+        
+
+        circle_marker_c0a70b541640a1bf1c1afcc1f6fcef88.bindPopup(popup_8627ebdd9522132194b445859559b1e5)
+        ;
+
+        
+    
+    
+            var circle_marker_a299bec25c62d2fc83190ada72ef2151 = L.circleMarker(
+                [57.98802185058594, 56.22616958618164],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B9EABD", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_f631048163a49b24a9576334b2dd170c = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_797eab30dac78e22a37b9ca79ecc6d06 = $(`<div id="html_797eab30dac78e22a37b9ca79ecc6d06" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.068% в год<br><br>Пермский край, Пермь, Малая ул., 3</div>`)[0];
+                popup_f631048163a49b24a9576334b2dd170c.setContent(html_797eab30dac78e22a37b9ca79ecc6d06);
+            
+        
+
+        circle_marker_a299bec25c62d2fc83190ada72ef2151.bindPopup(popup_f631048163a49b24a9576334b2dd170c)
+        ;
+
+        
+    
+    
+            var circle_marker_9605ba318b4069cd4a734b4451c954ad = L.circleMarker(
+                [57.97450256347656, 56.20572662353516],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF5E7B", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_05597eab02104f2807fbd683826977cf = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_5348535d5edd202d0f97ba767e79e81c = $(`<div id="html_5348535d5edd202d0f97ba767e79e81c" style="width: 100.0%; height: 100.0%;">Возможный доход: 7.161% в год<br><br>Пермский край, Пермь, Молодогвардейская ул., 33</div>`)[0];
+                popup_05597eab02104f2807fbd683826977cf.setContent(html_5348535d5edd202d0f97ba767e79e81c);
+            
+        
+
+        circle_marker_9605ba318b4069cd4a734b4451c954ad.bindPopup(popup_05597eab02104f2807fbd683826977cf)
+        ;
+
+        
+    
+    
+            var circle_marker_579717f7d1bccc05b108ed9050b4a516 = L.circleMarker(
+                [58.01148986816406, 56.2125129699707],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#41BAC2", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_70356cfa2695ceb4d12b0d165ada0f0b = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_d8a8d6dcdf5b1b39dc656800a1b9333c = $(`<div id="html_d8a8d6dcdf5b1b39dc656800a1b9333c" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.479% в год<br><br>Пермский край, Пермь, Монастырская ул., 101</div>`)[0];
+                popup_70356cfa2695ceb4d12b0d165ada0f0b.setContent(html_d8a8d6dcdf5b1b39dc656800a1b9333c);
+            
+        
+
+        circle_marker_579717f7d1bccc05b108ed9050b4a516.bindPopup(popup_70356cfa2695ceb4d12b0d165ada0f0b)
+        ;
+
+        
+    
+    
+            var circle_marker_6673a05c9058508f546be27694649ab5 = L.circleMarker(
+                [58.008340399999994, 56.196007599999994],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F8E8BF", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_491dde0c80a017f766e069c89beb10f4 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_3ce5dbdf0e3cc0ff6d993754b9113cf3 = $(`<div id="html_3ce5dbdf0e3cc0ff6d993754b9113cf3" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.549% в год<br><br>Пермский край, Пермь, Монастырская ул., 181</div>`)[0];
+                popup_491dde0c80a017f766e069c89beb10f4.setContent(html_3ce5dbdf0e3cc0ff6d993754b9113cf3);
+            
+        
+
+        circle_marker_6673a05c9058508f546be27694649ab5.bindPopup(popup_491dde0c80a017f766e069c89beb10f4)
+        ;
+
+        
+    
+    
+            var circle_marker_999499410e66cf4a824d2e06e3a794f2 = L.circleMarker(
+                [57.998848, 56.168205],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D8175C", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_e650390931517e228436ec4c25fd66cd = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_1c5691e010e15d07933ca7f879ea701d = $(`<div id="html_1c5691e010e15d07933ca7f879ea701d" style="width: 100.0%; height: 100.0%;">Возможный доход: 10.062% в год<br><br>Пермский край, Пермь, Парковый пр-т, 37А</div>`)[0];
+                popup_e650390931517e228436ec4c25fd66cd.setContent(html_1c5691e010e15d07933ca7f879ea701d);
+            
+        
+
+        circle_marker_999499410e66cf4a824d2e06e3a794f2.bindPopup(popup_e650390931517e228436ec4c25fd66cd)
+        ;
+
+        
+    
+    
+            var circle_marker_24cb1a964d5ef0c31795ef2abc8d9770 = L.circleMarker(
+                [57.998252, 56.176281],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FD9A98", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_883824451f8caee9adb46c96e2ba5dca = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_2f2487b08c1650df1ff23476604db2a2 = $(`<div id="html_2f2487b08c1650df1ff23476604db2a2" style="width: 100.0%; height: 100.0%;">Возможный доход: 6.727% в год<br><br>Пермский край, Пермь, Парковый пр-т, 45А</div>`)[0];
+                popup_883824451f8caee9adb46c96e2ba5dca.setContent(html_2f2487b08c1650df1ff23476604db2a2);
+            
+        
+
+        circle_marker_24cb1a964d5ef0c31795ef2abc8d9770.bindPopup(popup_883824451f8caee9adb46c96e2ba5dca)
+        ;
+
+        
+    
+    
+            var circle_marker_cccc29711222e74f86b20af4f637fafd = L.circleMarker(
+                [58.00574887438965, 56.21613796618652],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF5E7B", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_f0f1fe87766e3536c438b8ae6fddbaa3 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_4c529704cfe122d6addd38de3639b737 = $(`<div id="html_4c529704cfe122d6addd38de3639b737" style="width: 100.0%; height: 100.0%;">Возможный доход: 7.002% в год<br><br>Пермский край, Пермь, Пермская ул., 200</div>`)[0];
+                popup_f0f1fe87766e3536c438b8ae6fddbaa3.setContent(html_4c529704cfe122d6addd38de3639b737);
+            
+        
+
+        circle_marker_cccc29711222e74f86b20af4f637fafd.bindPopup(popup_f0f1fe87766e3536c438b8ae6fddbaa3)
+        ;
+
+        
+    
+    
+            var circle_marker_e489a14eaf20ce9d760fb5931b6c1441 = L.circleMarker(
+                [57.9941732565918, 56.13932340881348],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FD9A98", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_adf20003d424470545775f8e40f35cc7 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_921c7a699e078a3e2ca185cb962ecccc = $(`<div id="html_921c7a699e078a3e2ca185cb962ecccc" style="width: 100.0%; height: 100.0%;">Возможный доход: 6.754% в год<br><br>Пермский край, Пермь, Подлесная ул., 3А</div>`)[0];
+                popup_adf20003d424470545775f8e40f35cc7.setContent(html_921c7a699e078a3e2ca185cb962ecccc);
+            
+        
+
+        circle_marker_e489a14eaf20ce9d760fb5931b6c1441.bindPopup(popup_adf20003d424470545775f8e40f35cc7)
+        ;
+
+        
+    
+    
+            var circle_marker_ec4a58a8ec0e42b49698703d9905d990 = L.circleMarker(
+                [57.996992, 56.219589000000006],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#79D5C3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_dd02ed58690dd99c9c4cd9ad9ee7cf3f = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_f1700b119e220f0e905b0b5008bd0c06 = $(`<div id="html_f1700b119e220f0e905b0b5008bd0c06" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.736% в год<br><br>Пермский край, Пермь, Полевая ул., 7</div>`)[0];
+                popup_dd02ed58690dd99c9c4cd9ad9ee7cf3f.setContent(html_f1700b119e220f0e905b0b5008bd0c06);
+            
+        
+
+        circle_marker_ec4a58a8ec0e42b49698703d9905d990.bindPopup(popup_dd02ed58690dd99c9c4cd9ad9ee7cf3f)
+        ;
+
+        
+    
+    
+            var circle_marker_e5de4bbb1e6e68a40243168dcf9475f3 = L.circleMarker(
+                [58.010142566833494, 56.334679939575196],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B9EABD", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_4d70c1773387d6851a4a82626f653d99 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_6957e9b783da8eeab397928c6a662867 = $(`<div id="html_6957e9b783da8eeab397928c6a662867" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.002% в год<br><br>Пермский край, Пермь, Сапфирная ул., 13</div>`)[0];
+                popup_4d70c1773387d6851a4a82626f653d99.setContent(html_6957e9b783da8eeab397928c6a662867);
+            
+        
+
+        circle_marker_e5de4bbb1e6e68a40243168dcf9475f3.bindPopup(popup_4d70c1773387d6851a4a82626f653d99)
+        ;
+
+        
+    
+    
+            var circle_marker_d73d90addbfbf5259f0278aae288222b = L.circleMarker(
+                [58.0087575, 56.335543],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F8E8BF", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_fdf925c23288cf6751ce8c158d9eef21 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_8b04cf473ec54e5cd7123d356388b337 = $(`<div id="html_8b04cf473ec54e5cd7123d356388b337" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.591% в год<br><br>Пермский край, Пермь, Сапфирная ул., 15</div>`)[0];
+                popup_fdf925c23288cf6751ce8c158d9eef21.setContent(html_8b04cf473ec54e5cd7123d356388b337);
+            
+        
+
+        circle_marker_d73d90addbfbf5259f0278aae288222b.bindPopup(popup_fdf925c23288cf6751ce8c158d9eef21)
+        ;
+
+        
+    
+    
+            var circle_marker_8fc9f1a513d79286562fb663013dcd2f = L.circleMarker(
+                [58.012047, 56.222356],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FDC7BA", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_edac8ca41282877d1f7e7c7452441a40 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_f24b1be19d908c19861008300d84b078 = $(`<div id="html_f24b1be19d908c19861008300d84b078" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.963% в год<br><br>Пермский край, Пермь, Советская ул., 94</div>`)[0];
+                popup_edac8ca41282877d1f7e7c7452441a40.setContent(html_f24b1be19d908c19861008300d84b078);
+            
+        
+
+        circle_marker_8fc9f1a513d79286562fb663013dcd2f.bindPopup(popup_edac8ca41282877d1f7e7c7452441a40)
+        ;
+
+        
+    
+    
+            var circle_marker_cc958e8da43071312a0093b0ba250872 = L.circleMarker(
+                [57.985453, 56.215699],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF5E7B", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_c88bfc927aa3cd97926266d5b01b8076 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_47a86d4433f80c22d41e5971165543cf = $(`<div id="html_47a86d4433f80c22d41e5971165543cf" style="width: 100.0%; height: 100.0%;">Возможный доход: 7.577% в год<br><br>Пермский край, Пермь, Стахановская ул., 21</div>`)[0];
+                popup_c88bfc927aa3cd97926266d5b01b8076.setContent(html_47a86d4433f80c22d41e5971165543cf);
+            
+        
+
+        circle_marker_cc958e8da43071312a0093b0ba250872.bindPopup(popup_c88bfc927aa3cd97926266d5b01b8076)
+        ;
+
+        
+    
+    
+            var circle_marker_62920de465537cca578124a5ce214c5e = L.circleMarker(
+                [57.974038, 56.187699],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D8175C", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_13db608029d75de3a941cc73ba361e43 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_d3e3c20b797206fe9ee180c59e0e2bf2 = $(`<div id="html_d3e3c20b797206fe9ee180c59e0e2bf2" style="width: 100.0%; height: 100.0%;">Возможный доход: 8.277% в год<br><br>Пермский край, Пермь, Теплогорская ул., 24к1</div>`)[0];
+                popup_13db608029d75de3a941cc73ba361e43.setContent(html_d3e3c20b797206fe9ee180c59e0e2bf2);
+            
+        
+
+        circle_marker_62920de465537cca578124a5ce214c5e.bindPopup(popup_13db608029d75de3a941cc73ba361e43)
+        ;
+
+        
+    
+    
+            var circle_marker_0d71d2991106372bbde0c9d6c8826d0f = L.circleMarker(
+                [57.973895342203775, 56.18853392765299],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF5E7B", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_96e3ca9b5149a36a7d129cc51b374fc4 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_97103353438b5ef1877f5166fd1ce1b1 = $(`<div id="html_97103353438b5ef1877f5166fd1ce1b1" style="width: 100.0%; height: 100.0%;">Возможный доход: 7.676% в год<br><br>Пермский край, Пермь, Теплогорская ул., 24к2</div>`)[0];
+                popup_96e3ca9b5149a36a7d129cc51b374fc4.setContent(html_97103353438b5ef1877f5166fd1ce1b1);
+            
+        
+
+        circle_marker_0d71d2991106372bbde0c9d6c8826d0f.bindPopup(popup_96e3ca9b5149a36a7d129cc51b374fc4)
+        ;
+
+        
+    
+    
+            var circle_marker_af92a5303084ed9e7e84bea409c1baf3 = L.circleMarker(
+                [58.034272, 56.138112],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#41BAC2", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_ea566419e6fe272866b5645dc54052e2 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_2736eb7ae5049b9f98d17fe084757307 = $(`<div id="html_2736eb7ae5049b9f98d17fe084757307" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.522% в год<br><br>Пермский край, Пермь, Транспортная ул., 11А</div>`)[0];
+                popup_ea566419e6fe272866b5645dc54052e2.setContent(html_2736eb7ae5049b9f98d17fe084757307);
+            
+        
+
+        circle_marker_af92a5303084ed9e7e84bea409c1baf3.bindPopup(popup_ea566419e6fe272866b5645dc54052e2)
+        ;
+
+        
+    
+    
+            var circle_marker_0619e15f42c43b9ea50a6d42c23fb6c3 = L.circleMarker(
+                [58.00615310668945, 56.309078216552734],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FD9A98", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_5e4c530b8ee6a5de6509ee7c18095299 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_8fb81b2aa193eb0867757fb0736633bf = $(`<div id="html_8fb81b2aa193eb0867757fb0736633bf" style="width: 100.0%; height: 100.0%;">Возможный доход: 6.23% в год<br><br>Пермский край, Пермь, Уинская ул., 15А</div>`)[0];
+                popup_5e4c530b8ee6a5de6509ee7c18095299.setContent(html_8fb81b2aa193eb0867757fb0736633bf);
+            
+        
+
+        circle_marker_0619e15f42c43b9ea50a6d42c23fb6c3.bindPopup(popup_5e4c530b8ee6a5de6509ee7c18095299)
+        ;
+
+        
+    
+    
+            var circle_marker_57334300a985fe12c516d6ac791c0c9c = L.circleMarker(
+                [58.00540999999723, 56.32530299999999],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FDC7BA", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_1b68589571f3b27635d2a67fdf0b0105 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_4092fad4e3e79f3c803cbee873239b39 = $(`<div id="html_4092fad4e3e79f3c803cbee873239b39" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.964% в год<br><br>Пермский край, Пермь, Уинская ул., 43</div>`)[0];
+                popup_1b68589571f3b27635d2a67fdf0b0105.setContent(html_4092fad4e3e79f3c803cbee873239b39);
+            
+        
+
+        circle_marker_57334300a985fe12c516d6ac791c0c9c.bindPopup(popup_1b68589571f3b27635d2a67fdf0b0105)
+        ;
+
+        
+    
+    
+            var circle_marker_41d2012a58e946f5f0976ad8f9c0be76 = L.circleMarker(
+                [58.004714, 56.335085],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D8175C", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_41a50e3b3503df79c47e85b331f6971a = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_3bf931e977d790f62eb107aec05cb1aa = $(`<div id="html_3bf931e977d790f62eb107aec05cb1aa" style="width: 100.0%; height: 100.0%;">Возможный доход: 7.743% в год<br><br>Пермский край, Пермь, Уинская ул., 66</div>`)[0];
+                popup_41a50e3b3503df79c47e85b331f6971a.setContent(html_3bf931e977d790f62eb107aec05cb1aa);
+            
+        
+
+        circle_marker_41d2012a58e946f5f0976ad8f9c0be76.bindPopup(popup_41a50e3b3503df79c47e85b331f6971a)
+        ;
+
+        
+    
+    
+            var circle_marker_df42c495d461bec6002ced80333e0067 = L.circleMarker(
+                [58.00462980168583, 56.33725153987567],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#79D5C3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_b4134ccad278d97dc83a0c0dda973c6d = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_fc03842a7cd46d4a2feb4a27646fc98f = $(`<div id="html_fc03842a7cd46d4a2feb4a27646fc98f" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.573% в год<br><br>Пермский край, Пермь, Уинская ул., 68</div>`)[0];
+                popup_b4134ccad278d97dc83a0c0dda973c6d.setContent(html_fc03842a7cd46d4a2feb4a27646fc98f);
+            
+        
+
+        circle_marker_df42c495d461bec6002ced80333e0067.bindPopup(popup_b4134ccad278d97dc83a0c0dda973c6d)
+        ;
+
+        
+    
+    
+            var circle_marker_a01104c747373478cf728a4d140c310e = L.circleMarker(
+                [58.00464899807502, 56.30548124270948],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FD9A98", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_221c0261fa59901f56c26d9cf153c325 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_bd5d2743e4fcc79ad5744e45d8694ba4 = $(`<div id="html_bd5d2743e4fcc79ad5744e45d8694ba4" style="width: 100.0%; height: 100.0%;">Возможный доход: 6.345% в год<br><br>Пермский край, Пермь, Уинская ул., 8</div>`)[0];
+                popup_221c0261fa59901f56c26d9cf153c325.setContent(html_bd5d2743e4fcc79ad5744e45d8694ba4);
+            
+        
+
+        circle_marker_a01104c747373478cf728a4d140c310e.bindPopup(popup_221c0261fa59901f56c26d9cf153c325)
+        ;
+
+        
+    
+    
+            var circle_marker_f632cc69216899abe65d6b8cfdc97bc7 = L.circleMarker(
+                [58.022286718159044, 56.286494577703245],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D8175C", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_d7dc6785cc4e9e48ce1e9c9c6aa24851 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_a834ce25026ca45d53c6184c3e2bad78 = $(`<div id="html_a834ce25026ca45d53c6184c3e2bad78" style="width: 100.0%; height: 100.0%;">Возможный доход: 10.913% в год<br><br>Пермский край, Пермь, Уральская ул., 95</div>`)[0];
+                popup_d7dc6785cc4e9e48ce1e9c9c6aa24851.setContent(html_a834ce25026ca45d53c6184c3e2bad78);
+            
+        
+
+        circle_marker_f632cc69216899abe65d6b8cfdc97bc7.bindPopup(popup_d7dc6785cc4e9e48ce1e9c9c6aa24851)
+        ;
+
+        
+    
+    
+            var circle_marker_eb6ef0e8200bbddc82fc998a468524b7 = L.circleMarker(
+                [58.04383974563333, 56.0893191669098],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FD9A98", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_9a2ffd843a652bf6b575e6fc9aabeb70 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_aa2071f6ed10bfcd62856a1f80686625 = $(`<div id="html_aa2071f6ed10bfcd62856a1f80686625" style="width: 100.0%; height: 100.0%;">Возможный доход: 6.384% в год<br><br>Пермский край, Пермь, Хабаровская ул., 171</div>`)[0];
+                popup_9a2ffd843a652bf6b575e6fc9aabeb70.setContent(html_aa2071f6ed10bfcd62856a1f80686625);
+            
+        
+
+        circle_marker_eb6ef0e8200bbddc82fc998a468524b7.bindPopup(popup_9a2ffd843a652bf6b575e6fc9aabeb70)
+        ;
+
+        
+    
+    
+            var circle_marker_51b3c3dc9bab7ae181bdf5dc7a05d838 = L.circleMarker(
+                [58.050259, 56.085839],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#41BAC2", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_ddd7d21348341829249fcb652b695915 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_a8a4bfa193aeaa800915b236b35a8f26 = $(`<div id="html_a8a4bfa193aeaa800915b236b35a8f26" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.512% в год<br><br>Пермский край, Пермь, Хабаровская ул., 60</div>`)[0];
+                popup_ddd7d21348341829249fcb652b695915.setContent(html_a8a4bfa193aeaa800915b236b35a8f26);
+            
+        
+
+        circle_marker_51b3c3dc9bab7ae181bdf5dc7a05d838.bindPopup(popup_ddd7d21348341829249fcb652b695915)
+        ;
+
+        
+    
+    
+            var circle_marker_bbb9d22f81cf52089b332c4c1a0af907 = L.circleMarker(
+                [58.050545, 56.084689],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#79D5C3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_56c7a91b23e50951ca573fc61e1bba4e = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_f81b707f451ec6b66425113a391acf61 = $(`<div id="html_f81b707f451ec6b66425113a391acf61" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.555% в год<br><br>Пермский край, Пермь, Хабаровская ул., 64</div>`)[0];
+                popup_56c7a91b23e50951ca573fc61e1bba4e.setContent(html_f81b707f451ec6b66425113a391acf61);
+            
+        
+
+        circle_marker_bbb9d22f81cf52089b332c4c1a0af907.bindPopup(popup_56c7a91b23e50951ca573fc61e1bba4e)
+        ;
+
+        
+    
+    
+            var circle_marker_bd460acf53bb0ce032b03552d6cedb32 = L.circleMarker(
+                [57.960332, 56.149862],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F8E8BF", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_ab5c757c9fd283df85080264d79db0b0 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_c6e3c77b799b739c3e2e58f3952808c0 = $(`<div id="html_c6e3c77b799b739c3e2e58f3952808c0" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.72% в год<br><br>Пермский край, Пермь, Экскаваторная ул., 49</div>`)[0];
+                popup_ab5c757c9fd283df85080264d79db0b0.setContent(html_c6e3c77b799b739c3e2e58f3952808c0);
+            
+        
+
+        circle_marker_bd460acf53bb0ce032b03552d6cedb32.bindPopup(popup_ab5c757c9fd283df85080264d79db0b0)
+        ;
+
+        
+    
+    
+            var circle_marker_077d92421d856b56dfa5647879f31979 = L.circleMarker(
+                [58.014555, 56.275904],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#249AB4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_2330462bcabac4431b8c398cc1173911 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_0b59e6c80336b144c30b7466f55a0289 = $(`<div id="html_0b59e6c80336b144c30b7466f55a0289" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.016% в год<br><br>Пермский край, Пермь, б-р Гагарина, 18</div>`)[0];
+                popup_2330462bcabac4431b8c398cc1173911.setContent(html_0b59e6c80336b144c30b7466f55a0289);
+            
+        
+
+        circle_marker_077d92421d856b56dfa5647879f31979.bindPopup(popup_2330462bcabac4431b8c398cc1173911)
+        ;
+
+        
+    
+    
+            var circle_marker_a5881d55804e2695748e7b010f6c6767 = L.circleMarker(
+                [58.002227783203125, 56.28277206420898],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F8E8BF", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_a79ff8f42670e4834afd97fc0124b7ee = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_a779cd0ed14f1937c2a66b66382a2003 = $(`<div id="html_a779cd0ed14f1937c2a66b66382a2003" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.857% в год<br><br>Пермский край, Пермь, б-р Гагарина, 56</div>`)[0];
+                popup_a79ff8f42670e4834afd97fc0124b7ee.setContent(html_a779cd0ed14f1937c2a66b66382a2003);
+            
+        
+
+        circle_marker_a5881d55804e2695748e7b010f6c6767.bindPopup(popup_a79ff8f42670e4834afd97fc0124b7ee)
+        ;
+
+        
+    
+    
+            var circle_marker_3c22a76da73dc29f7cd9f4f6e72e3572 = L.circleMarker(
+                [57.980924, 56.214181],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FDC7BA", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_d92e1af751b51994088de656bf084747 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_da7b73aa5dbb9f974a94bcbe6ea21781 = $(`<div id="html_da7b73aa5dbb9f974a94bcbe6ea21781" style="width: 100.0%; height: 100.0%;">Возможный доход: 6.064% в год<br><br>Пермский край, Пермь, пр-т Декабристов, 2</div>`)[0];
+                popup_d92e1af751b51994088de656bf084747.setContent(html_da7b73aa5dbb9f974a94bcbe6ea21781);
+            
+        
+
+        circle_marker_3c22a76da73dc29f7cd9f4f6e72e3572.bindPopup(popup_d92e1af751b51994088de656bf084747)
+        ;
+
+        
+    
+    
+            var circle_marker_2aaf75334b22748da941f079bca36e41 = L.circleMarker(
+                [57.975312, 56.202611],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FDC7BA", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_5aafc58a8665531a3209b6eb282d15cf = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_2808c6a2a71eb1da49dbcae028bab127 = $(`<div id="html_2808c6a2a71eb1da49dbcae028bab127" style="width: 100.0%; height: 100.0%;">Возможный доход: 6.065% в год<br><br>Пермский край, Пермь, пр-т Декабристов, 23</div>`)[0];
+                popup_5aafc58a8665531a3209b6eb282d15cf.setContent(html_2808c6a2a71eb1da49dbcae028bab127);
+            
+        
+
+        circle_marker_2aaf75334b22748da941f079bca36e41.bindPopup(popup_5aafc58a8665531a3209b6eb282d15cf)
+        ;
+
+        
+    
+    
+            var circle_marker_8e4bfda123fa852de4183d92fd7773a4 = L.circleMarker(
+                [57.986521023900025, 56.18977592775158],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FD9A98", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_073d62d2c237a35d6e41b98c02f59aa6 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_99289868bf86b77dc9f2fd28634bed23 = $(`<div id="html_99289868bf86b77dc9f2fd28634bed23" style="width: 100.0%; height: 100.0%;">Возможный доход: 6.912% в год<br><br>Пермский край, Пермь, ул. 9 Мая, 1</div>`)[0];
+                popup_073d62d2c237a35d6e41b98c02f59aa6.setContent(html_99289868bf86b77dc9f2fd28634bed23);
+            
+        
+
+        circle_marker_8e4bfda123fa852de4183d92fd7773a4.bindPopup(popup_073d62d2c237a35d6e41b98c02f59aa6)
+        ;
+
+        
+    
+    
+            var circle_marker_d8f72771e149c6744a31bd98e31d19dd = L.circleMarker(
+                [58.050288, 56.218699],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B9EABD", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_c3b2a7ec2bdb2b888de9041820d16b7c = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_f0c9f27f52b1465e023486ee55047b5e = $(`<div id="html_f0c9f27f52b1465e023486ee55047b5e" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.817% в год<br><br>Пермский край, Пермь, ул. Академика Королёва, 8</div>`)[0];
+                popup_c3b2a7ec2bdb2b888de9041820d16b7c.setContent(html_f0c9f27f52b1465e023486ee55047b5e);
+            
+        
+
+        circle_marker_d8f72771e149c6744a31bd98e31d19dd.bindPopup(popup_c3b2a7ec2bdb2b888de9041820d16b7c)
+        ;
+
+        
+    
+    
+            var circle_marker_c8adedefc2f138afc80c78abca4786f8 = L.circleMarker(
+                [58.003622, 56.293403],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#41BAC2", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_11a8cc7bc407c2a8c30eb3ca8943b97b = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_8bdf9ced7bee9a52b945899d4d1d48c1 = $(`<div id="html_8bdf9ced7bee9a52b945899d4d1d48c1" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.507% в год<br><br>Пермский край, Пермь, ул. Аркадия Гайдара, 6/2</div>`)[0];
+                popup_11a8cc7bc407c2a8c30eb3ca8943b97b.setContent(html_8bdf9ced7bee9a52b945899d4d1d48c1);
+            
+        
+
+        circle_marker_c8adedefc2f138afc80c78abca4786f8.bindPopup(popup_11a8cc7bc407c2a8c30eb3ca8943b97b)
+        ;
+
+        
+    
+    
+            var circle_marker_dbb20409426c11119061f2a9f6deb3b8 = L.circleMarker(
+                [58.06036, 56.35333],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FD9A98", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_14e7ecf79fc10eab14f2fea8d6dd7cce = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_5139949ccc463db0cfa57bca47ff77bc = $(`<div id="html_5139949ccc463db0cfa57bca47ff77bc" style="width: 100.0%; height: 100.0%;">Возможный доход: 6.96% в год<br><br>Пермский край, Пермь, ул. Гашкова, 29Б</div>`)[0];
+                popup_14e7ecf79fc10eab14f2fea8d6dd7cce.setContent(html_5139949ccc463db0cfa57bca47ff77bc);
+            
+        
+
+        circle_marker_dbb20409426c11119061f2a9f6deb3b8.bindPopup(popup_14e7ecf79fc10eab14f2fea8d6dd7cce)
+        ;
+
+        
+    
+    
+            var circle_marker_c23570a02170dd5db6aa660469b293db = L.circleMarker(
+                [58.05484771728516, 56.344520568847656],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D8175C", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_d60e4bf0448f64979ce62025a4e3f0b3 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_59a1c45bdfc157eb4f26633ec79cd87f = $(`<div id="html_59a1c45bdfc157eb4f26633ec79cd87f" style="width: 100.0%; height: 100.0%;">Возможный доход: 8.278% в год<br><br>Пермский край, Пермь, ул. Гашкова, 51</div>`)[0];
+                popup_d60e4bf0448f64979ce62025a4e3f0b3.setContent(html_59a1c45bdfc157eb4f26633ec79cd87f);
+            
+        
+
+        circle_marker_c23570a02170dd5db6aa660469b293db.bindPopup(popup_d60e4bf0448f64979ce62025a4e3f0b3)
+        ;
+
+        
+    
+    
+            var circle_marker_7b9e41097feb82da1152f23b92883771 = L.circleMarker(
+                [58.05325698852539, 56.34103775024414],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#249AB4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_7bccd6d2445824c411fb830f5f2a8fdc = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_10231b55d871dc4c5b0853b8b2470c51 = $(`<div id="html_10231b55d871dc4c5b0853b8b2470c51" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.161% в год<br><br>Пермский край, Пермь, ул. Гашкова, 58</div>`)[0];
+                popup_7bccd6d2445824c411fb830f5f2a8fdc.setContent(html_10231b55d871dc4c5b0853b8b2470c51);
+            
+        
+
+        circle_marker_7b9e41097feb82da1152f23b92883771.bindPopup(popup_7bccd6d2445824c411fb830f5f2a8fdc)
+        ;
+
+        
+    
+    
+            var circle_marker_fbed83dc503607f714876a57cc15fbad = L.circleMarker(
+                [57.994644348686656, 56.14723555391784],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#249AB4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_4658812ecbc921fd60f9091b9fcda163 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_0e6475a64a8655c01b694a81a711d2e6 = $(`<div id="html_0e6475a64a8655c01b694a81a711d2e6" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.063% в год<br><br>Пермский край, Пермь, ул. Желябова, 16</div>`)[0];
+                popup_4658812ecbc921fd60f9091b9fcda163.setContent(html_0e6475a64a8655c01b694a81a711d2e6);
+            
+        
+
+        circle_marker_fbed83dc503607f714876a57cc15fbad.bindPopup(popup_4658812ecbc921fd60f9091b9fcda163)
+        ;
+
+        
+    
+    
+            var circle_marker_766cd1db1c96d67a874dd3c0b94294e6 = L.circleMarker(
+                [57.998958, 56.148227],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FDC7BA", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_f2412922f0b81d45fd69f43b4c9b1bde = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_aefce5a295e37586b2803c950e670f8b = $(`<div id="html_aefce5a295e37586b2803c950e670f8b" style="width: 100.0%; height: 100.0%;">Возможный доход: 6.065% в год<br><br>Пермский край, Пермь, ул. Желябова, 3</div>`)[0];
+                popup_f2412922f0b81d45fd69f43b4c9b1bde.setContent(html_aefce5a295e37586b2803c950e670f8b);
+            
+        
+
+        circle_marker_766cd1db1c96d67a874dd3c0b94294e6.bindPopup(popup_f2412922f0b81d45fd69f43b4c9b1bde)
+        ;
+
+        
+    
+    
+            var circle_marker_f2914b9070878766688f32045fe997e1 = L.circleMarker(
+                [58.045625, 56.368143],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B9EABD", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_bd5c413ee669a81a22b4b54af72badf4 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_c326f2efdc7ab5f466cab23d33548977 = $(`<div id="html_c326f2efdc7ab5f466cab23d33548977" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.455% в год<br><br>Пермский край, Пермь, ул. Журналиста Дементьева, 48</div>`)[0];
+                popup_bd5c413ee669a81a22b4b54af72badf4.setContent(html_c326f2efdc7ab5f466cab23d33548977);
+            
+        
+
+        circle_marker_f2914b9070878766688f32045fe997e1.bindPopup(popup_bd5c413ee669a81a22b4b54af72badf4)
+        ;
+
+        
+    
+    
+            var circle_marker_fb2746fe8e1614a99bac9d2cb0046f95 = L.circleMarker(
+                [58.0231155, 56.297196],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF5E7B", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_eeefc04e1a42e7298a238f51e7cb2410 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_4b0ad1e5340548ec30df8ce9e7c3c98d = $(`<div id="html_4b0ad1e5340548ec30df8ce9e7c3c98d" style="width: 100.0%; height: 100.0%;">Возможный доход: 7.417% в год<br><br>Пермский край, Пермь, ул. КИМ, 61</div>`)[0];
+                popup_eeefc04e1a42e7298a238f51e7cb2410.setContent(html_4b0ad1e5340548ec30df8ce9e7c3c98d);
+            
+        
+
+        circle_marker_fb2746fe8e1614a99bac9d2cb0046f95.bindPopup(popup_eeefc04e1a42e7298a238f51e7cb2410)
+        ;
+
+        
+    
+    
+            var circle_marker_5d175ed81df2f36d1eac01e143d7c384 = L.circleMarker(
+                [57.96896781258138, 56.2018227294108],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D8175C", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_42e2066b83eb749af383c44341baa998 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_73a6ecd0c87386459b896ddfd6abfa39 = $(`<div id="html_73a6ecd0c87386459b896ddfd6abfa39" style="width: 100.0%; height: 100.0%;">Возможный доход: 9.373% в год<br><br>Пермский край, Пермь, ул. Карпинского, 112/1</div>`)[0];
+                popup_42e2066b83eb749af383c44341baa998.setContent(html_73a6ecd0c87386459b896ddfd6abfa39);
+            
+        
+
+        circle_marker_5d175ed81df2f36d1eac01e143d7c384.bindPopup(popup_42e2066b83eb749af383c44341baa998)
+        ;
+
+        
+    
+    
+            var circle_marker_53447b27b88b37de092759b5aeae9afd = L.circleMarker(
+                [57.967594, 56.200751],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF5E7B", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_ac49246437ce5e65bd7f298f494616ea = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_f9ae27b9952b1bd378a7aa527cea5c39 = $(`<div id="html_f9ae27b9952b1bd378a7aa527cea5c39" style="width: 100.0%; height: 100.0%;">Возможный доход: 7.432% в год<br><br>Пермский край, Пермь, ул. Карпинского, 120</div>`)[0];
+                popup_ac49246437ce5e65bd7f298f494616ea.setContent(html_f9ae27b9952b1bd378a7aa527cea5c39);
+            
+        
+
+        circle_marker_53447b27b88b37de092759b5aeae9afd.bindPopup(popup_ac49246437ce5e65bd7f298f494616ea)
+        ;
+
+        
+    
+    
+            var circle_marker_12f4d24d2c778df63cca17f8ffbec57b = L.circleMarker(
+                [57.97604266666667, 56.185444],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FDC7BA", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_75ae53fe41c72f7945ed2138856f60e2 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_226f5da74dcaaed3f83cf9c0bd8c529f = $(`<div id="html_226f5da74dcaaed3f83cf9c0bd8c529f" style="width: 100.0%; height: 100.0%;">Возможный доход: 6.22% в год<br><br>Пермский край, Пермь, ул. Комбайнёров, 39Б</div>`)[0];
+                popup_75ae53fe41c72f7945ed2138856f60e2.setContent(html_226f5da74dcaaed3f83cf9c0bd8c529f);
+            
+        
+
+        circle_marker_12f4d24d2c778df63cca17f8ffbec57b.bindPopup(popup_75ae53fe41c72f7945ed2138856f60e2)
+        ;
+
+        
+    
+    
+            var circle_marker_74e662c7708b992ee48d4ce82a076547 = L.circleMarker(
+                [57.997088, 56.157021],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D8175C", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_40de3a547770d3a96ae3af8f5b707252 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_38557ccf938f840b84d8b416ee3118dc = $(`<div id="html_38557ccf938f840b84d8b416ee3118dc" style="width: 100.0%; height: 100.0%;">Возможный доход: 12.375% в год<br><br>Пермский край, Пермь, ул. Комиссара Пожарского, 11</div>`)[0];
+                popup_40de3a547770d3a96ae3af8f5b707252.setContent(html_38557ccf938f840b84d8b416ee3118dc);
+            
+        
+
+        circle_marker_74e662c7708b992ee48d4ce82a076547.bindPopup(popup_40de3a547770d3a96ae3af8f5b707252)
+        ;
+
+        
+    
+    
+            var circle_marker_cfaf3a906bf7b54ec41dbdddbb61d6ae = L.circleMarker(
+                [57.970520003906245, 56.170342698339844],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#249AB4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_88c722be55488b2d61e2dc88476b4a29 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_c9668798af7b9fab4c6bfba71856746a = $(`<div id="html_c9668798af7b9fab4c6bfba71856746a" style="width: 100.0%; height: 100.0%;">Возможный доход: 3.951% в год<br><br>Пермский край, Пермь, ул. Космонавта Беляева, 40Б</div>`)[0];
+                popup_88c722be55488b2d61e2dc88476b4a29.setContent(html_c9668798af7b9fab4c6bfba71856746a);
+            
+        
+
+        circle_marker_cfaf3a906bf7b54ec41dbdddbb61d6ae.bindPopup(popup_88c722be55488b2d61e2dc88476b4a29)
+        ;
+
+        
+    
+    
+            var circle_marker_c4051344b1ea0a827253ecde5fda59de = L.circleMarker(
+                [57.96455, 56.15505],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F8E8BF", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_8c908f15d631c5b0d9c539254c8689af = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_307546dee6111b194cfe6c225b08e902 = $(`<div id="html_307546dee6111b194cfe6c225b08e902" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.719% в год<br><br>Пермский край, Пермь, ул. Космонавта Беляева, 61В</div>`)[0];
+                popup_8c908f15d631c5b0d9c539254c8689af.setContent(html_307546dee6111b194cfe6c225b08e902);
+            
+        
+
+        circle_marker_c4051344b1ea0a827253ecde5fda59de.bindPopup(popup_8c908f15d631c5b0d9c539254c8689af)
+        ;
+
+        
+    
+    
+            var circle_marker_fae0515eead711cd906b09fd1f3b5957 = L.circleMarker(
+                [58.03671549459533, 56.13166243694605],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#41BAC2", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_03704c629d57b2886a1dc79b9d399725 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_a9048a6582efb00c1fa1fc10fe8035bf = $(`<div id="html_a9048a6582efb00c1fa1fc10fe8035bf" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.373% в год<br><br>Пермский край, Пермь, ул. Костычева, 36</div>`)[0];
+                popup_03704c629d57b2886a1dc79b9d399725.setContent(html_a9048a6582efb00c1fa1fc10fe8035bf);
+            
+        
+
+        circle_marker_fae0515eead711cd906b09fd1f3b5957.bindPopup(popup_03704c629d57b2886a1dc79b9d399725)
+        ;
+
+        
+    
+    
+            var circle_marker_973d213f55caf54df7634cc9557a4b41 = L.circleMarker(
+                [58.007456, 56.211809],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#249AB4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_54b504049d2012db3f80ced325a38bf4 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_fcb233c53db3cea39c5d588eb1ececa6 = $(`<div id="html_fcb233c53db3cea39c5d588eb1ececa6" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.082% в год<br><br>Пермский край, Пермь, ул. Крисанова, 19</div>`)[0];
+                popup_54b504049d2012db3f80ced325a38bf4.setContent(html_fcb233c53db3cea39c5d588eb1ececa6);
+            
+        
+
+        circle_marker_973d213f55caf54df7634cc9557a4b41.bindPopup(popup_54b504049d2012db3f80ced325a38bf4)
+        ;
+
+        
+    
+    
+            var circle_marker_646408439fac9a2d3b41f7cad2926f9d = L.circleMarker(
+                [58.01033020019531, 56.20994186401367],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F8E8BF", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_42d4b7d7d1253d4eeeb1549e17168ae9 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_f1ce542b792c6d5b57f5619e09ab0a5a = $(`<div id="html_f1ce542b792c6d5b57f5619e09ab0a5a" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.571% в год<br><br>Пермский край, Пермь, ул. Крисанова, 7</div>`)[0];
+                popup_42d4b7d7d1253d4eeeb1549e17168ae9.setContent(html_f1ce542b792c6d5b57f5619e09ab0a5a);
+            
+        
+
+        circle_marker_646408439fac9a2d3b41f7cad2926f9d.bindPopup(popup_42d4b7d7d1253d4eeeb1549e17168ae9)
+        ;
+
+        
+    
+    
+            var circle_marker_392b683302718329b18d203575718bf3 = L.circleMarker(
+                [58.018731, 56.278464],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FD9A98", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_714096ebb53189acf2eac8a23d9294b1 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_da8807d71c73181353df9902b1eead20 = $(`<div id="html_da8807d71c73181353df9902b1eead20" style="width: 100.0%; height: 100.0%;">Возможный доход: 6.651% в год<br><br>Пермский край, Пермь, ул. Крупской, 25</div>`)[0];
+                popup_714096ebb53189acf2eac8a23d9294b1.setContent(html_da8807d71c73181353df9902b1eead20);
+            
+        
+
+        circle_marker_392b683302718329b18d203575718bf3.bindPopup(popup_714096ebb53189acf2eac8a23d9294b1)
+        ;
+
+        
+    
+    
+            var circle_marker_6b0b07e93575d688170599eeefa314db = L.circleMarker(
+                [57.99846826708984, 56.21882892333985],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FDC7BA", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_88e65d45c122830304892b61268e111c = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_d6a48b374e6fc136578d2572fb203443 = $(`<div id="html_d6a48b374e6fc136578d2572fb203443" style="width: 100.0%; height: 100.0%;">Возможный доход: 6.004% в год<br><br>Пермский край, Пермь, ул. Крылова, 17</div>`)[0];
+                popup_88e65d45c122830304892b61268e111c.setContent(html_d6a48b374e6fc136578d2572fb203443);
+            
+        
+
+        circle_marker_6b0b07e93575d688170599eeefa314db.bindPopup(popup_88e65d45c122830304892b61268e111c)
+        ;
+
+        
+    
+    
+            var circle_marker_58e2b052285f02bc1dce9b2b1324c89d = L.circleMarker(
+                [57.995957, 56.13512],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#79D5C3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_d473ac2de87dc8cd44f0537e4a22f011 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_62288ad53be7dc9cf4942ff6e1e483ec = $(`<div id="html_62288ad53be7dc9cf4942ff6e1e483ec" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.555% в год<br><br>Пермский край, Пермь, ул. Куфонина, 10Б</div>`)[0];
+                popup_d473ac2de87dc8cd44f0537e4a22f011.setContent(html_62288ad53be7dc9cf4942ff6e1e483ec);
+            
+        
+
+        circle_marker_58e2b052285f02bc1dce9b2b1324c89d.bindPopup(popup_d473ac2de87dc8cd44f0537e4a22f011)
+        ;
+
+        
+    
+    
+            var circle_marker_45bbbf75384a5be87479e2f831d50b78 = L.circleMarker(
+                [57.993854, 56.13742],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF5E7B", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_201c1c03659540fae4a7f615f8b02460 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_b08a65886a14302c73e58c0bc83bebfe = $(`<div id="html_b08a65886a14302c73e58c0bc83bebfe" style="width: 100.0%; height: 100.0%;">Возможный доход: 7.15% в год<br><br>Пермский край, Пермь, ул. Куфонина, 19</div>`)[0];
+                popup_201c1c03659540fae4a7f615f8b02460.setContent(html_b08a65886a14302c73e58c0bc83bebfe);
+            
+        
+
+        circle_marker_45bbbf75384a5be87479e2f831d50b78.bindPopup(popup_201c1c03659540fae4a7f615f8b02460)
+        ;
+
+        
+    
+    
+            var circle_marker_5e9a3a6dd980be5e75552f873547616f = L.circleMarker(
+                [58.01624651604791, 56.257061220458844],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F8E8BF", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_23706dec0919ca6a0a2407d645178ec7 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_2c1eac65362f75c7a662ddae67cf2e8d = $(`<div id="html_2c1eac65362f75c7a662ddae67cf2e8d" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.459% в год<br><br>Пермский край, Пермь, ул. Ленина, 10</div>`)[0];
+                popup_23706dec0919ca6a0a2407d645178ec7.setContent(html_2c1eac65362f75c7a662ddae67cf2e8d);
+            
+        
+
+        circle_marker_5e9a3a6dd980be5e75552f873547616f.bindPopup(popup_23706dec0919ca6a0a2407d645178ec7)
+        ;
+
+        
+    
+    
+            var circle_marker_b7aac27fee9cf6f2b85b24c76ce28a7f = L.circleMarker(
+                [58.011022, 56.235965],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#249AB4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_6d512af9c09a17296ee8b52db8524efd = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_4267541d87be883bae25d42088f60593 = $(`<div id="html_4267541d87be883bae25d42088f60593" style="width: 100.0%; height: 100.0%;">Возможный доход: 3.796% в год<br><br>Пермский край, Пермь, ул. Ленина, 49</div>`)[0];
+                popup_6d512af9c09a17296ee8b52db8524efd.setContent(html_4267541d87be883bae25d42088f60593);
+            
+        
+
+        circle_marker_b7aac27fee9cf6f2b85b24c76ce28a7f.bindPopup(popup_6d512af9c09a17296ee8b52db8524efd)
+        ;
+
+        
+    
+    
+            var circle_marker_653de412219016e6f4f7ffdad534fff0 = L.circleMarker(
+                [58.006235, 56.208189],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B9EABD", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_dd3e9c27b7588373ec6e8abcc8d33e12 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_90ec290f7d95204292bd328013332348 = $(`<div id="html_90ec290f7d95204292bd328013332348" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.163% в год<br><br>Пермский край, Пермь, ул. Ленина, 65</div>`)[0];
+                popup_dd3e9c27b7588373ec6e8abcc8d33e12.setContent(html_90ec290f7d95204292bd328013332348);
+            
+        
+
+        circle_marker_653de412219016e6f4f7ffdad534fff0.bindPopup(popup_dd3e9c27b7588373ec6e8abcc8d33e12)
+        ;
+
+        
+    
+    
+            var circle_marker_e39958fe0acb9e8e4e693a4c62029c0a = L.circleMarker(
+                [58.007465, 56.219113],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF5E7B", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_ad768ee5ec214de765ac535de3c12f26 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_afa502b045c9026bf5d91efb2bbb0d76 = $(`<div id="html_afa502b045c9026bf5d91efb2bbb0d76" style="width: 100.0%; height: 100.0%;">Возможный доход: 7.654% в год<br><br>Пермский край, Пермь, ул. Ленина, 74</div>`)[0];
+                popup_ad768ee5ec214de765ac535de3c12f26.setContent(html_afa502b045c9026bf5d91efb2bbb0d76);
+            
+        
+
+        circle_marker_e39958fe0acb9e8e4e693a4c62029c0a.bindPopup(popup_ad768ee5ec214de765ac535de3c12f26)
+        ;
+
+        
+    
+    
+            var circle_marker_45d24126a3fd5307b17065070514b1de = L.circleMarker(
+                [58.016557, 56.256078],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#249AB4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_bf4bf9cffee8a89d46f3cf3ccdf17078 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_1cac0d9e487205d7fab43161f708926d = $(`<div id="html_1cac0d9e487205d7fab43161f708926d" style="width: 100.0%; height: 100.0%;">Возможный доход: 2.637% в год<br><br>Пермский край, Пермь, ул. Ленина, 9</div>`)[0];
+                popup_bf4bf9cffee8a89d46f3cf3ccdf17078.setContent(html_1cac0d9e487205d7fab43161f708926d);
+            
+        
+
+        circle_marker_45d24126a3fd5307b17065070514b1de.bindPopup(popup_bf4bf9cffee8a89d46f3cf3ccdf17078)
+        ;
+
+        
+    
+    
+            var circle_marker_0da5fd32c9ed9836282fcef896193f31 = L.circleMarker(
+                [58.002802, 56.216777],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#249AB4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_9a2ed69c6413c9245d9efef2485b0d4e = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_0fa15839194d6e0d5a4b3c42768c1c26 = $(`<div id="html_0fa15839194d6e0d5a4b3c42768c1c26" style="width: 100.0%; height: 100.0%;">Возможный доход: 3.167% в год<br><br>Пермский край, Пермь, ул. Луначарского, 105</div>`)[0];
+                popup_9a2ed69c6413c9245d9efef2485b0d4e.setContent(html_0fa15839194d6e0d5a4b3c42768c1c26);
+            
+        
+
+        circle_marker_0da5fd32c9ed9836282fcef896193f31.bindPopup(popup_9a2ed69c6413c9245d9efef2485b0d4e)
+        ;
+
+        
+    
+    
+            var circle_marker_6900befd54332004223e4ca3f56e7024 = L.circleMarker(
+                [58.0048, 56.22514],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#41BAC2", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_b9d0f5a3f1f56b39d8e0967a27fd6fb1 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_5e974c68db21d231037589b81db5d5e8 = $(`<div id="html_5e974c68db21d231037589b81db5d5e8" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.49% в год<br><br>Пермский край, Пермь, ул. Луначарского, 90</div>`)[0];
+                popup_b9d0f5a3f1f56b39d8e0967a27fd6fb1.setContent(html_5e974c68db21d231037589b81db5d5e8);
+            
+        
+
+        circle_marker_6900befd54332004223e4ca3f56e7024.bindPopup(popup_b9d0f5a3f1f56b39d8e0967a27fd6fb1)
+        ;
+
+        
+    
+    
+            var circle_marker_03fec68123d78e7d84bfbd2eb4a7ca46 = L.circleMarker(
+                [58.0051955, 56.230285],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D8175C", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_7e339d90dffabcd6d70952c6d2e99c68 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_b752aa0530cbeebb815cc705a9493af9 = $(`<div id="html_b752aa0530cbeebb815cc705a9493af9" style="width: 100.0%; height: 100.0%;">Возможный доход: 9.135% в год<br><br>Пермский край, Пермь, ул. Луначарского, 95А</div>`)[0];
+                popup_7e339d90dffabcd6d70952c6d2e99c68.setContent(html_b752aa0530cbeebb815cc705a9493af9);
+            
+        
+
+        circle_marker_03fec68123d78e7d84bfbd2eb4a7ca46.bindPopup(popup_7e339d90dffabcd6d70952c6d2e99c68)
+        ;
+
+        
+    
+    
+            var circle_marker_829562ba3c78d0b081b3120143846e76 = L.circleMarker(
+                [58.013754, 56.298982],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF5E7B", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_9cfbc6559b0682d9232f6dbd081bf6a5 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_d6f6b8eab317a91f236655b449cf3cd3 = $(`<div id="html_d6f6b8eab317a91f236655b449cf3cd3" style="width: 100.0%; height: 100.0%;">Возможный доход: 7.692% в год<br><br>Пермский край, Пермь, ул. Макаренко, 16А</div>`)[0];
+                popup_9cfbc6559b0682d9232f6dbd081bf6a5.setContent(html_d6f6b8eab317a91f236655b449cf3cd3);
+            
+        
+
+        circle_marker_829562ba3c78d0b081b3120143846e76.bindPopup(popup_9cfbc6559b0682d9232f6dbd081bf6a5)
+        ;
+
+        
+    
+    
+            var circle_marker_ca6963b168ada7ae63f5a6c63cfbb703 = L.circleMarker(
+                [58.010747333080914, 56.25622903574639],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#79D5C3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_efea70e31b08b606cb357c7fb2b0218b = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_9829588ba987581b6b3d2855ae910ba2 = $(`<div id="html_9829588ba987581b6b3d2855ae910ba2" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.663% в год<br><br>Пермский край, Пермь, ул. Максима Горького, 41</div>`)[0];
+                popup_efea70e31b08b606cb357c7fb2b0218b.setContent(html_9829588ba987581b6b3d2855ae910ba2);
+            
+        
+
+        circle_marker_ca6963b168ada7ae63f5a6c63cfbb703.bindPopup(popup_efea70e31b08b606cb357c7fb2b0218b)
+        ;
+
+        
+    
+    
+            var circle_marker_e22916b1919e42b1c5441a6c5554f51d = L.circleMarker(
+                [57.999315, 56.194113],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D8175C", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_faf689e66581cde8f2ef43f38034702c = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_d211f13e92eb799cfc5889ca58e74b93 = $(`<div id="html_d211f13e92eb799cfc5889ca58e74b93" style="width: 100.0%; height: 100.0%;">Возможный доход: 7.912% в год<br><br>Пермский край, Пермь, ул. Малкова, 28/6</div>`)[0];
+                popup_faf689e66581cde8f2ef43f38034702c.setContent(html_d211f13e92eb799cfc5889ca58e74b93);
+            
+        
+
+        circle_marker_e22916b1919e42b1c5441a6c5554f51d.bindPopup(popup_faf689e66581cde8f2ef43f38034702c)
+        ;
+
+        
+    
+    
+            var circle_marker_3e1d1d9c848e7217991b38b5697283e4 = L.circleMarker(
+                [58.001123, 56.113561],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#41BAC2", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_e99622685c7aa82fcf7e95acf512dd80 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_61c5699a4e9e5738469a8b4778153c73 = $(`<div id="html_61c5699a4e9e5738469a8b4778153c73" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.388% в год<br><br>Пермский край, Пермь, ул. Маяковского, 41А</div>`)[0];
+                popup_e99622685c7aa82fcf7e95acf512dd80.setContent(html_61c5699a4e9e5738469a8b4778153c73);
+            
+        
+
+        circle_marker_3e1d1d9c848e7217991b38b5697283e4.bindPopup(popup_e99622685c7aa82fcf7e95acf512dd80)
+        ;
+
+        
+    
+    
+            var circle_marker_8b4fe3523d5bfc2a23a972acc0b6fbf4 = L.circleMarker(
+                [57.96734168835449, 56.15523273791504],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F8E8BF", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_f90283dfff9d2aa421a621829e9d3120 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_72adcd3e8b87a739c37311ad4c16673d = $(`<div id="html_72adcd3e8b87a739c37311ad4c16673d" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.732% в год<br><br>Пермский край, Пермь, ул. Милиционера Власова, 4А</div>`)[0];
+                popup_f90283dfff9d2aa421a621829e9d3120.setContent(html_72adcd3e8b87a739c37311ad4c16673d);
+            
+        
+
+        circle_marker_8b4fe3523d5bfc2a23a972acc0b6fbf4.bindPopup(popup_f90283dfff9d2aa421a621829e9d3120)
+        ;
+
+        
+    
+    
+            var circle_marker_744e7d5929488121ce93b8d419aab079 = L.circleMarker(
+                [57.974391, 56.182165],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF5E7B", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_e464bad02a79a93f0d1049be24272004 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_3112e10ea435617abf3ace7bd8dbeab3 = $(`<div id="html_3112e10ea435617abf3ace7bd8dbeab3" style="width: 100.0%; height: 100.0%;">Возможный доход: 7.19% в год<br><br>Пермский край, Пермь, ул. Нефтяников, 5</div>`)[0];
+                popup_e464bad02a79a93f0d1049be24272004.setContent(html_3112e10ea435617abf3ace7bd8dbeab3);
+            
+        
+
+        circle_marker_744e7d5929488121ce93b8d419aab079.bindPopup(popup_e464bad02a79a93f0d1049be24272004)
+        ;
+
+        
+    
+    
+            var circle_marker_2bff50a1458d456834e4c539678f2497 = L.circleMarker(
+                [58.012314055817704, 56.26009358940357],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#249AB4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_9ca7657a1cd5f439d0309f964c63ce76 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_78b407b334f8824d258caa97b461e957 = $(`<div id="html_78b407b334f8824d258caa97b461e957" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.178% в год<br><br>Пермский край, Пермь, ул. Николая Островского, 30</div>`)[0];
+                popup_9ca7657a1cd5f439d0309f964c63ce76.setContent(html_78b407b334f8824d258caa97b461e957);
+            
+        
+
+        circle_marker_2bff50a1458d456834e4c539678f2497.bindPopup(popup_9ca7657a1cd5f439d0309f964c63ce76)
+        ;
+
+        
+    
+    
+            var circle_marker_1ca632e6d647f36209b5cb1d4d20ff47 = L.circleMarker(
+                [57.99425, 56.223488],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#79D5C3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_8bbc1dd6baeaf51a4a77c711138b8065 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_09d178bb4d18bb43a3e668017db9db22 = $(`<div id="html_09d178bb4d18bb43a3e668017db9db22" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.734% в год<br><br>Пермский край, Пермь, ул. Овчинникова, 17</div>`)[0];
+                popup_8bbc1dd6baeaf51a4a77c711138b8065.setContent(html_09d178bb4d18bb43a3e668017db9db22);
+            
+        
+
+        circle_marker_1ca632e6d647f36209b5cb1d4d20ff47.bindPopup(popup_8bbc1dd6baeaf51a4a77c711138b8065)
+        ;
+
+        
+    
+    
+            var circle_marker_e01e4f246d5fe9f74a9a7ecd7be2f8fe = L.circleMarker(
+                [58.04953668507053, 56.21687239495974],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#79D5C3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_1e16e64a9f7ba27768989e8554559959 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_22ccf5926d05ac8866695a92e833dec3 = $(`<div id="html_22ccf5926d05ac8866695a92e833dec3" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.787% в год<br><br>Пермский край, Пермь, ул. Профессора Дедюкина, 8</div>`)[0];
+                popup_1e16e64a9f7ba27768989e8554559959.setContent(html_22ccf5926d05ac8866695a92e833dec3);
+            
+        
+
+        circle_marker_e01e4f246d5fe9f74a9a7ecd7be2f8fe.bindPopup(popup_1e16e64a9f7ba27768989e8554559959)
+        ;
+
+        
+    
+    
+            var circle_marker_22fdac6650d808d17ef6a6a5878a2bcb = L.circleMarker(
+                [58.002949, 56.219786],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B9EABD", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_f88b0f31bfe1193e8f03e1be6d31bc94 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_7726736654d75df5956420124969cc86 = $(`<div id="html_7726736654d75df5956420124969cc86" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.362% в год<br><br>Пермский край, Пермь, ул. Пушкина, 109</div>`)[0];
+                popup_f88b0f31bfe1193e8f03e1be6d31bc94.setContent(html_7726736654d75df5956420124969cc86);
+            
+        
+
+        circle_marker_22fdac6650d808d17ef6a6a5878a2bcb.bindPopup(popup_f88b0f31bfe1193e8f03e1be6d31bc94)
+        ;
+
+        
+    
+    
+            var circle_marker_074bf21b4bedd6c3cea390d3f1a805d7 = L.circleMarker(
+                [58.00231170654297, 56.21787643432617],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF5E7B", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_b639b1b68d560ed014dbda904962495e = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_a3a20af141428ede7d392872ee0a75ac = $(`<div id="html_a3a20af141428ede7d392872ee0a75ac" style="width: 100.0%; height: 100.0%;">Возможный доход: 6.964% в год<br><br>Пермский край, Пермь, ул. Пушкина, 113</div>`)[0];
+                popup_b639b1b68d560ed014dbda904962495e.setContent(html_a3a20af141428ede7d392872ee0a75ac);
+            
+        
+
+        circle_marker_074bf21b4bedd6c3cea390d3f1a805d7.bindPopup(popup_b639b1b68d560ed014dbda904962495e)
+        ;
+
+        
+    
+    
+            var circle_marker_b4b661e53a1c3d13398aaefed23cd609 = L.circleMarker(
+                [57.978581, 56.203455],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B9EABD", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_e7c4d11ffe0fad8ccf24741435bafec3 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_6ae88c151545b6579682afc0492e917a = $(`<div id="html_6ae88c151545b6579682afc0492e917a" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.955% в год<br><br>Пермский край, Пермь, ул. Советской Армии, 37</div>`)[0];
+                popup_e7c4d11ffe0fad8ccf24741435bafec3.setContent(html_6ae88c151545b6579682afc0492e917a);
+            
+        
+
+        circle_marker_b4b661e53a1c3d13398aaefed23cd609.bindPopup(popup_e7c4d11ffe0fad8ccf24741435bafec3)
+        ;
+
+        
+    
+    
+            var circle_marker_3132ff5ef317f47a58d2070e42f9308c = L.circleMarker(
+                [57.97663893131511, 56.2042009148763],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#41BAC2", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_5087f323aa2c853eee7eece801db40ad = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_6106f25b2e04e157916126c82051f34b = $(`<div id="html_6106f25b2e04e157916126c82051f34b" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.497% в год<br><br>Пермский край, Пермь, ул. Советской Армии, 60</div>`)[0];
+                popup_5087f323aa2c853eee7eece801db40ad.setContent(html_6106f25b2e04e157916126c82051f34b);
+            
+        
+
+        circle_marker_3132ff5ef317f47a58d2070e42f9308c.bindPopup(popup_5087f323aa2c853eee7eece801db40ad)
+        ;
+
+        
+    
+    
+            var circle_marker_cf592e8b471b93151aa3be1507793d39 = L.circleMarker(
+                [57.974348, 56.205018],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FD9A98", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_ca572c3daa89533c8099378c494be73e = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_1208aededa84b6004a1c063b98e7f21e = $(`<div id="html_1208aededa84b6004a1c063b98e7f21e" style="width: 100.0%; height: 100.0%;">Возможный доход: 6.443% в год<br><br>Пермский край, Пермь, ул. Советской Армии, 72</div>`)[0];
+                popup_ca572c3daa89533c8099378c494be73e.setContent(html_1208aededa84b6004a1c063b98e7f21e);
+            
+        
+
+        circle_marker_cf592e8b471b93151aa3be1507793d39.bindPopup(popup_ca572c3daa89533c8099378c494be73e)
+        ;
+
+        
+    
+    
+            var circle_marker_bffd0f7281ff879be655455366998cc4 = L.circleMarker(
+                [58.00256035685222, 56.176870035847976],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#41BAC2", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_44c7993ce05763e1b8029e1dd619f55e = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_105f40685e3521f3e357c70db1e32ab5 = $(`<div id="html_105f40685e3521f3e357c70db1e32ab5" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.219% в год<br><br>Пермский край, Пермь, ул. Татьяны Барамзиной, 38</div>`)[0];
+                popup_44c7993ce05763e1b8029e1dd619f55e.setContent(html_105f40685e3521f3e357c70db1e32ab5);
+            
+        
+
+        circle_marker_bffd0f7281ff879be655455366998cc4.bindPopup(popup_44c7993ce05763e1b8029e1dd619f55e)
+        ;
+
+        
+    
+    
+            var circle_marker_ea768d60eef4b8f8853adf8099e869e1 = L.circleMarker(
+                [58.002177, 56.177548],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FD9A98", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_64685178ab778f52de3767c7408b0bcb = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_9221a7cbad3254b0aa85de6c02a57cf3 = $(`<div id="html_9221a7cbad3254b0aa85de6c02a57cf3" style="width: 100.0%; height: 100.0%;">Возможный доход: 6.296% в год<br><br>Пермский край, Пермь, ул. Татьяны Барамзиной, 42/2</div>`)[0];
+                popup_64685178ab778f52de3767c7408b0bcb.setContent(html_9221a7cbad3254b0aa85de6c02a57cf3);
+            
+        
+
+        circle_marker_ea768d60eef4b8f8853adf8099e869e1.bindPopup(popup_64685178ab778f52de3767c7408b0bcb)
+        ;
+
+        
+    
+    
+            var circle_marker_278ecfdf9d3fd79a664e8dfcce1ace5a = L.circleMarker(
+                [57.9993225, 56.189832499999994],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B9EABD", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_c9d756a2a151cef63d4ac8fb70753264 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_8f02f4801e937b4b551b6c258b8d8bb8 = $(`<div id="html_8f02f4801e937b4b551b6c258b8d8bb8" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.211% в год<br><br>Пермский край, Пермь, ул. Татьяны Барамзиной, 45</div>`)[0];
+                popup_c9d756a2a151cef63d4ac8fb70753264.setContent(html_8f02f4801e937b4b551b6c258b8d8bb8);
+            
+        
+
+        circle_marker_278ecfdf9d3fd79a664e8dfcce1ace5a.bindPopup(popup_c9d756a2a151cef63d4ac8fb70753264)
+        ;
+
+        
+    
+    
+            var circle_marker_f6ec340716fbf514a4eb9884d0b0d579 = L.circleMarker(
+                [57.998466, 56.291364],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B9EABD", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_8732303fe99d5f2ff99688b337c17257 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_9a2f0113522a75cc3b1991ef75ecc48c = $(`<div id="html_9a2f0113522a75cc3b1991ef75ecc48c" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.272% в год<br><br>Пермский край, Пермь, ул. Ушинского, 4</div>`)[0];
+                popup_8732303fe99d5f2ff99688b337c17257.setContent(html_9a2f0113522a75cc3b1991ef75ecc48c);
+            
+        
+
+        circle_marker_f6ec340716fbf514a4eb9884d0b0d579.bindPopup(popup_8732303fe99d5f2ff99688b337c17257)
+        ;
+
+        
+    
+    
+            var circle_marker_a465286764239525927b307498633391 = L.circleMarker(
+                [58.010078, 56.310094],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FDC7BA", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_f4439c7bffc5ffac64bbcbfa89ea47c3 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_f8ea717e7d11a8c8532d9ec8ded92ad8 = $(`<div id="html_f8ea717e7d11a8c8532d9ec8ded92ad8" style="width: 100.0%; height: 100.0%;">Возможный доход: 6.151% в год<br><br>Пермский край, Пермь, ул. Юрша, 60</div>`)[0];
+                popup_f4439c7bffc5ffac64bbcbfa89ea47c3.setContent(html_f8ea717e7d11a8c8532d9ec8ded92ad8);
+            
+        
+
+        circle_marker_a465286764239525927b307498633391.bindPopup(popup_f4439c7bffc5ffac64bbcbfa89ea47c3)
+        ;
+
+        
+    
+    
+            var circle_marker_8e98804ca115bc3b2281eca37913880b = L.circleMarker(
+                [58.001976, 56.30509],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FDC7BA", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_0fab9387656160554d8009f7f60d2fbf = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_2d8f1edfd6169e6a201111ba1b5cd627 = $(`<div id="html_2d8f1edfd6169e6a201111ba1b5cd627" style="width: 100.0%; height: 100.0%;">Возможный доход: 6.168% в год<br><br>Пермский край, Пермь, ул. Юрша, 84</div>`)[0];
+                popup_0fab9387656160554d8009f7f60d2fbf.setContent(html_2d8f1edfd6169e6a201111ba1b5cd627);
+            
+        
+
+        circle_marker_8e98804ca115bc3b2281eca37913880b.bindPopup(popup_0fab9387656160554d8009f7f60d2fbf)
+        ;
+
+        
+    
+    
+            var circle_marker_7803e36cafb50a99274d937e942f5b26 = L.circleMarker(
+                [57.99143600463867, 56.19358825683594],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B9EABD", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_d79012dfb54f92ce7ff50b1cddf9d132 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_2f1e8d2d0aa06186d6991b92812fc45b = $(`<div id="html_2f1e8d2d0aa06186d6991b92812fc45b" style="width: 100.0%; height: 100.0%;">Возможный доход: 5.38% в год<br><br>Пермский край, Пермь, ш. Космонавтов, 116</div>`)[0];
+                popup_d79012dfb54f92ce7ff50b1cddf9d132.setContent(html_2f1e8d2d0aa06186d6991b92812fc45b);
+            
+        
+
+        circle_marker_7803e36cafb50a99274d937e942f5b26.bindPopup(popup_d79012dfb54f92ce7ff50b1cddf9d132)
+        ;
+
+        
+    
+    
+            var circle_marker_9fa47f85c8c7b78a6f7d091060cff7ed = L.circleMarker(
+                [57.96932601928711, 56.152950286865234],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#79D5C3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0c23f2c116064de3e4cb976ff0dec22);
+        
+    
+        var popup_5bc304f477661a23375a07d9bf249fb9 = L.popup({"maxWidth": 170});
+
+        
+            
+                var html_bdea346acf22b8bb1b90563a79f8f929 = $(`<div id="html_bdea346acf22b8bb1b90563a79f8f929" style="width: 100.0%; height: 100.0%;">Возможный доход: 4.66% в год<br><br>Пермский край, Пермь, ш. Космонавтов, 217</div>`)[0];
+                popup_5bc304f477661a23375a07d9bf249fb9.setContent(html_bdea346acf22b8bb1b90563a79f8f929);
+            
+        
+
+        circle_marker_9fa47f85c8c7b78a6f7d091060cff7ed.bindPopup(popup_5bc304f477661a23375a07d9bf249fb9)
+        ;
+
+        
+    
+</script>
+</html>

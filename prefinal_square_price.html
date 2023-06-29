@@ -1,0 +1,3191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_da2eec7a261b317172113c4e543b9961 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_da2eec7a261b317172113c4e543b9961" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_da2eec7a261b317172113c4e543b9961 = L.map(
+                "map_da2eec7a261b317172113c4e543b9961",
+                {
+                    center: [58.00104, 56.2144],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bb732f9a3b4c67d4d2023e30ceb2f67d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_da2eec7a261b317172113c4e543b9961);
+        
+    
+            var tile_layer_9a7b42f5b2964ea190f9d274402bf60a = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_da2eec7a261b317172113c4e543b9961);
+        
+    
+        function geo_json_6e77143461f0d905ab34d0a8684364a3_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FD9A98", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_6e77143461f0d905ab34d0a8684364a3_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_6e77143461f0d905ab34d0a8684364a3 = L.geoJson(null, {
+                onEachFeature: geo_json_6e77143461f0d905ab34d0a8684364a3_onEachFeature,
+            
+                style: geo_json_6e77143461f0d905ab34d0a8684364a3_styler,
+        });
+
+        function geo_json_6e77143461f0d905ab34d0a8684364a3_add (data) {
+            geo_json_6e77143461f0d905ab34d0a8684364a3
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_6e77143461f0d905ab34d0a8684364a3_add({"features": [{"geometry": {"coordinates": [[[56.226974070266095, 58.0090665879585], [56.227768169525575, 58.00765620578716], [56.22838364666504, 58.006755657638394], [56.23033357114829, 58.00373920187883], [56.240342825343774, 58.005499997189716], [56.2436211834912, 58.00655615248368], [56.23862614766085, 58.01135094875005], [56.23422427097661, 58.01030527817626], [56.226974070266095, 58.0090665879585]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_8cb83fc77982f7d62f258e6130035749 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_d91ee3cfbdcf9f15d5f837b178194082 = $(`<div id="html_d91ee3cfbdcf9f15d5f837b178194082" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 108,913.0р.</div>`)[0];
+                popup_8cb83fc77982f7d62f258e6130035749.setContent(html_d91ee3cfbdcf9f15d5f837b178194082);
+            
+        
+
+        geo_json_6e77143461f0d905ab34d0a8684364a3.bindPopup(popup_8cb83fc77982f7d62f258e6130035749)
+        ;
+
+        
+    
+    
+        function geo_json_bb6284f42f1d38b7aca3c833a3f5021a_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FF5E7B", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_bb6284f42f1d38b7aca3c833a3f5021a_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_bb6284f42f1d38b7aca3c833a3f5021a = L.geoJson(null, {
+                onEachFeature: geo_json_bb6284f42f1d38b7aca3c833a3f5021a_onEachFeature,
+            
+                style: geo_json_bb6284f42f1d38b7aca3c833a3f5021a_styler,
+        });
+
+        function geo_json_bb6284f42f1d38b7aca3c833a3f5021a_add (data) {
+            geo_json_bb6284f42f1d38b7aca3c833a3f5021a
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_bb6284f42f1d38b7aca3c833a3f5021a_add({"features": [{"geometry": {"coordinates": [[[56.344868020321144, 58.01019125036166], [56.337734947749794, 58.01448417732709], [56.3273044648617, 58.011960080470345], [56.3327932536705, 58.00782140579696], [56.33607498012353, 58.00752654106114], [56.34251146906959, 58.007335532868666], [56.344868020321144, 58.01019125036166]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_5946922ccd419fbdb0c8ae390bd44c48 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_1b7b3e2d50736a9a88cf77a6f248e739 = $(`<div id="html_1b7b3e2d50736a9a88cf77a6f248e739" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 123,703.0р.</div>`)[0];
+                popup_5946922ccd419fbdb0c8ae390bd44c48.setContent(html_1b7b3e2d50736a9a88cf77a6f248e739);
+            
+        
+
+        geo_json_bb6284f42f1d38b7aca3c833a3f5021a.bindPopup(popup_5946922ccd419fbdb0c8ae390bd44c48)
+        ;
+
+        
+    
+    
+        function geo_json_264a155c8d2bd70cd5662a990217520a_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_264a155c8d2bd70cd5662a990217520a_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_264a155c8d2bd70cd5662a990217520a = L.geoJson(null, {
+                onEachFeature: geo_json_264a155c8d2bd70cd5662a990217520a_onEachFeature,
+            
+                style: geo_json_264a155c8d2bd70cd5662a990217520a_styler,
+        });
+
+        function geo_json_264a155c8d2bd70cd5662a990217520a_add (data) {
+            geo_json_264a155c8d2bd70cd5662a990217520a
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_264a155c8d2bd70cd5662a990217520a_add({"features": [{"geometry": {"coordinates": [[[56.257172570978724, 58.01029845931342], [56.26093135652388, 58.006399153953225], [56.265185311422414, 58.00632760309671], [56.26925755409735, 58.00603711808361], [56.269297383840716, 58.0065839020448], [56.265276515312635, 58.010275777302255], [56.264575002069876, 58.01141312941374], [56.26375497810812, 58.01211101250832], [56.260436187170455, 58.011192735514385], [56.257172570978724, 58.01029845931342]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_3844f74280f916bf6d41bea1a5d1b73f = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_7763176a82806dafec5716d1c19b5bbf = $(`<div id="html_7763176a82806dafec5716d1c19b5bbf" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_3844f74280f916bf6d41bea1a5d1b73f.setContent(html_7763176a82806dafec5716d1c19b5bbf);
+            
+        
+
+        geo_json_264a155c8d2bd70cd5662a990217520a.bindPopup(popup_3844f74280f916bf6d41bea1a5d1b73f)
+        ;
+
+        
+    
+    
+        function geo_json_b4eb48d83cb638bdcf437cc271e358d7_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#D8175C", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_b4eb48d83cb638bdcf437cc271e358d7_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_b4eb48d83cb638bdcf437cc271e358d7 = L.geoJson(null, {
+                onEachFeature: geo_json_b4eb48d83cb638bdcf437cc271e358d7_onEachFeature,
+            
+                style: geo_json_b4eb48d83cb638bdcf437cc271e358d7_styler,
+        });
+
+        function geo_json_b4eb48d83cb638bdcf437cc271e358d7_add (data) {
+            geo_json_b4eb48d83cb638bdcf437cc271e358d7
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_b4eb48d83cb638bdcf437cc271e358d7_add({"features": [{"geometry": {"coordinates": [[[56.24842774915888, 58.01953664916539], [56.25241408128923, 58.015308185732806], [56.25799573377907, 58.01689226300303], [56.25659818684838, 58.01825297206466], [56.25430683975904, 58.01760328774762], [56.25302572449422, 58.01894177985699], [56.252200896857914, 58.01880235593211], [56.25128832159976, 58.019638891331624], [56.25058634063356, 58.01950876488729], [56.25011250347973, 58.02000138392998], [56.24842774915888, 58.01953664916539]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_68dfa6249e1487c529750411cf4b0a58 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_82ba6564e99ce23642efaba8477003fc = $(`<div id="html_82ba6564e99ce23642efaba8477003fc" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 141,790.0р.</div>`)[0];
+                popup_68dfa6249e1487c529750411cf4b0a58.setContent(html_82ba6564e99ce23642efaba8477003fc);
+            
+        
+
+        geo_json_b4eb48d83cb638bdcf437cc271e358d7.bindPopup(popup_68dfa6249e1487c529750411cf4b0a58)
+        ;
+
+        
+    
+    
+        function geo_json_bddeaf589ec4df79f35c8218b988854d_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FF5E7B", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_bddeaf589ec4df79f35c8218b988854d_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_bddeaf589ec4df79f35c8218b988854d = L.geoJson(null, {
+                onEachFeature: geo_json_bddeaf589ec4df79f35c8218b988854d_onEachFeature,
+            
+                style: geo_json_bddeaf589ec4df79f35c8218b988854d_styler,
+        });
+
+        function geo_json_bddeaf589ec4df79f35c8218b988854d_add (data) {
+            geo_json_bddeaf589ec4df79f35c8218b988854d
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_bddeaf589ec4df79f35c8218b988854d_add({"features": [{"geometry": {"coordinates": [[[56.23457557770607, 58.015743391742916], [56.2388278834446, 58.01142357104629], [56.246338475957714, 58.01358460416844], [56.242305490954266, 58.01781867778118], [56.23457557770607, 58.015743391742916]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_fd6f6c74fd90f7de668183a2a43b2c48 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_3ee7eec4de3e37a7596216b29919e081 = $(`<div id="html_3ee7eec4de3e37a7596216b29919e081" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 123,012.0р.</div>`)[0];
+                popup_fd6f6c74fd90f7de668183a2a43b2c48.setContent(html_3ee7eec4de3e37a7596216b29919e081);
+            
+        
+
+        geo_json_bddeaf589ec4df79f35c8218b988854d.bindPopup(popup_fd6f6c74fd90f7de668183a2a43b2c48)
+        ;
+
+        
+    
+    
+        function geo_json_0ceb3e1503be3e58fa97b5769d7148a1_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FDC7BA", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_0ceb3e1503be3e58fa97b5769d7148a1_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_0ceb3e1503be3e58fa97b5769d7148a1 = L.geoJson(null, {
+                onEachFeature: geo_json_0ceb3e1503be3e58fa97b5769d7148a1_onEachFeature,
+            
+                style: geo_json_0ceb3e1503be3e58fa97b5769d7148a1_styler,
+        });
+
+        function geo_json_0ceb3e1503be3e58fa97b5769d7148a1_add (data) {
+            geo_json_0ceb3e1503be3e58fa97b5769d7148a1
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_0ceb3e1503be3e58fa97b5769d7148a1_add({"features": [{"geometry": {"coordinates": [[[56.19615748480149, 58.0039985343293], [56.19616869686381, 58.00339386846848], [56.20617032938304, 58.00241108647688], [56.21175468825284, 58.00179161835911], [56.21607525492584, 58.0014776155065], [56.214364139415395, 58.00458354375408], [56.21285054955018, 58.006730191669504], [56.19615748480149, 58.0039985343293]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_c69c811f9e5cabd7d386500b2e71cdce = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_98f138f5e6a35bb73c37543e2029ae25 = $(`<div id="html_98f138f5e6a35bb73c37543e2029ae25" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 106,881.0р.</div>`)[0];
+                popup_c69c811f9e5cabd7d386500b2e71cdce.setContent(html_98f138f5e6a35bb73c37543e2029ae25);
+            
+        
+
+        geo_json_0ceb3e1503be3e58fa97b5769d7148a1.bindPopup(popup_c69c811f9e5cabd7d386500b2e71cdce)
+        ;
+
+        
+    
+    
+        function geo_json_1883bcc4e11a1d924bf508d3a74feca6_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FF5E7B", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_1883bcc4e11a1d924bf508d3a74feca6_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_1883bcc4e11a1d924bf508d3a74feca6 = L.geoJson(null, {
+                onEachFeature: geo_json_1883bcc4e11a1d924bf508d3a74feca6_onEachFeature,
+            
+                style: geo_json_1883bcc4e11a1d924bf508d3a74feca6_styler,
+        });
+
+        function geo_json_1883bcc4e11a1d924bf508d3a74feca6_add (data) {
+            geo_json_1883bcc4e11a1d924bf508d3a74feca6
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_1883bcc4e11a1d924bf508d3a74feca6_add({"features": [{"geometry": {"coordinates": [[[56.21280425286048, 58.00675192944303], [56.21466646762008, 58.00386354648171], [56.216225185871025, 58.00134851470395], [56.230402012497706, 58.003774180914306], [56.226954493628824, 58.00905424967283], [56.21280425286048, 58.00675192944303]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_257e6c32ef4275c8d4eb6b6e729f5173 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_43fac874422ec15233439e2d80e3bd79 = $(`<div id="html_43fac874422ec15233439e2d80e3bd79" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 121,022.0р.</div>`)[0];
+                popup_257e6c32ef4275c8d4eb6b6e729f5173.setContent(html_43fac874422ec15233439e2d80e3bd79);
+            
+        
+
+        geo_json_1883bcc4e11a1d924bf508d3a74feca6.bindPopup(popup_257e6c32ef4275c8d4eb6b6e729f5173)
+        ;
+
+        
+    
+    
+        function geo_json_cdce779225e786df54da5f8b1e67046f_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#D8175C", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_cdce779225e786df54da5f8b1e67046f_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_cdce779225e786df54da5f8b1e67046f = L.geoJson(null, {
+                onEachFeature: geo_json_cdce779225e786df54da5f8b1e67046f_onEachFeature,
+            
+                style: geo_json_cdce779225e786df54da5f8b1e67046f_styler,
+        });
+
+        function geo_json_cdce779225e786df54da5f8b1e67046f_add (data) {
+            geo_json_cdce779225e786df54da5f8b1e67046f
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_cdce779225e786df54da5f8b1e67046f_add({"features": [{"geometry": {"coordinates": [[[56.22408811013631, 58.01385346460347], [56.22704806393949, 58.0090586480396], [56.23891234157526, 58.011261751641996], [56.23453562858893, 58.01565222037769], [56.22408811013631, 58.01385346460347]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_ee522e04cccdfc13536807973282bb33 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_5eeef27aca744461ac7187dd92028b8d = $(`<div id="html_5eeef27aca744461ac7187dd92028b8d" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 178,175.0р.</div>`)[0];
+                popup_ee522e04cccdfc13536807973282bb33.setContent(html_5eeef27aca744461ac7187dd92028b8d);
+            
+        
+
+        geo_json_cdce779225e786df54da5f8b1e67046f.bindPopup(popup_ee522e04cccdfc13536807973282bb33)
+        ;
+
+        
+    
+    
+        function geo_json_fba0c59fa7249fa8c80f9398908c1737_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_fba0c59fa7249fa8c80f9398908c1737_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_fba0c59fa7249fa8c80f9398908c1737 = L.geoJson(null, {
+                onEachFeature: geo_json_fba0c59fa7249fa8c80f9398908c1737_onEachFeature,
+            
+                style: geo_json_fba0c59fa7249fa8c80f9398908c1737_styler,
+        });
+
+        function geo_json_fba0c59fa7249fa8c80f9398908c1737_add (data) {
+            geo_json_fba0c59fa7249fa8c80f9398908c1737
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_fba0c59fa7249fa8c80f9398908c1737_add({"features": [{"geometry": {"coordinates": [[[56.23737457761021, 58.004956649334815], [56.23897345606656, 58.00155186652049], [56.2430460710018, 57.99808281109995], [56.24956225489791, 57.99998523795318], [56.2434684162541, 58.00650707691739], [56.24066283707677, 58.00567592821383], [56.23737457761021, 58.004956649334815]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_36c8c040cd9ddc25328e548e3a82e4cc = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_8376ce128fb62eb99438d71f4b17a3f4 = $(`<div id="html_8376ce128fb62eb99438d71f4b17a3f4" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_36c8c040cd9ddc25328e548e3a82e4cc.setContent(html_8376ce128fb62eb99438d71f4b17a3f4);
+            
+        
+
+        geo_json_fba0c59fa7249fa8c80f9398908c1737.bindPopup(popup_36c8c040cd9ddc25328e548e3a82e4cc)
+        ;
+
+        
+    
+    
+        function geo_json_0f40bd627a208611e93b7ba6f5031d6c_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FD9A98", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_0f40bd627a208611e93b7ba6f5031d6c_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_0f40bd627a208611e93b7ba6f5031d6c = L.geoJson(null, {
+                onEachFeature: geo_json_0f40bd627a208611e93b7ba6f5031d6c_onEachFeature,
+            
+                style: geo_json_0f40bd627a208611e93b7ba6f5031d6c_styler,
+        });
+
+        function geo_json_0f40bd627a208611e93b7ba6f5031d6c_add (data) {
+            geo_json_0f40bd627a208611e93b7ba6f5031d6c
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_0f40bd627a208611e93b7ba6f5031d6c_add({"features": [{"geometry": {"coordinates": [[[56.23882001864811, 58.01136232911895], [56.244853554847964, 58.00508293506141], [56.25255644888958, 58.007193035441645], [56.246436949624126, 58.01353733386463], [56.23882001864811, 58.01136232911895]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_89771886060436c993069e3ae2b1b119 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_99ea27180ef2047031310938924d9f1a = $(`<div id="html_99ea27180ef2047031310938924d9f1a" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 107,575.0р.</div>`)[0];
+                popup_89771886060436c993069e3ae2b1b119.setContent(html_99ea27180ef2047031310938924d9f1a);
+            
+        
+
+        geo_json_0f40bd627a208611e93b7ba6f5031d6c.bindPopup(popup_89771886060436c993069e3ae2b1b119)
+        ;
+
+        
+    
+    
+        function geo_json_0153ee3e027d137d72e27011aef3cbba_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_0153ee3e027d137d72e27011aef3cbba_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_0153ee3e027d137d72e27011aef3cbba = L.geoJson(null, {
+                onEachFeature: geo_json_0153ee3e027d137d72e27011aef3cbba_onEachFeature,
+            
+                style: geo_json_0153ee3e027d137d72e27011aef3cbba_styler,
+        });
+
+        function geo_json_0153ee3e027d137d72e27011aef3cbba_add (data) {
+            geo_json_0153ee3e027d137d72e27011aef3cbba
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_0153ee3e027d137d72e27011aef3cbba_add({"features": [{"geometry": {"coordinates": [[[56.242978035493195, 57.99810972869696], [56.24769650704741, 57.99388062287747], [56.253976237571806, 57.99537006060012], [56.24963940709927, 58.00005862671878], [56.242978035493195, 57.99810972869696]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_5448d124d7a7d068c3c4e4b929e5405b = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_e1c399746e5d20cbd2bb2bf846cfcd6e = $(`<div id="html_e1c399746e5d20cbd2bb2bf846cfcd6e" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_5448d124d7a7d068c3c4e4b929e5405b.setContent(html_e1c399746e5d20cbd2bb2bf846cfcd6e);
+            
+        
+
+        geo_json_0153ee3e027d137d72e27011aef3cbba.bindPopup(popup_5448d124d7a7d068c3c4e4b929e5405b)
+        ;
+
+        
+    
+    
+        function geo_json_9cbce24f8f3d80d98f09c66340cd766e_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#79D5C3", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_9cbce24f8f3d80d98f09c66340cd766e_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_9cbce24f8f3d80d98f09c66340cd766e = L.geoJson(null, {
+                onEachFeature: geo_json_9cbce24f8f3d80d98f09c66340cd766e_onEachFeature,
+            
+                style: geo_json_9cbce24f8f3d80d98f09c66340cd766e_styler,
+        });
+
+        function geo_json_9cbce24f8f3d80d98f09c66340cd766e_add (data) {
+            geo_json_9cbce24f8f3d80d98f09c66340cd766e
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_9cbce24f8f3d80d98f09c66340cd766e_add({"features": [{"geometry": {"coordinates": [[[56.29951047929117, 58.00111602944423], [56.29728889910845, 58.00056886600288], [56.29578698574559, 57.99942476996637], [56.29456668113741, 57.99864543723953], [56.29278315901871, 57.99784950545674], [56.3022014074005, 57.99337205949155], [56.304954915233196, 57.994980687849505], [56.29951047929117, 58.00111602944423]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_daf00a9f070336e75d2d8ef67207b9e0 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_24dcec3d6276dd249659f9cc5ec06237 = $(`<div id="html_24dcec3d6276dd249659f9cc5ec06237" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 87,850.0р.</div>`)[0];
+                popup_daf00a9f070336e75d2d8ef67207b9e0.setContent(html_24dcec3d6276dd249659f9cc5ec06237);
+            
+        
+
+        geo_json_9cbce24f8f3d80d98f09c66340cd766e.bindPopup(popup_daf00a9f070336e75d2d8ef67207b9e0)
+        ;
+
+        
+    
+    
+        function geo_json_d81660aa62afd1d3a182a72e5e87ee4a_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#79D5C3", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_d81660aa62afd1d3a182a72e5e87ee4a_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_d81660aa62afd1d3a182a72e5e87ee4a = L.geoJson(null, {
+                onEachFeature: geo_json_d81660aa62afd1d3a182a72e5e87ee4a_onEachFeature,
+            
+                style: geo_json_d81660aa62afd1d3a182a72e5e87ee4a_styler,
+        });
+
+        function geo_json_d81660aa62afd1d3a182a72e5e87ee4a_add (data) {
+            geo_json_d81660aa62afd1d3a182a72e5e87ee4a
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_d81660aa62afd1d3a182a72e5e87ee4a_add({"features": [{"geometry": {"coordinates": [[[56.29287702860367, 57.99784950545674], [56.29128124565588, 57.9979489978972], [56.2875264622476, 57.9978329233565], [56.28780807100338, 57.99464901781309], [56.28374038897769, 57.994781686196234], [56.28370909911604, 57.99413492318533], [56.284272316627664, 57.9931067117887], [56.28568036040565, 57.99247650311469], [56.286994534598676, 57.992012131732196], [56.28952902601276, 57.99109995677651], [56.29203221495126, 57.99032044285164], [56.29462927347578, 57.98904333018021], [56.30213884029121, 57.993488149140546], [56.29287702860367, 57.99784950545674]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_f4dbe13292af35f123f0941374c3c0cc = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_5872e7f1673b3b1ed70af7de59554be9 = $(`<div id="html_5872e7f1673b3b1ed70af7de59554be9" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 87,734.0р.</div>`)[0];
+                popup_f4dbe13292af35f123f0941374c3c0cc.setContent(html_5872e7f1673b3b1ed70af7de59554be9);
+            
+        
+
+        geo_json_d81660aa62afd1d3a182a72e5e87ee4a.bindPopup(popup_f4dbe13292af35f123f0941374c3c0cc)
+        ;
+
+        
+    
+    
+        function geo_json_78b628e45b11d5d6a2a51ccf559a1ee6_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_78b628e45b11d5d6a2a51ccf559a1ee6_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_78b628e45b11d5d6a2a51ccf559a1ee6 = L.geoJson(null, {
+                onEachFeature: geo_json_78b628e45b11d5d6a2a51ccf559a1ee6_onEachFeature,
+            
+                style: geo_json_78b628e45b11d5d6a2a51ccf559a1ee6_styler,
+        });
+
+        function geo_json_78b628e45b11d5d6a2a51ccf559a1ee6_add (data) {
+            geo_json_78b628e45b11d5d6a2a51ccf559a1ee6
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_78b628e45b11d5d6a2a51ccf559a1ee6_add({"features": [{"geometry": {"coordinates": [[[56.21376707446257, 57.969866948080806], [56.21936165354378, 57.96681438615955], [56.228016284623536, 57.96664356441629], [56.23787692557509, 57.966311078007486], [56.24468376158106, 57.965887591972944], [56.24661615661867, 57.97519862023418], [56.2438654838154, 57.97523067833225], [56.237595040668936, 57.973353232034384], [56.231942648361326, 57.9716402420388], [56.22991072242786, 57.97356397646894], [56.22913234398666, 57.973911669658804], [56.22435806949676, 57.97612390424024], [56.216960646102734, 57.97161482629002], [56.21373399656301, 57.96994625486414], [56.21376707446257, 57.969866948080806]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_4b0f0ed87c09884b3ec2449726b05ecb = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_8168fe118feb35a19c9a358fd67549fa = $(`<div id="html_8168fe118feb35a19c9a358fd67549fa" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_4b0f0ed87c09884b3ec2449726b05ecb.setContent(html_8168fe118feb35a19c9a358fd67549fa);
+            
+        
+
+        geo_json_78b628e45b11d5d6a2a51ccf559a1ee6.bindPopup(popup_4b0f0ed87c09884b3ec2449726b05ecb)
+        ;
+
+        
+    
+    
+        function geo_json_baadaa66ff165d9111e360ef0d860d5f_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_baadaa66ff165d9111e360ef0d860d5f_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_baadaa66ff165d9111e360ef0d860d5f = L.geoJson(null, {
+                onEachFeature: geo_json_baadaa66ff165d9111e360ef0d860d5f_onEachFeature,
+            
+                style: geo_json_baadaa66ff165d9111e360ef0d860d5f_styler,
+        });
+
+        function geo_json_baadaa66ff165d9111e360ef0d860d5f_add (data) {
+            geo_json_baadaa66ff165d9111e360ef0d860d5f
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_baadaa66ff165d9111e360ef0d860d5f_add({"features": [{"geometry": {"coordinates": [[[56.21334844220493, 57.97007558727543], [56.21141063442218, 57.966793949622], [56.21073159066978, 57.96523317010184], [56.210957938586546, 57.96223148003256], [56.21435315734868, 57.95995002750084], [56.22725498864861, 57.956227345934764], [56.24196760328695, 57.95544673466], [56.24464079253093, 57.96589131155534], [56.237703324241146, 57.966306889726894], [56.22988028796239, 57.96650567325693], [56.21929682944643, 57.96675722625146], [56.21334844220493, 57.97007558727543]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_49692687031abafcf2349ea89bcf5084 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_0a1ba7570829f73f15fd395647bbe55e = $(`<div id="html_0a1ba7570829f73f15fd395647bbe55e" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_49692687031abafcf2349ea89bcf5084.setContent(html_0a1ba7570829f73f15fd395647bbe55e);
+            
+        
+
+        geo_json_baadaa66ff165d9111e360ef0d860d5f.bindPopup(popup_49692687031abafcf2349ea89bcf5084)
+        ;
+
+        
+    
+    
+        function geo_json_3c9717dc0af1ddf23ce48c614fb6269c_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FDC7BA", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_3c9717dc0af1ddf23ce48c614fb6269c_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_3c9717dc0af1ddf23ce48c614fb6269c = L.geoJson(null, {
+                onEachFeature: geo_json_3c9717dc0af1ddf23ce48c614fb6269c_onEachFeature,
+            
+                style: geo_json_3c9717dc0af1ddf23ce48c614fb6269c_styler,
+        });
+
+        function geo_json_3c9717dc0af1ddf23ce48c614fb6269c_add (data) {
+            geo_json_3c9717dc0af1ddf23ce48c614fb6269c
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_3c9717dc0af1ddf23ce48c614fb6269c_add({"features": [{"geometry": {"coordinates": [[[56.21607383496243, 58.00130613475369], [56.21622038773057, 58.00078840899687], [56.2189560394101, 57.99990825802715], [56.22442734276913, 57.998743319061106], [56.22729030522766, 57.9984996216865], [56.22903282303554, 57.99851450031181], [56.23077534084342, 57.997994582940635], [56.23179477612137, 57.99703697446569], [56.23240928518156, 57.99598739633747], [56.242242318871604, 57.99878026186872], [56.23899772566392, 58.00152033998614], [56.23737283732294, 58.00490412193352], [56.21607383496243, 58.00130613475369]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_ce33b12559792a5c7d7234974a92a486 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_40e064268cc5b4b9a45a1e507e7c8542 = $(`<div id="html_40e064268cc5b4b9a45a1e507e7c8542" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 104,688.0р.</div>`)[0];
+                popup_ce33b12559792a5c7d7234974a92a486.setContent(html_40e064268cc5b4b9a45a1e507e7c8542);
+            
+        
+
+        geo_json_3c9717dc0af1ddf23ce48c614fb6269c.bindPopup(popup_ce33b12559792a5c7d7234974a92a486)
+        ;
+
+        
+    
+    
+        function geo_json_dec1fa85f3a736a62640b7c1444db0c4_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_dec1fa85f3a736a62640b7c1444db0c4_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_dec1fa85f3a736a62640b7c1444db0c4 = L.geoJson(null, {
+                onEachFeature: geo_json_dec1fa85f3a736a62640b7c1444db0c4_onEachFeature,
+            
+                style: geo_json_dec1fa85f3a736a62640b7c1444db0c4_styler,
+        });
+
+        function geo_json_dec1fa85f3a736a62640b7c1444db0c4_add (data) {
+            geo_json_dec1fa85f3a736a62640b7c1444db0c4
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_dec1fa85f3a736a62640b7c1444db0c4_add({"features": [{"geometry": {"coordinates": [[[56.24223575767442, 57.99878095775313], [56.232443583606795, 57.995960984590084], [56.23674059326791, 57.99087546825916], [56.237560408287436, 57.987919114966985], [56.240033185430946, 57.985795316206406], [56.24272895390496, 57.98542791531153], [56.24547589726933, 57.985378382942656], [56.24882553716111, 57.98547098055616], [56.248334099370226, 57.9931846742532], [56.24767883928885, 57.99383584967589], [56.24223575767442, 57.99878095775313]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_a28619839727c8b9a0517d0074198483 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_887ae0dcbedafe31271b925beda14be8 = $(`<div id="html_887ae0dcbedafe31271b925beda14be8" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_a28619839727c8b9a0517d0074198483.setContent(html_887ae0dcbedafe31271b925beda14be8);
+            
+        
+
+        geo_json_dec1fa85f3a736a62640b7c1444db0c4.bindPopup(popup_a28619839727c8b9a0517d0074198483)
+        ;
+
+        
+    
+    
+        function geo_json_4d1b4eedc4281bde287cdc939c2d481b_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_4d1b4eedc4281bde287cdc939c2d481b_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_4d1b4eedc4281bde287cdc939c2d481b = L.geoJson(null, {
+                onEachFeature: geo_json_4d1b4eedc4281bde287cdc939c2d481b_onEachFeature,
+            
+                style: geo_json_4d1b4eedc4281bde287cdc939c2d481b_styler,
+        });
+
+        function geo_json_4d1b4eedc4281bde287cdc939c2d481b_add (data) {
+            geo_json_4d1b4eedc4281bde287cdc939c2d481b
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_4d1b4eedc4281bde287cdc939c2d481b_add({"features": [{"geometry": {"coordinates": [[[56.247687273297544, 57.99388077661027], [56.24831376328811, 57.993121806611725], [56.24876125613892, 57.98543632941093], [56.257621614583144, 57.98553122189949], [56.256995124591015, 57.992291664758085], [56.25404167177629, 57.995351235208716], [56.247687273297544, 57.99388077661027]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_1a5b611fcea9f27be3aef37d0b403071 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_b5b5b0198956796a126a0bd4a0432b9e = $(`<div id="html_b5b5b0198956796a126a0bd4a0432b9e" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_1a5b611fcea9f27be3aef37d0b403071.setContent(html_b5b5b0198956796a126a0bd4a0432b9e);
+            
+        
+
+        geo_json_4d1b4eedc4281bde287cdc939c2d481b.bindPopup(popup_1a5b611fcea9f27be3aef37d0b403071)
+        ;
+
+        
+    
+    
+        function geo_json_72a1fbc7f2a2cfac93e8120b2f67b463_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_72a1fbc7f2a2cfac93e8120b2f67b463_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_72a1fbc7f2a2cfac93e8120b2f67b463 = L.geoJson(null, {
+                onEachFeature: geo_json_72a1fbc7f2a2cfac93e8120b2f67b463_onEachFeature,
+            
+                style: geo_json_72a1fbc7f2a2cfac93e8120b2f67b463_styler,
+        });
+
+        function geo_json_72a1fbc7f2a2cfac93e8120b2f67b463_add (data) {
+            geo_json_72a1fbc7f2a2cfac93e8120b2f67b463
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_72a1fbc7f2a2cfac93e8120b2f67b463_add({"features": [{"geometry": {"coordinates": [[[56.25735404012775, 57.992362350543175], [56.26182997306228, 57.99732465728749], [56.25461367302569, 58.00477892796073], [56.24716900906313, 58.00260089248664], [56.25721702284298, 57.992071851852955], [56.25735404012775, 57.992362350543175]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_a9fe42d7eb25ebd76fe0ff1c5cfcb3a5 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_eaa9e835d7b3e0e9d5ea799f3a5363a0 = $(`<div id="html_eaa9e835d7b3e0e9d5ea799f3a5363a0" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_a9fe42d7eb25ebd76fe0ff1c5cfcb3a5.setContent(html_eaa9e835d7b3e0e9d5ea799f3a5363a0);
+            
+        
+
+        geo_json_72a1fbc7f2a2cfac93e8120b2f67b463.bindPopup(popup_a9fe42d7eb25ebd76fe0ff1c5cfcb3a5)
+        ;
+
+        
+    
+    
+        function geo_json_2444d8d350b0e58c9f4deff809c81295_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_2444d8d350b0e58c9f4deff809c81295_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_2444d8d350b0e58c9f4deff809c81295 = L.geoJson(null, {
+                onEachFeature: geo_json_2444d8d350b0e58c9f4deff809c81295_onEachFeature,
+            
+                style: geo_json_2444d8d350b0e58c9f4deff809c81295_styler,
+        });
+
+        function geo_json_2444d8d350b0e58c9f4deff809c81295_add (data) {
+            geo_json_2444d8d350b0e58c9f4deff809c81295
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_2444d8d350b0e58c9f4deff809c81295_add({"features": [{"geometry": {"coordinates": [[[56.257179151983536, 58.01028613991255], [56.25111026280965, 58.00863348166814], [56.25462681541549, 58.004817051968104], [56.26097929754047, 58.00636470833689], [56.257179151983536, 58.01028613991255]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_81200c0a02338c6c346f2b9230997e5f = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_0cf2a169ff24e0f1c804e0c7d28394e3 = $(`<div id="html_0cf2a169ff24e0f1c804e0c7d28394e3" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_81200c0a02338c6c346f2b9230997e5f.setContent(html_0cf2a169ff24e0f1c804e0c7d28394e3);
+            
+        
+
+        geo_json_2444d8d350b0e58c9f4deff809c81295.bindPopup(popup_81200c0a02338c6c346f2b9230997e5f)
+        ;
+
+        
+    
+    
+        function geo_json_72cbd2f234ab3d7918e9a8e5dc0c6aff_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#D8175C", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_72cbd2f234ab3d7918e9a8e5dc0c6aff_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_72cbd2f234ab3d7918e9a8e5dc0c6aff = L.geoJson(null, {
+                onEachFeature: geo_json_72cbd2f234ab3d7918e9a8e5dc0c6aff_onEachFeature,
+            
+                style: geo_json_72cbd2f234ab3d7918e9a8e5dc0c6aff_styler,
+        });
+
+        function geo_json_72cbd2f234ab3d7918e9a8e5dc0c6aff_add (data) {
+            geo_json_72cbd2f234ab3d7918e9a8e5dc0c6aff
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_72cbd2f234ab3d7918e9a8e5dc0c6aff_add({"features": [{"geometry": {"coordinates": [[[56.254434821866255, 58.013165109889286], [56.25715155575324, 58.01030788272027], [56.26043860250155, 58.01120520899465], [56.261193242115866, 58.01141459887182], [56.262419959338416, 58.011728803411074], [56.263161025389536, 58.011935584439584], [56.26334428406352, 58.0119999934403], [56.26356476949243, 58.012080519630075], [56.263696542217076, 58.01213859668965], [56.2618862410927, 58.01426365528758], [56.26356109043115, 58.014806397383836], [56.26383694796996, 58.01562049509266], [56.26360049865076, 58.0157248652539], [56.254434821866255, 58.013165109889286]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_52382d861230cb81911dbdae68662611 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_f886a7c759a8c6f4c90b7068f09396b9 = $(`<div id="html_f886a7c759a8c6f4c90b7068f09396b9" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 146,118.0р.</div>`)[0];
+                popup_52382d861230cb81911dbdae68662611.setContent(html_f886a7c759a8c6f4c90b7068f09396b9);
+            
+        
+
+        geo_json_72cbd2f234ab3d7918e9a8e5dc0c6aff.bindPopup(popup_52382d861230cb81911dbdae68662611)
+        ;
+
+        
+    
+    
+        function geo_json_d1f6ed2c384e4324cb9afc5a47c89893_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#79D5C3", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_d1f6ed2c384e4324cb9afc5a47c89893_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_d1f6ed2c384e4324cb9afc5a47c89893 = L.geoJson(null, {
+                onEachFeature: geo_json_d1f6ed2c384e4324cb9afc5a47c89893_onEachFeature,
+            
+                style: geo_json_d1f6ed2c384e4324cb9afc5a47c89893_styler,
+        });
+
+        function geo_json_d1f6ed2c384e4324cb9afc5a47c89893_add (data) {
+            geo_json_d1f6ed2c384e4324cb9afc5a47c89893
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_d1f6ed2c384e4324cb9afc5a47c89893_add({"features": [{"geometry": {"coordinates": [[[56.299567469485766, 58.00110797743133], [56.301881930771714, 57.99844170496516], [56.30570582333121, 57.99954378832584], [56.30325719037691, 58.00203223887158], [56.299567469485766, 58.00110797743133]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_f941f22d9d690355062b4812a945f628 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_884ef5ab550832db0efbb4f5018834b1 = $(`<div id="html_884ef5ab550832db0efbb4f5018834b1" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 86,254.0р.</div>`)[0];
+                popup_f941f22d9d690355062b4812a945f628.setContent(html_884ef5ab550832db0efbb4f5018834b1);
+            
+        
+
+        geo_json_d1f6ed2c384e4324cb9afc5a47c89893.bindPopup(popup_f941f22d9d690355062b4812a945f628)
+        ;
+
+        
+    
+    
+        function geo_json_4c232090563281c21e2b1d6bd4940617_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FDC7BA", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_4c232090563281c21e2b1d6bd4940617_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_4c232090563281c21e2b1d6bd4940617 = L.geoJson(null, {
+                onEachFeature: geo_json_4c232090563281c21e2b1d6bd4940617_onEachFeature,
+            
+                style: geo_json_4c232090563281c21e2b1d6bd4940617_styler,
+        });
+
+        function geo_json_4c232090563281c21e2b1d6bd4940617_add (data) {
+            geo_json_4c232090563281c21e2b1d6bd4940617
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_4c232090563281c21e2b1d6bd4940617_add({"features": [{"geometry": {"coordinates": [[[56.30188709730359, 57.998434669367384], [56.30489978562497, 57.9950390258513], [56.31073421723377, 57.998682021543516], [56.30820949955606, 58.00023355530678], [56.30188709730359, 57.998434669367384]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_8d05e7025f33acce469164566eb9ee7e = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_ec4872c6ebc529aee6a2b3a9dbb8ba47 = $(`<div id="html_ec4872c6ebc529aee6a2b3a9dbb8ba47" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 101,474.0р.</div>`)[0];
+                popup_8d05e7025f33acce469164566eb9ee7e.setContent(html_ec4872c6ebc529aee6a2b3a9dbb8ba47);
+            
+        
+
+        geo_json_4c232090563281c21e2b1d6bd4940617.bindPopup(popup_8d05e7025f33acce469164566eb9ee7e)
+        ;
+
+        
+    
+    
+        function geo_json_788c77fa6fafc2de0d48767116e824e9_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FDC7BA", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_788c77fa6fafc2de0d48767116e824e9_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_788c77fa6fafc2de0d48767116e824e9 = L.geoJson(null, {
+                onEachFeature: geo_json_788c77fa6fafc2de0d48767116e824e9_onEachFeature,
+            
+                style: geo_json_788c77fa6fafc2de0d48767116e824e9_styler,
+        });
+
+        function geo_json_788c77fa6fafc2de0d48767116e824e9_add (data) {
+            geo_json_788c77fa6fafc2de0d48767116e824e9
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_788c77fa6fafc2de0d48767116e824e9_add({"features": [{"geometry": {"coordinates": [[[56.303512777369804, 58.001774488304875], [56.30576452483609, 57.99954145775692], [56.30824144704826, 58.00024888327022], [56.310750537080196, 57.99870616626339], [56.31123305439493, 57.99897039323082], [56.31251976723175, 57.99972896949549], [56.313388298397655, 58.00054719104372], [56.31367780878628, 58.00142505378548], [56.31364564096438, 58.00231141762674], [56.3136295570539, 58.00306140065899], [56.3136295570539, 58.00355569906739], [56.31335613057681, 58.00426304526192], [56.3128253615308, 58.004663584499156], [56.31153864869401, 58.00482550334428], [56.31002676110916, 58.004595407924114], [56.30735683197196, 58.00520899242423], [56.30402746250539, 58.0019534656403], [56.303512777369804, 58.001774488304875]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_8075a164941f739fbb4e3dba5ebcedbc = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_da7c69e3eb6c57dd675b4684966ce5ef = $(`<div id="html_da7c69e3eb6c57dd675b4684966ce5ef" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 101,784.0р.</div>`)[0];
+                popup_8075a164941f739fbb4e3dba5ebcedbc.setContent(html_da7c69e3eb6c57dd675b4684966ce5ef);
+            
+        
+
+        geo_json_788c77fa6fafc2de0d48767116e824e9.bindPopup(popup_8075a164941f739fbb4e3dba5ebcedbc)
+        ;
+
+        
+    
+    
+        function geo_json_0a929f72da8f73cd2bf4f8d2123ee60e_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FF5E7B", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_0a929f72da8f73cd2bf4f8d2123ee60e_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_0a929f72da8f73cd2bf4f8d2123ee60e = L.geoJson(null, {
+                onEachFeature: geo_json_0a929f72da8f73cd2bf4f8d2123ee60e_onEachFeature,
+            
+                style: geo_json_0a929f72da8f73cd2bf4f8d2123ee60e_styler,
+        });
+
+        function geo_json_0a929f72da8f73cd2bf4f8d2123ee60e_add (data) {
+            geo_json_0a929f72da8f73cd2bf4f8d2123ee60e
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_0a929f72da8f73cd2bf4f8d2123ee60e_add({"features": [{"geometry": {"coordinates": [[[56.331534972291564, 58.0051899433019], [56.33869133304128, 57.99882862957864], [56.34003992233508, 57.999097513118244], [56.33847820430253, 58.005536599569695], [56.331534972291564, 58.0051899433019]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_c950368e1c47d001957422f03c4e9263 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_3dca0377f40132af453c110e6ad8879e = $(`<div id="html_3dca0377f40132af453c110e6ad8879e" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 121,981.0р.</div>`)[0];
+                popup_c950368e1c47d001957422f03c4e9263.setContent(html_3dca0377f40132af453c110e6ad8879e);
+            
+        
+
+        geo_json_0a929f72da8f73cd2bf4f8d2123ee60e.bindPopup(popup_c950368e1c47d001957422f03c4e9263)
+        ;
+
+        
+    
+    
+        function geo_json_511cb29144ecc71460a9f0f29c37eaeb_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#F8E8BF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_511cb29144ecc71460a9f0f29c37eaeb_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_511cb29144ecc71460a9f0f29c37eaeb = L.geoJson(null, {
+                onEachFeature: geo_json_511cb29144ecc71460a9f0f29c37eaeb_onEachFeature,
+            
+                style: geo_json_511cb29144ecc71460a9f0f29c37eaeb_styler,
+        });
+
+        function geo_json_511cb29144ecc71460a9f0f29c37eaeb_add (data) {
+            geo_json_511cb29144ecc71460a9f0f29c37eaeb
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_511cb29144ecc71460a9f0f29c37eaeb_add({"features": [{"geometry": {"coordinates": [[[56.323954478350714, 58.008096170152896], [56.32281229477499, 58.007955850294906], [56.322150159370295, 58.00812248006525], [56.32107418933606, 58.008148789958], [56.320263073464446, 58.00757873795027], [56.31994855914655, 58.006473688200316], [56.31955127790329, 58.00503531837501], [56.320776228403304, 58.00467571688762], [56.322381906761564, 58.0047897372626], [56.32546083639846, 58.004965152514984], [56.327513456155174, 58.00503531837501], [56.323954478350714, 58.008096170152896]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_0da634909e2362d1bd3ed70f1c8c0655 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_a2341da7dcfbd749ebcb2473c7708265 = $(`<div id="html_a2341da7dcfbd749ebcb2473c7708265" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 94,501.0р.</div>`)[0];
+                popup_0da634909e2362d1bd3ed70f1c8c0655.setContent(html_a2341da7dcfbd749ebcb2473c7708265);
+            
+        
+
+        geo_json_511cb29144ecc71460a9f0f29c37eaeb.bindPopup(popup_0da634909e2362d1bd3ed70f1c8c0655)
+        ;
+
+        
+    
+    
+        function geo_json_d5c824a7691b4b5a50d913963310606a_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_d5c824a7691b4b5a50d913963310606a_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_d5c824a7691b4b5a50d913963310606a = L.geoJson(null, {
+                onEachFeature: geo_json_d5c824a7691b4b5a50d913963310606a_onEachFeature,
+            
+                style: geo_json_d5c824a7691b4b5a50d913963310606a_styler,
+        });
+
+        function geo_json_d5c824a7691b4b5a50d913963310606a_add (data) {
+            geo_json_d5c824a7691b4b5a50d913963310606a
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_d5c824a7691b4b5a50d913963310606a_add({"features": [{"geometry": {"coordinates": [[[56.2880181023923, 58.11721073508414], [56.278370931076324, 58.11715474081231], [56.27769951622369, 58.1150642250532], [56.27777019147118, 58.11321625634727], [56.27925437167383, 58.11108817369805], [56.28126861623406, 58.109538700267535], [56.28724848682049, 58.109300211032746], [56.290229474679165, 58.10936699115081], [56.28997820163892, 58.11523757349997], [56.290211094883006, 58.11577182478155], [56.29257791407622, 58.11722133986882], [56.2880181023923, 58.11721073508414]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_0cfb201f3a0cb9b2f09e4d147821f3a8 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_97a8480480b1e8451ac64861036df502 = $(`<div id="html_97a8480480b1e8451ac64861036df502" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_0cfb201f3a0cb9b2f09e4d147821f3a8.setContent(html_97a8480480b1e8451ac64861036df502);
+            
+        
+
+        geo_json_d5c824a7691b4b5a50d913963310606a.bindPopup(popup_0cfb201f3a0cb9b2f09e4d147821f3a8)
+        ;
+
+        
+    
+    
+        function geo_json_e41279adf4e98ff561eb858c37a4673f_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_e41279adf4e98ff561eb858c37a4673f_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_e41279adf4e98ff561eb858c37a4673f = L.geoJson(null, {
+                onEachFeature: geo_json_e41279adf4e98ff561eb858c37a4673f_onEachFeature,
+            
+                style: geo_json_e41279adf4e98ff561eb858c37a4673f_styler,
+        });
+
+        function geo_json_e41279adf4e98ff561eb858c37a4673f_add (data) {
+            geo_json_e41279adf4e98ff561eb858c37a4673f
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_e41279adf4e98ff561eb858c37a4673f_add({"features": [{"geometry": {"coordinates": [[[56.300443004502, 58.10756456760919], [56.29686583166858, 58.10761430216107], [56.29680307425065, 58.104654975586385], [56.29672463135802, 58.10307159003938], [56.2937436539961, 58.10314620124183], [56.293602449805775, 58.101537880731655], [56.291092619820574, 58.102598553855586], [56.28944523759529, 58.101471061722066], [56.29041797757657, 58.10082439573614], [56.290025743712306, 58.09946470080084], [56.29021402108097, 58.099124767062364], [56.2897276510908, 58.098817996528624], [56.2897276510908, 58.09706852494591], [56.2926144923247, 58.09583306440757], [56.29473255518667, 58.0961315688609], [56.298184213184214, 58.095667227520636], [56.29871765123883, 58.09569210310306], [56.309675788516984, 58.103024126461094], [56.30988245233334, 58.10335172442444], [56.30949811910543, 58.10443489529618], [56.30382689573361, 58.10664413482337], [56.30214514406788, 58.10750518039464], [56.300443004502, 58.10756456760919]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_cb232585466b5caa92d8255525374312 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_8615bb338b820bf96838996cfc1cd2ba = $(`<div id="html_8615bb338b820bf96838996cfc1cd2ba" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_cb232585466b5caa92d8255525374312.setContent(html_8615bb338b820bf96838996cfc1cd2ba);
+            
+        
+
+        geo_json_e41279adf4e98ff561eb858c37a4673f.bindPopup(popup_cb232585466b5caa92d8255525374312)
+        ;
+
+        
+    
+    
+        function geo_json_35dcaf820ad4649b276f14b06bf7fa9b_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_35dcaf820ad4649b276f14b06bf7fa9b_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_35dcaf820ad4649b276f14b06bf7fa9b = L.geoJson(null, {
+                onEachFeature: geo_json_35dcaf820ad4649b276f14b06bf7fa9b_onEachFeature,
+            
+                style: geo_json_35dcaf820ad4649b276f14b06bf7fa9b_styler,
+        });
+
+        function geo_json_35dcaf820ad4649b276f14b06bf7fa9b_add (data) {
+            geo_json_35dcaf820ad4649b276f14b06bf7fa9b
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_35dcaf820ad4649b276f14b06bf7fa9b_add({"features": [{"geometry": {"coordinates": [[[56.22692798130137, 57.97493622289889], [56.22993516203948, 57.9735811891976], [56.23192235962424, 57.9716987686551], [56.243674126355685, 57.97523621697317], [56.24368177103162, 57.97629861641687], [56.24242559659747, 57.976789631454366], [56.24082487146248, 57.97685433973544], [56.238585291899994, 57.97734915444491], [56.23687688667849, 57.978331155194326], [56.23472344479126, 57.97924461628901], [56.234091768504356, 57.98050058727151], [56.23351751733529, 57.98143682790729], [56.232770990813805, 57.98241110112883], [56.23167991359145, 57.98282972601598], [56.230761111719545, 57.98285255996001], [56.23040220473851, 57.98203052880501], [56.23153635079845, 57.980112382759586], [56.22962696179931, 57.978240109999376], [56.22942597388948, 57.97696883465821], [56.22692798130137, 57.97493622289889]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_773852efa0abffa582e95625b2fe6a03 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_6dc449806dde446a5fef87ed1611ea47 = $(`<div id="html_6dc449806dde446a5fef87ed1611ea47" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_773852efa0abffa582e95625b2fe6a03.setContent(html_6dc449806dde446a5fef87ed1611ea47);
+            
+        
+
+        geo_json_35dcaf820ad4649b276f14b06bf7fa9b.bindPopup(popup_773852efa0abffa582e95625b2fe6a03)
+        ;
+
+        
+    
+    
+        function geo_json_4ff752c43cec2a06a8af8a5f90d93ea0_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FF5E7B", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_4ff752c43cec2a06a8af8a5f90d93ea0_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_4ff752c43cec2a06a8af8a5f90d93ea0 = L.geoJson(null, {
+                onEachFeature: geo_json_4ff752c43cec2a06a8af8a5f90d93ea0_onEachFeature,
+            
+                style: geo_json_4ff752c43cec2a06a8af8a5f90d93ea0_styler,
+        });
+
+        function geo_json_4ff752c43cec2a06a8af8a5f90d93ea0_add (data) {
+            geo_json_4ff752c43cec2a06a8af8a5f90d93ea0
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_4ff752c43cec2a06a8af8a5f90d93ea0_add({"features": [{"geometry": {"coordinates": [[[56.22341675961155, 58.01504239788554], [56.209269120262576, 58.01256806068014], [56.21276402404459, 58.00681768109499], [56.2268108488617, 58.009239006165586], [56.22341675961155, 58.01504239788554]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_12992e6c7f095ffb85d659b2e8cbbbf4 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_6e3532c920dd6813ae82c4d431750620 = $(`<div id="html_6e3532c920dd6813ae82c4d431750620" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 117,526.0р.</div>`)[0];
+                popup_12992e6c7f095ffb85d659b2e8cbbbf4.setContent(html_6e3532c920dd6813ae82c4d431750620);
+            
+        
+
+        geo_json_4ff752c43cec2a06a8af8a5f90d93ea0.bindPopup(popup_12992e6c7f095ffb85d659b2e8cbbbf4)
+        ;
+
+        
+    
+    
+        function geo_json_76281620495c0c76250dd96e5d40999b_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FDC7BA", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_76281620495c0c76250dd96e5d40999b_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_76281620495c0c76250dd96e5d40999b = L.geoJson(null, {
+                onEachFeature: geo_json_76281620495c0c76250dd96e5d40999b_onEachFeature,
+            
+                style: geo_json_76281620495c0c76250dd96e5d40999b_styler,
+        });
+
+        function geo_json_76281620495c0c76250dd96e5d40999b_add (data) {
+            geo_json_76281620495c0c76250dd96e5d40999b
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_76281620495c0c76250dd96e5d40999b_add({"features": [{"geometry": {"coordinates": [[[56.20913418967322, 58.01256451816616], [56.19812181202744, 58.01062426508051], [56.196573196420644, 58.01018150802449], [56.195589948416284, 58.00959549761592], [56.195221230414234, 58.009295977478956], [56.19310724720674, 58.00688670260132], [56.192984341204976, 58.006639254376154], [56.19391845860247, 58.00494614498038], [56.19610618541162, 58.0039953619677], [56.21281999202614, 58.006806467715705], [56.20913418967322, 58.01256451816616]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_882e455961db08a5a159359e0fcb8470 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_b2f3d31798f00b0fcb853f11834b195d = $(`<div id="html_b2f3d31798f00b0fcb853f11834b195d" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 102,552.0р.</div>`)[0];
+                popup_882e455961db08a5a159359e0fcb8470.setContent(html_b2f3d31798f00b0fcb853f11834b195d);
+            
+        
+
+        geo_json_76281620495c0c76250dd96e5d40999b.bindPopup(popup_882e455961db08a5a159359e0fcb8470)
+        ;
+
+        
+    
+    
+        function geo_json_87e7e7ee7b080453d335ee38267fd1e9_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FD9A98", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_87e7e7ee7b080453d335ee38267fd1e9_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_87e7e7ee7b080453d335ee38267fd1e9 = L.geoJson(null, {
+                onEachFeature: geo_json_87e7e7ee7b080453d335ee38267fd1e9_onEachFeature,
+            
+                style: geo_json_87e7e7ee7b080453d335ee38267fd1e9_styler,
+        });
+
+        function geo_json_87e7e7ee7b080453d335ee38267fd1e9_add (data) {
+            geo_json_87e7e7ee7b080453d335ee38267fd1e9
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_87e7e7ee7b080453d335ee38267fd1e9_add({"features": [{"geometry": {"coordinates": [[[56.242345947440754, 58.01782878486654], [56.24636119309034, 58.013605591177225], [56.25238133482026, 58.01529891706352], [56.248365257386155, 58.01952835196107], [56.242345947440754, 58.01782878486654]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_9f400d6f9b47d3b3de511a6653213c3d = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_9c336c058b839721359fe6874a09a05e = $(`<div id="html_9c336c058b839721359fe6874a09a05e" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 109,079.0р.</div>`)[0];
+                popup_9f400d6f9b47d3b3de511a6653213c3d.setContent(html_9c336c058b839721359fe6874a09a05e);
+            
+        
+
+        geo_json_87e7e7ee7b080453d335ee38267fd1e9.bindPopup(popup_9f400d6f9b47d3b3de511a6653213c3d)
+        ;
+
+        
+    
+    
+        function geo_json_107b087e230f32d3694be8486a285a02_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#D8175C", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_107b087e230f32d3694be8486a285a02_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_107b087e230f32d3694be8486a285a02 = L.geoJson(null, {
+                onEachFeature: geo_json_107b087e230f32d3694be8486a285a02_onEachFeature,
+            
+                style: geo_json_107b087e230f32d3694be8486a285a02_styler,
+        });
+
+        function geo_json_107b087e230f32d3694be8486a285a02_add (data) {
+            geo_json_107b087e230f32d3694be8486a285a02
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_107b087e230f32d3694be8486a285a02_add({"features": [{"geometry": {"coordinates": [[[56.2524737603965, 58.015293254364906], [56.2544337073584, 58.01319847843297], [56.26367841294055, 58.01576180588245], [56.2641293741882, 58.01655189846619], [56.261042024106416, 58.01685506889561], [56.2580760866679, 58.01686425583816], [56.2524737603965, 58.015293254364906]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_40a7fe56eb26df4110a38d5c3175ec6a = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_ee717453fb1be37a2f0f838688c3f42f = $(`<div id="html_ee717453fb1be37a2f0f838688c3f42f" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 157,217.0р.</div>`)[0];
+                popup_40a7fe56eb26df4110a38d5c3175ec6a.setContent(html_ee717453fb1be37a2f0f838688c3f42f);
+            
+        
+
+        geo_json_107b087e230f32d3694be8486a285a02.bindPopup(popup_40a7fe56eb26df4110a38d5c3175ec6a)
+        ;
+
+        
+    
+    
+        function geo_json_f2618d54f77b9091181f1d275428a66e_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#B9EABD", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_f2618d54f77b9091181f1d275428a66e_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f2618d54f77b9091181f1d275428a66e = L.geoJson(null, {
+                onEachFeature: geo_json_f2618d54f77b9091181f1d275428a66e_onEachFeature,
+            
+                style: geo_json_f2618d54f77b9091181f1d275428a66e_styler,
+        });
+
+        function geo_json_f2618d54f77b9091181f1d275428a66e_add (data) {
+            geo_json_f2618d54f77b9091181f1d275428a66e
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_f2618d54f77b9091181f1d275428a66e_add({"features": [{"geometry": {"coordinates": [[[56.26548838886214, 58.022053984866034], [56.26318102872358, 58.02143101877192], [56.26370885620565, 58.02077609400098], [56.26603129712939, 58.02145497920708], [56.2671472752352, 58.0203527825866], [56.270570613480686, 58.02084797657389], [56.27081190593253, 58.02093583546994], [56.27242554995115, 58.01919464346949], [56.27533614149763, 58.01991349447508], [56.27388838611694, 58.02141504775426], [56.27304386214422, 58.0214070609355], [56.27290813507767, 58.02154283661238], [56.272757327225946, 58.02239741286789], [56.27212393424665, 58.02321203664667], [56.27164134911911, 58.02380302659975], [56.26972608939704, 58.0233238463056], [56.26586540838062, 58.02237345306392], [56.26548838886214, 58.022053984866034]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_43555a14e1b3446a25de5c51b6a3271e = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_a18d9a9f8c200b3ad5755d23ef87f313 = $(`<div id="html_a18d9a9f8c200b3ad5755d23ef87f313" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 92,004.0р.</div>`)[0];
+                popup_43555a14e1b3446a25de5c51b6a3271e.setContent(html_a18d9a9f8c200b3ad5755d23ef87f313);
+            
+        
+
+        geo_json_f2618d54f77b9091181f1d275428a66e.bindPopup(popup_43555a14e1b3446a25de5c51b6a3271e)
+        ;
+
+        
+    
+    
+        function geo_json_83b94e01f368ea043fbeb999222b5c9c_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FD9A98", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_83b94e01f368ea043fbeb999222b5c9c_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_83b94e01f368ea043fbeb999222b5c9c = L.geoJson(null, {
+                onEachFeature: geo_json_83b94e01f368ea043fbeb999222b5c9c_onEachFeature,
+            
+                style: geo_json_83b94e01f368ea043fbeb999222b5c9c_styler,
+        });
+
+        function geo_json_83b94e01f368ea043fbeb999222b5c9c_add (data) {
+            geo_json_83b94e01f368ea043fbeb999222b5c9c
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_83b94e01f368ea043fbeb999222b5c9c_add({"features": [{"geometry": {"coordinates": [[[56.27689059471939, 58.019732313214774], [56.2722339959528, 58.01851756691241], [56.27501507085097, 58.01512465039258], [56.2760460075894, 58.01381402855881], [56.27810230519992, 58.011834121220005], [56.27980163265785, 58.011771062999216], [56.281550318611544, 58.0147010115593], [56.27689059471939, 58.019732313214774]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_d648f6caf23e71ea335d0aa63ed9817d = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_5addcbb85fcfe223df56dcfd1ed05487 = $(`<div id="html_5addcbb85fcfe223df56dcfd1ed05487" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 114,050.0р.</div>`)[0];
+                popup_d648f6caf23e71ea335d0aa63ed9817d.setContent(html_5addcbb85fcfe223df56dcfd1ed05487);
+            
+        
+
+        geo_json_83b94e01f368ea043fbeb999222b5c9c.bindPopup(popup_d648f6caf23e71ea335d0aa63ed9817d)
+        ;
+
+        
+    
+    
+        function geo_json_75c1506a2186181e6df8ff834770bef7_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#79D5C3", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_75c1506a2186181e6df8ff834770bef7_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_75c1506a2186181e6df8ff834770bef7 = L.geoJson(null, {
+                onEachFeature: geo_json_75c1506a2186181e6df8ff834770bef7_onEachFeature,
+            
+                style: geo_json_75c1506a2186181e6df8ff834770bef7_styler,
+        });
+
+        function geo_json_75c1506a2186181e6df8ff834770bef7_add (data) {
+            geo_json_75c1506a2186181e6df8ff834770bef7
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_75c1506a2186181e6df8ff834770bef7_add({"features": [{"geometry": {"coordinates": [[[56.28449890382612, 58.021841877677645], [56.27693425524734, 58.01980273207977], [56.28166782277057, 58.014536400791485], [56.28925511999779, 58.01644388594096], [56.28449890382612, 58.021841877677645]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_4b6c4b37c786ff1c1e5295222aa4d4b0 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_4d7be6c0f7ba40787ec25fa7365b94bd = $(`<div id="html_4d7be6c0f7ba40787ec25fa7365b94bd" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 84,032.0р.</div>`)[0];
+                popup_4b6c4b37c786ff1c1e5295222aa4d4b0.setContent(html_4d7be6c0f7ba40787ec25fa7365b94bd);
+            
+        
+
+        geo_json_75c1506a2186181e6df8ff834770bef7.bindPopup(popup_4b6c4b37c786ff1c1e5295222aa4d4b0)
+        ;
+
+        
+    
+    
+        function geo_json_5faf59ae209c0328e6e05f974ed352ca_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_5faf59ae209c0328e6e05f974ed352ca_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_5faf59ae209c0328e6e05f974ed352ca = L.geoJson(null, {
+                onEachFeature: geo_json_5faf59ae209c0328e6e05f974ed352ca_onEachFeature,
+            
+                style: geo_json_5faf59ae209c0328e6e05f974ed352ca_styler,
+        });
+
+        function geo_json_5faf59ae209c0328e6e05f974ed352ca_add (data) {
+            geo_json_5faf59ae209c0328e6e05f974ed352ca
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_5faf59ae209c0328e6e05f974ed352ca_add({"features": [{"geometry": {"coordinates": [[[56.2546808159845, 58.00480656451808], [56.25869614642136, 58.00052233181586], [56.26855692388665, 58.00289609165364], [56.265251787950234, 58.006253824566045], [56.26093599061079, 58.006326186032425], [56.2546808159845, 58.00480656451808]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_9d7867172577e08613b262144c7825b0 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_9ff08d22d328ad1a081dee0692408016 = $(`<div id="html_9ff08d22d328ad1a081dee0692408016" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_9d7867172577e08613b262144c7825b0.setContent(html_9ff08d22d328ad1a081dee0692408016);
+            
+        
+
+        geo_json_5faf59ae209c0328e6e05f974ed352ca.bindPopup(popup_9d7867172577e08613b262144c7825b0)
+        ;
+
+        
+    
+    
+        function geo_json_54b2d06d4012e715ff18081f1053579d_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_54b2d06d4012e715ff18081f1053579d_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_54b2d06d4012e715ff18081f1053579d = L.geoJson(null, {
+                onEachFeature: geo_json_54b2d06d4012e715ff18081f1053579d_onEachFeature,
+            
+                style: geo_json_54b2d06d4012e715ff18081f1053579d_styler,
+        });
+
+        function geo_json_54b2d06d4012e715ff18081f1053579d_add (data) {
+            geo_json_54b2d06d4012e715ff18081f1053579d
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_54b2d06d4012e715ff18081f1053579d_add({"features": [{"geometry": {"coordinates": [[[56.26855692388665, 58.00289609165364], [56.258723461594286, 58.00052233181586], [56.261837391320114, 57.99741015213499], [56.262846875378415, 57.997582326863125], [56.26348818704855, 57.99693091041968], [56.27099687785355, 57.998616072109996], [56.272787206266486, 57.99905505078925], [56.27292081286407, 57.99942322230589], [56.271932124040205, 57.99974890933774], [56.26855692388665, 58.00289609165364]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_dc05cad70ce37736ad30b099fe99bf5f = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_82f324a35efe1646944aa73ab25d1a41 = $(`<div id="html_82f324a35efe1646944aa73ab25d1a41" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_dc05cad70ce37736ad30b099fe99bf5f.setContent(html_82f324a35efe1646944aa73ab25d1a41);
+            
+        
+
+        geo_json_54b2d06d4012e715ff18081f1053579d.bindPopup(popup_dc05cad70ce37736ad30b099fe99bf5f)
+        ;
+
+        
+    
+    
+        function geo_json_f715a90e3815bd97f9f3394ff1b39d70_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_f715a90e3815bd97f9f3394ff1b39d70_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f715a90e3815bd97f9f3394ff1b39d70 = L.geoJson(null, {
+                onEachFeature: geo_json_f715a90e3815bd97f9f3394ff1b39d70_onEachFeature,
+            
+                style: geo_json_f715a90e3815bd97f9f3394ff1b39d70_styler,
+        });
+
+        function geo_json_f715a90e3815bd97f9f3394ff1b39d70_add (data) {
+            geo_json_f715a90e3815bd97f9f3394ff1b39d70
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_f715a90e3815bd97f9f3394ff1b39d70_add({"features": [{"geometry": {"coordinates": [[[56.257307697403206, 57.99101351100464], [56.2589374845939, 57.990519404457075], [56.2597191461484, 57.99049454481647], [56.2597191461484, 57.99012164814005], [56.26181399911238, 57.99012993477501], [56.26190779718621, 57.98983161725508], [56.26433094800174, 57.98930955115824], [56.26494064401393, 57.988903494488255], [56.26716056282717, 57.98887034680189], [56.26861445331696, 57.98941727970609], [56.27139717577268, 57.99058569996032], [56.27103761145801, 57.99193637864968], [56.275520590180435, 57.99801786890609], [56.27340734001771, 57.99911809521157], [56.269240179653366, 57.998249979769724], [56.262814489529774, 57.99663494605895], [56.26172864808271, 57.99642524136644], [56.2610121699534, 57.99618654635091], [56.25967585331904, 57.99461768050449], [56.26042013093854, 57.99413355945191], [56.26123207015959, 57.993183228722216], [56.261790278373695, 57.99238529004799], [56.261874855522535, 57.991085239304], [56.257307697403206, 57.99101351100464]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_e610470c4dda3a76f3ce2645622b2cd0 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_b86c36adab7d0e259fde9641ce781037 = $(`<div id="html_b86c36adab7d0e259fde9641ce781037" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_e610470c4dda3a76f3ce2645622b2cd0.setContent(html_b86c36adab7d0e259fde9641ce781037);
+            
+        
+
+        geo_json_f715a90e3815bd97f9f3394ff1b39d70.bindPopup(popup_e610470c4dda3a76f3ce2645622b2cd0)
+        ;
+
+        
+    
+    
+        function geo_json_99e0815b0f4665a392e1f98980e17dec_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_99e0815b0f4665a392e1f98980e17dec_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_99e0815b0f4665a392e1f98980e17dec = L.geoJson(null, {
+                onEachFeature: geo_json_99e0815b0f4665a392e1f98980e17dec_onEachFeature,
+            
+                style: geo_json_99e0815b0f4665a392e1f98980e17dec_styler,
+        });
+
+        function geo_json_99e0815b0f4665a392e1f98980e17dec_add (data) {
+            geo_json_99e0815b0f4665a392e1f98980e17dec
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_99e0815b0f4665a392e1f98980e17dec_add({"features": [{"geometry": {"coordinates": [[[56.27379531682388, 57.99022738150555], [56.27260168704797, 57.989977058204744], [56.2689765351208, 57.98878631848217], [56.26719494031357, 57.98883559373118], [56.26493309338386, 57.988876654324315], [56.26431340929449, 57.98928725766467], [56.261850165035014, 57.98982103497045], [56.261726228217356, 57.99008381472194], [56.25965028651521, 57.9900920265581], [56.25965028651521, 57.99046976898646], [56.25904609452698, 57.990486192479864], [56.25718704225676, 57.99104458677681], [56.257727020774865, 57.98556936472869], [56.269008257226915, 57.985800945545265], [56.270340578021006, 57.98596520154973], [56.27599519534371, 57.98670434424923], [56.274817795572744, 57.989800365141974], [56.27379531682388, 57.99022738150555]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_6f6722ee6af7882e467c13d5b46550cf = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_f11ca849b5493d3cd94f38aeac95d86a = $(`<div id="html_f11ca849b5493d3cd94f38aeac95d86a" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_6f6722ee6af7882e467c13d5b46550cf.setContent(html_f11ca849b5493d3cd94f38aeac95d86a);
+            
+        
+
+        geo_json_99e0815b0f4665a392e1f98980e17dec.bindPopup(popup_6f6722ee6af7882e467c13d5b46550cf)
+        ;
+
+        
+    
+    
+        function geo_json_24ec1ded378608eae4a8763cd042c355_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_24ec1ded378608eae4a8763cd042c355_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_24ec1ded378608eae4a8763cd042c355 = L.geoJson(null, {
+                onEachFeature: geo_json_24ec1ded378608eae4a8763cd042c355_onEachFeature,
+            
+                style: geo_json_24ec1ded378608eae4a8763cd042c355_styler,
+        });
+
+        function geo_json_24ec1ded378608eae4a8763cd042c355_add (data) {
+            geo_json_24ec1ded378608eae4a8763cd042c355
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_24ec1ded378608eae4a8763cd042c355_add({"features": [{"geometry": {"coordinates": [[[56.26638296189705, 58.0093404030367], [56.26937224487273, 58.00661701527528], [56.26933109317281, 58.006042863738315], [56.2754302984105, 58.00559308793714], [56.278653848245085, 58.00570937399783], [56.27866756547843, 58.00628353088419], [56.27785824871188, 58.00628353088419], [56.27798170381158, 58.00769344669206], [56.27674715281091, 58.00835477981684], [56.27854413074064, 58.00882715699316], [56.277487903774755, 58.009815487159756], [56.27629450447401, 58.010207904802826], [56.27411346437202, 58.00999716252943], [56.271952158635145, 58.00880989863765], [56.271485772701084, 58.008729958936726], [56.27129373143487, 58.008875303714774], [56.27027865616702, 58.00917325866439], [56.26963394620009, 58.00865001905726], [56.26638296189705, 58.0093404030367]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_c381c671c1b791e054f6937b0cc39435 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_891c62ef6f44e03efdd9a82df0c2423e = $(`<div id="html_891c62ef6f44e03efdd9a82df0c2423e" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_c381c671c1b791e054f6937b0cc39435.setContent(html_891c62ef6f44e03efdd9a82df0c2423e);
+            
+        
+
+        geo_json_24ec1ded378608eae4a8763cd042c355.bindPopup(popup_c381c671c1b791e054f6937b0cc39435)
+        ;
+
+        
+    
+    
+        function geo_json_218692f82bd62e512d920ab7f8b3fd7c_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_218692f82bd62e512d920ab7f8b3fd7c_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_218692f82bd62e512d920ab7f8b3fd7c = L.geoJson(null, {
+                onEachFeature: geo_json_218692f82bd62e512d920ab7f8b3fd7c_onEachFeature,
+            
+                style: geo_json_218692f82bd62e512d920ab7f8b3fd7c_styler,
+        });
+
+        function geo_json_218692f82bd62e512d920ab7f8b3fd7c_add (data) {
+            geo_json_218692f82bd62e512d920ab7f8b3fd7c
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_218692f82bd62e512d920ab7f8b3fd7c_add({"features": [{"geometry": {"coordinates": [[[56.26535858792397, 58.0062586828175], [56.27200900434477, 57.99975989901259], [56.2735684753834, 57.999212610532965], [56.27513827404482, 57.99846281173453], [56.27695593565343, 57.998856868535455], [56.27829272696988, 58.001619939398665], [56.279924491367694, 58.00170202768422], [56.28057870249668, 58.00312290058011], [56.27985576890177, 58.00347860019036], [56.28035149479496, 58.00382882404571], [56.280454771023756, 58.00428848765608], [56.28032051192665, 58.00499438813617], [56.27986414014626, 58.00523762690793], [56.27793287468742, 58.005182906810205], [56.27548669957082, 58.005398064598126], [56.26535858792397, 58.0062586828175]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_fbfbd5500895f8387d5ebc125f5374da = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_2a8b4ce92de3c23e2c22ed507c6bc41f = $(`<div id="html_2a8b4ce92de3c23e2c22ed507c6bc41f" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_fbfbd5500895f8387d5ebc125f5374da.setContent(html_2a8b4ce92de3c23e2c22ed507c6bc41f);
+            
+        
+
+        geo_json_218692f82bd62e512d920ab7f8b3fd7c.bindPopup(popup_fbfbd5500895f8387d5ebc125f5374da)
+        ;
+
+        
+    
+    
+        function geo_json_92faf835633912365cbb8d6f0e3689fd_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#F8E8BF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_92faf835633912365cbb8d6f0e3689fd_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_92faf835633912365cbb8d6f0e3689fd = L.geoJson(null, {
+                onEachFeature: geo_json_92faf835633912365cbb8d6f0e3689fd_onEachFeature,
+            
+                style: geo_json_92faf835633912365cbb8d6f0e3689fd_styler,
+        });
+
+        function geo_json_92faf835633912365cbb8d6f0e3689fd_add (data) {
+            geo_json_92faf835633912365cbb8d6f0e3689fd
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_92faf835633912365cbb8d6f0e3689fd_add({"features": [{"geometry": {"coordinates": [[[56.28444659845843, 58.006268535545274], [56.2816547452953, 58.00571543994624], [56.28265010164074, 58.00485362279392], [56.28265010164074, 58.004030375092356], [56.28398533576163, 58.00325213134124], [56.283997474253624, 58.003046311982814], [56.28254085521138, 58.00300128884058], [56.2823139040415, 58.001624254374235], [56.28284799769017, 58.001424857821746], [56.28330926038694, 58.0006272605072], [56.28256881237465, 57.999855375218885], [56.28390010100881, 57.99941548211066], [56.28352380775587, 57.998752925825386], [56.284786210924835, 57.99839912861296], [56.284264255768164, 57.99800673125179], [56.280282830387904, 57.997633628133514], [56.28065595016395, 57.99532662400756], [56.28142067516015, 57.99508859258282], [56.283617742214744, 57.99490845964192], [56.28386051205595, 57.994824826182565], [56.28772055251636, 57.994689725566644], [56.28741709021526, 57.99783550765943], [56.28630035877492, 58.004369877960585], [56.28444659845843, 58.006268535545274]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_d2ced2f2273cf92ee84bf3215401c4a0 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_d3a43f37ef97e7e99b65acf40441c35e = $(`<div id="html_d3a43f37ef97e7e99b65acf40441c35e" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 94,627.0р.</div>`)[0];
+                popup_d2ced2f2273cf92ee84bf3215401c4a0.setContent(html_d3a43f37ef97e7e99b65acf40441c35e);
+            
+        
+
+        geo_json_92faf835633912365cbb8d6f0e3689fd.bindPopup(popup_d2ced2f2273cf92ee84bf3215401c4a0)
+        ;
+
+        
+    
+    
+        function geo_json_9847d8d1d94decd3bde1c5d1612fc943_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#F8E8BF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_9847d8d1d94decd3bde1c5d1612fc943_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_9847d8d1d94decd3bde1c5d1612fc943 = L.geoJson(null, {
+                onEachFeature: geo_json_9847d8d1d94decd3bde1c5d1612fc943_onEachFeature,
+            
+                style: geo_json_9847d8d1d94decd3bde1c5d1612fc943_styler,
+        });
+
+        function geo_json_9847d8d1d94decd3bde1c5d1612fc943_add (data) {
+            geo_json_9847d8d1d94decd3bde1c5d1612fc943
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_9847d8d1d94decd3bde1c5d1612fc943_add({"features": [{"geometry": {"coordinates": [[[56.284561235583425, 58.00633430006582], [56.286366133571164, 58.00438297799283], [56.28753405012185, 57.99787139700916], [56.29133010458992, 57.99797840333815], [56.293174287079864, 57.99812821166125], [56.29466847873337, 57.9987345722802], [56.296715766474904, 58.000162520837506], [56.29636577563849, 58.00027665360665], [56.296581154614785, 58.00149642485138], [56.29617731903241, 58.00254496691366], [56.29622958464452, 58.00309838666848], [56.29543513724113, 58.00471788823799], [56.294008251517795, 58.00582339344339], [56.293173657982834, 58.00580199689253], [56.29325442509895, 58.00517435904186], [56.29040065365396, 58.00449678309997], [56.28804494609528, 58.007256933219765], [56.284561235583425, 58.00633430006582]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_3507efe807b1ad8781e89f58bac41254 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_6dd8d93d59f724cb8ecba19a5f944c3e = $(`<div id="html_6dd8d93d59f724cb8ecba19a5f944c3e" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 99,685.0р.</div>`)[0];
+                popup_3507efe807b1ad8781e89f58bac41254.setContent(html_6dd8d93d59f724cb8ecba19a5f944c3e);
+            
+        
+
+        geo_json_9847d8d1d94decd3bde1c5d1612fc943.bindPopup(popup_3507efe807b1ad8781e89f58bac41254)
+        ;
+
+        
+    
+    
+        function geo_json_90329695d1797fe2bc6da53fc8f756b5_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FDC7BA", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_90329695d1797fe2bc6da53fc8f756b5_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_90329695d1797fe2bc6da53fc8f756b5 = L.geoJson(null, {
+                onEachFeature: geo_json_90329695d1797fe2bc6da53fc8f756b5_onEachFeature,
+            
+                style: geo_json_90329695d1797fe2bc6da53fc8f756b5_styler,
+        });
+
+        function geo_json_90329695d1797fe2bc6da53fc8f756b5_add (data) {
+            geo_json_90329695d1797fe2bc6da53fc8f756b5
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_90329695d1797fe2bc6da53fc8f756b5_add({"features": [{"geometry": {"coordinates": [[[56.30012250856609, 58.00759689511065], [56.29728387484093, 58.00461642690084], [56.29728387484093, 58.00413035777959], [56.29761274094332, 58.00337831330373], [56.29941285013484, 58.001158772853444], [56.303186155938334, 58.00208512671489], [56.30408621053468, 58.00250702250915], [56.30495164764551, 58.00328659948187], [56.307253710361124, 58.005634399334156], [56.30012250856609, 58.00759689511065]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_642fccd27a2cf6712d766581aeb655ca = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_755d4baa1a624d33a2fdc3ab26bf2773 = $(`<div id="html_755d4baa1a624d33a2fdc3ab26bf2773" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 102,709.0р.</div>`)[0];
+                popup_642fccd27a2cf6712d766581aeb655ca.setContent(html_755d4baa1a624d33a2fdc3ab26bf2773);
+            
+        
+
+        geo_json_90329695d1797fe2bc6da53fc8f756b5.bindPopup(popup_642fccd27a2cf6712d766581aeb655ca)
+        ;
+
+        
+    
+    
+        function geo_json_8781bd2334c856ea70248f42456c2719_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#B9EABD", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_8781bd2334c856ea70248f42456c2719_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_8781bd2334c856ea70248f42456c2719 = L.geoJson(null, {
+                onEachFeature: geo_json_8781bd2334c856ea70248f42456c2719_onEachFeature,
+            
+                style: geo_json_8781bd2334c856ea70248f42456c2719_styler,
+        });
+
+        function geo_json_8781bd2334c856ea70248f42456c2719_add (data) {
+            geo_json_8781bd2334c856ea70248f42456c2719
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_8781bd2334c856ea70248f42456c2719_add({"features": [{"geometry": {"coordinates": [[[56.288174083670214, 58.01594151501098], [56.2814614582814, 58.01430044714854], [56.279783301935026, 58.01173612793238], [56.27751424549382, 58.01138144284445], [56.279365314990685, 58.009668947980344], [56.281261649800115, 58.010053268586546], [56.281019835293336, 58.01030273764826], [56.29100085785774, 58.01272317216487], [56.288174083670214, 58.01594151501098]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_9606973a477c458352227055d5501ddb = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_766dda8e693291a14d88b2dc995a9c18 = $(`<div id="html_766dda8e693291a14d88b2dc995a9c18" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 93,169.0р.</div>`)[0];
+                popup_9606973a477c458352227055d5501ddb.setContent(html_766dda8e693291a14d88b2dc995a9c18);
+            
+        
+
+        geo_json_8781bd2334c856ea70248f42456c2719.bindPopup(popup_9606973a477c458352227055d5501ddb)
+        ;
+
+        
+    
+    
+        function geo_json_d84b9c70d1e2cee87ff01f7c7e8d8b4e_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#79D5C3", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_d84b9c70d1e2cee87ff01f7c7e8d8b4e_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_d84b9c70d1e2cee87ff01f7c7e8d8b4e = L.geoJson(null, {
+                onEachFeature: geo_json_d84b9c70d1e2cee87ff01f7c7e8d8b4e_onEachFeature,
+            
+                style: geo_json_d84b9c70d1e2cee87ff01f7c7e8d8b4e_styler,
+        });
+
+        function geo_json_d84b9c70d1e2cee87ff01f7c7e8d8b4e_add (data) {
+            geo_json_d84b9c70d1e2cee87ff01f7c7e8d8b4e
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_d84b9c70d1e2cee87ff01f7c7e8d8b4e_add({"features": [{"geometry": {"coordinates": [[[56.29097867394799, 58.012731813393174], [56.28108063625436, 58.010288532919674], [56.28130757854407, 58.01004807905264], [56.280212335323654, 58.009828532807205], [56.28111274700342, 58.0088659467898], [56.28103381055527, 58.00850525104693], [56.28129035401304, 58.00816023432611], [56.28010630728713, 58.00777339344182], [56.28161596686283, 58.006273038566064], [56.282129053777, 58.00660761792426], [56.293785043411475, 58.00952965926089], [56.29097867394799, 58.012731813393174]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_e54dbd9c96ac246df71250ceb6cd808f = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_5dad4496f292b81ea435303027cc390b = $(`<div id="html_5dad4496f292b81ea435303027cc390b" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 88,896.0р.</div>`)[0];
+                popup_e54dbd9c96ac246df71250ceb6cd808f.setContent(html_5dad4496f292b81ea435303027cc390b);
+            
+        
+
+        geo_json_d84b9c70d1e2cee87ff01f7c7e8d8b4e.bindPopup(popup_e54dbd9c96ac246df71250ceb6cd808f)
+        ;
+
+        
+    
+    
+        function geo_json_317fcd0271990d9bdf2474ae8545c824_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#F8E8BF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_317fcd0271990d9bdf2474ae8545c824_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_317fcd0271990d9bdf2474ae8545c824 = L.geoJson(null, {
+                onEachFeature: geo_json_317fcd0271990d9bdf2474ae8545c824_onEachFeature,
+            
+                style: geo_json_317fcd0271990d9bdf2474ae8545c824_styler,
+        });
+
+        function geo_json_317fcd0271990d9bdf2474ae8545c824_add (data) {
+            geo_json_317fcd0271990d9bdf2474ae8545c824
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_317fcd0271990d9bdf2474ae8545c824_add({"features": [{"geometry": {"coordinates": [[[56.292612337414056, 58.0170222015669], [56.28820024303903, 58.015940267580646], [56.29382550196803, 58.009566472121975], [56.30417176543014, 58.01317048646183], [56.30356320516549, 58.015386705854155], [56.303472938079636, 58.0175629332727], [56.29604649185279, 58.017846067671], [56.295088890301344, 58.017371315285914], [56.29447713099759, 58.01742396033927], [56.292612337414056, 58.0170222015669]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_b890d170b3934adc4ba214a73d09d5ba = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_85019c4ca1d7c473bff2e4c9ad1eb456 = $(`<div id="html_85019c4ca1d7c473bff2e4c9ad1eb456" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 97,497.0р.</div>`)[0];
+                popup_b890d170b3934adc4ba214a73d09d5ba.setContent(html_85019c4ca1d7c473bff2e4c9ad1eb456);
+            
+        
+
+        geo_json_317fcd0271990d9bdf2474ae8545c824.bindPopup(popup_b890d170b3934adc4ba214a73d09d5ba)
+        ;
+
+        
+    
+    
+        function geo_json_388fa8e2279da9bf2c48e9e3ce77c597_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#F8E8BF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_388fa8e2279da9bf2c48e9e3ce77c597_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_388fa8e2279da9bf2c48e9e3ce77c597 = L.geoJson(null, {
+                onEachFeature: geo_json_388fa8e2279da9bf2c48e9e3ce77c597_onEachFeature,
+            
+                style: geo_json_388fa8e2279da9bf2c48e9e3ce77c597_styler,
+        });
+
+        function geo_json_388fa8e2279da9bf2c48e9e3ce77c597_add (data) {
+            geo_json_388fa8e2279da9bf2c48e9e3ce77c597
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_388fa8e2279da9bf2c48e9e3ce77c597_add({"features": [{"geometry": {"coordinates": [[[56.30517619264609, 58.01331825241539], [56.308674961446485, 58.009233492746546], [56.308888920610826, 58.0088140884813], [56.30910287977369, 58.008099956397274], [56.30891031652715, 58.007487831840905], [56.307273881135984, 58.00566589206392], [56.30902544059549, 58.005386725010766], [56.31087668230231, 58.00528863877253], [56.31215831117618, 58.005386725010766], [56.31269944336762, 58.00568852713491], [56.31373898678825, 58.00711450775546], [56.31351088913604, 58.01038726973846], [56.30930588568313, 58.01394435021544], [56.30517619264609, 58.01331825241539]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_f0488e77c2244a70079036a8451ad608 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_388fe90e4a4049cfb0efc68c125f0bde = $(`<div id="html_388fe90e4a4049cfb0efc68c125f0bde" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 97,725.0р.</div>`)[0];
+                popup_f0488e77c2244a70079036a8451ad608.setContent(html_388fe90e4a4049cfb0efc68c125f0bde);
+            
+        
+
+        geo_json_388fa8e2279da9bf2c48e9e3ce77c597.bindPopup(popup_f0488e77c2244a70079036a8451ad608)
+        ;
+
+        
+    
+    
+        function geo_json_dbd671f7d3773e102ed213565ae8bd55_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#B9EABD", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_dbd671f7d3773e102ed213565ae8bd55_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_dbd671f7d3773e102ed213565ae8bd55 = L.geoJson(null, {
+                onEachFeature: geo_json_dbd671f7d3773e102ed213565ae8bd55_onEachFeature,
+            
+                style: geo_json_dbd671f7d3773e102ed213565ae8bd55_styler,
+        });
+
+        function geo_json_dbd671f7d3773e102ed213565ae8bd55_add (data) {
+            geo_json_dbd671f7d3773e102ed213565ae8bd55
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_dbd671f7d3773e102ed213565ae8bd55_add({"features": [{"geometry": {"coordinates": [[[56.30512625719098, 58.01330311033189], [56.30379342381059, 58.01240269227918], [56.30301758537212, 58.01151877286827], [56.30103016362034, 58.01064609215976], [56.29788997777172, 58.00817621386031], [56.30725901143978, 58.00570679836949], [56.30819426873492, 58.006765418953336], [56.308800060393, 58.00750305627599], [56.30900673230147, 58.008153429163826], [56.30865601081541, 58.009088106339846], [56.30512625719098, 58.01330311033189]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_26ac7fb883b4289b6ea9ae90e50ea5a7 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_6b4c6192c852b7d2799ed8a622dc42a3 = $(`<div id="html_6b4c6192c852b7d2799ed8a622dc42a3" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 92,772.0р.</div>`)[0];
+                popup_26ac7fb883b4289b6ea9ae90e50ea5a7.setContent(html_6b4c6192c852b7d2799ed8a622dc42a3);
+            
+        
+
+        geo_json_dbd671f7d3773e102ed213565ae8bd55.bindPopup(popup_26ac7fb883b4289b6ea9ae90e50ea5a7)
+        ;
+
+        
+    
+    
+        function geo_json_c7abd2cd51b79527a37aa1e8df7a35a3_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FDC7BA", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_c7abd2cd51b79527a37aa1e8df7a35a3_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_c7abd2cd51b79527a37aa1e8df7a35a3 = L.geoJson(null, {
+                onEachFeature: geo_json_c7abd2cd51b79527a37aa1e8df7a35a3_onEachFeature,
+            
+                style: geo_json_c7abd2cd51b79527a37aa1e8df7a35a3_styler,
+        });
+
+        function geo_json_c7abd2cd51b79527a37aa1e8df7a35a3_add (data) {
+            geo_json_c7abd2cd51b79527a37aa1e8df7a35a3
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_c7abd2cd51b79527a37aa1e8df7a35a3_add({"features": [{"geometry": {"coordinates": [[[56.28645663703614, 58.01972284495943], [56.289207012475345, 58.01646739642487], [56.29238686844403, 58.01727109511023], [56.292597979213014, 58.01702649307367], [56.294464742372526, 58.017445809355024], [56.2950848802582, 58.017389900738465], [56.29604807314524, 58.017872109682855], [56.29907609857585, 58.018144562194436], [56.30170178877239, 58.019248717903565], [56.302255954542744, 58.02040874352224], [56.301200400694285, 58.02062537064444], [56.30102096844362, 58.02049302404308], [56.29762369495836, 58.021394589188276], [56.2968821891244, 58.02166118370434], [56.2952461919144, 58.02222318265535], [56.29354274366557, 58.02103332007698], [56.29034296427716, 58.022325369793265], [56.286787648695935, 58.01982024083571], [56.28645663703614, 58.01972284495943]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_b4b8eeda5089b3ed739fd24ef44f3014 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_33966a572531b0fc97b0d87633282197 = $(`<div id="html_33966a572531b0fc97b0d87633282197" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 101,163.0р.</div>`)[0];
+                popup_b4b8eeda5089b3ed739fd24ef44f3014.setContent(html_33966a572531b0fc97b0d87633282197);
+            
+        
+
+        geo_json_c7abd2cd51b79527a37aa1e8df7a35a3.bindPopup(popup_b4b8eeda5089b3ed739fd24ef44f3014)
+        ;
+
+        
+    
+    
+        function geo_json_ce77ac6dfe6a32004d9fc1adbb05074b_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#F8E8BF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_ce77ac6dfe6a32004d9fc1adbb05074b_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_ce77ac6dfe6a32004d9fc1adbb05074b = L.geoJson(null, {
+                onEachFeature: geo_json_ce77ac6dfe6a32004d9fc1adbb05074b_onEachFeature,
+            
+                style: geo_json_ce77ac6dfe6a32004d9fc1adbb05074b_styler,
+        });
+
+        function geo_json_ce77ac6dfe6a32004d9fc1adbb05074b_add (data) {
+            geo_json_ce77ac6dfe6a32004d9fc1adbb05074b
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_ce77ac6dfe6a32004d9fc1adbb05074b_add({"features": [{"geometry": {"coordinates": [[[56.30371795463034, 58.02618341739512], [56.29752059746153, 58.0238381799617], [56.295288230256745, 58.022238296055605], [56.29766996334794, 58.02140274751872], [56.301007423729686, 58.020502904191204], [56.30121980757261, 58.02065555777858], [56.30185695910029, 58.020888554103095], [56.30178110772815, 58.021250097119776], [56.30281268639189, 58.02185266069452], [56.30361671093823, 58.02194906992452], [56.30528544112957, 58.02345944727284], [56.30584674128522, 58.023483548521995], [56.3067671797981, 58.024191143027906], [56.30729813940491, 58.02435181442917], [56.307540863795566, 58.02465708810382], [56.30734365022812, 58.024890058365514], [56.30371795463034, 58.02618341739512]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_320279e83d185725505dd49b4bf21991 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_2ceb016d4590280494a0e39faf0d8869 = $(`<div id="html_2ceb016d4590280494a0e39faf0d8869" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 97,265.0р.</div>`)[0];
+                popup_320279e83d185725505dd49b4bf21991.setContent(html_2ceb016d4590280494a0e39faf0d8869);
+            
+        
+
+        geo_json_ce77ac6dfe6a32004d9fc1adbb05074b.bindPopup(popup_320279e83d185725505dd49b4bf21991)
+        ;
+
+        
+    
+    
+        function geo_json_8b3b1eadc9d9721af2fc24d1f724a3d1_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FF5E7B", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_8b3b1eadc9d9721af2fc24d1f724a3d1_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_8b3b1eadc9d9721af2fc24d1f724a3d1 = L.geoJson(null, {
+                onEachFeature: geo_json_8b3b1eadc9d9721af2fc24d1f724a3d1_onEachFeature,
+            
+                style: geo_json_8b3b1eadc9d9721af2fc24d1f724a3d1_styler,
+        });
+
+        function geo_json_8b3b1eadc9d9721af2fc24d1f724a3d1_add (data) {
+            geo_json_8b3b1eadc9d9721af2fc24d1f724a3d1
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_8b3b1eadc9d9721af2fc24d1f724a3d1_add({"features": [{"geometry": {"coordinates": [[[56.25708904273799, 58.01028910307642], [56.2524043229306, 58.0152507757748], [56.24642319034581, 58.01356224520836], [56.25107301557185, 58.00864883297558], [56.25708904273799, 58.01028910307642]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_a326f0a3c035c7b535a7c1f5a42f03bb = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_6c2d044849668641f63a3827ae2c8e69 = $(`<div id="html_6c2d044849668641f63a3827ae2c8e69" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 118,761.0р.</div>`)[0];
+                popup_a326f0a3c035c7b535a7c1f5a42f03bb.setContent(html_6c2d044849668641f63a3827ae2c8e69);
+            
+        
+
+        geo_json_8b3b1eadc9d9721af2fc24d1f724a3d1.bindPopup(popup_a326f0a3c035c7b535a7c1f5a42f03bb)
+        ;
+
+        
+    
+    
+        function geo_json_1526cb38a747ae8a2b4e66899ab7b8bb_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#F8E8BF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_1526cb38a747ae8a2b4e66899ab7b8bb_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_1526cb38a747ae8a2b4e66899ab7b8bb = L.geoJson(null, {
+                onEachFeature: geo_json_1526cb38a747ae8a2b4e66899ab7b8bb_onEachFeature,
+            
+                style: geo_json_1526cb38a747ae8a2b4e66899ab7b8bb_styler,
+        });
+
+        function geo_json_1526cb38a747ae8a2b4e66899ab7b8bb_add (data) {
+            geo_json_1526cb38a747ae8a2b4e66899ab7b8bb
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_1526cb38a747ae8a2b4e66899ab7b8bb_add({"features": [{"geometry": {"coordinates": [[[56.30444842010979, 58.02651282018607], [56.29996027135181, 58.0297385375803], [56.297296736235495, 58.02869570309042], [56.295742472334155, 58.029757386787], [56.29154240041794, 58.02843813010588], [56.29056950240323, 58.02905378928003], [56.28527788344172, 58.02709368985299], [56.28284870841648, 58.0251781065536], [56.28025206858436, 58.023598693838835], [56.28007553442623, 58.02326686142197], [56.28002215232732, 58.022565763097276], [56.28057732615747, 58.02177418395689], [56.27977659467092, 58.02174591294943], [56.27706478403891, 58.02128791951404], [56.27781213342513, 58.02011181074462], [56.28471977704612, 58.02193250118623], [56.285426421566, 58.022307868071465], [56.28852734553652, 58.0211278864702], [56.29489935285295, 58.02524035288266], [56.29538057270153, 58.02546787718285], [56.29757126714503, 58.02387197412389], [56.30444842010979, 58.02651282018607]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_1682971cb2a644dbf1b1c7f1d8099120 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_cf0bc8b5c381076fd201a6c217bc5bd7 = $(`<div id="html_cf0bc8b5c381076fd201a6c217bc5bd7" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 95,508.0р.</div>`)[0];
+                popup_1682971cb2a644dbf1b1c7f1d8099120.setContent(html_cf0bc8b5c381076fd201a6c217bc5bd7);
+            
+        
+
+        geo_json_1526cb38a747ae8a2b4e66899ab7b8bb.bindPopup(popup_1682971cb2a644dbf1b1c7f1d8099120)
+        ;
+
+        
+    
+    
+        function geo_json_a80fe1a446c1f0c962d10b2777180824_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#B9EABD", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_a80fe1a446c1f0c962d10b2777180824_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_a80fe1a446c1f0c962d10b2777180824 = L.geoJson(null, {
+                onEachFeature: geo_json_a80fe1a446c1f0c962d10b2777180824_onEachFeature,
+            
+                style: geo_json_a80fe1a446c1f0c962d10b2777180824_styler,
+        });
+
+        function geo_json_a80fe1a446c1f0c962d10b2777180824_add (data) {
+            geo_json_a80fe1a446c1f0c962d10b2777180824
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_a80fe1a446c1f0c962d10b2777180824_add({"features": [{"geometry": {"coordinates": [[[56.30011708537796, 58.02974230903928], [56.30452550053175, 58.02651363331381], [56.3038774564499, 58.02618681592392], [56.30605303300976, 58.02538610069766], [56.30889208327247, 58.025337076734274], [56.31287293155856, 58.028678726109035], [56.31370613109186, 58.02992869939362], [56.31267519776395, 58.03407925181685], [56.30011708537796, 58.02974230903928]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_457e7139a8aca2edb626209519abc17f = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_5fb84a866815060ed0f2bf12775655cf = $(`<div id="html_5fb84a866815060ed0f2bf12775655cf" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 92,636.0р.</div>`)[0];
+                popup_457e7139a8aca2edb626209519abc17f.setContent(html_5fb84a866815060ed0f2bf12775655cf);
+            
+        
+
+        geo_json_a80fe1a446c1f0c962d10b2777180824.bindPopup(popup_457e7139a8aca2edb626209519abc17f)
+        ;
+
+        
+    
+    
+        function geo_json_8033238711926f7f1c70c4abffb85e70_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#41BAC2", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_8033238711926f7f1c70c4abffb85e70_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_8033238711926f7f1c70c4abffb85e70 = L.geoJson(null, {
+                onEachFeature: geo_json_8033238711926f7f1c70c4abffb85e70_onEachFeature,
+            
+                style: geo_json_8033238711926f7f1c70c4abffb85e70_styler,
+        });
+
+        function geo_json_8033238711926f7f1c70c4abffb85e70_add (data) {
+            geo_json_8033238711926f7f1c70c4abffb85e70
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_8033238711926f7f1c70c4abffb85e70_add({"features": [{"geometry": {"coordinates": [[[56.3266255554131, 58.03386162562484], [56.32552894472241, 58.034203600876964], [56.32471059935148, 58.03383815193695], [56.324079672653, 58.03353593832813], [56.32187142920847, 58.034657297031714], [56.318882038423425, 58.03343254887554], [56.318768614424584, 58.03295396320115], [56.318408084882776, 58.031920038393594], [56.32200282569897, 58.02861450580937], [56.32332476735269, 58.02906788765836], [56.32527668424885, 58.027309018969476], [56.329768281458996, 58.028708967430276], [56.329798325587404, 58.028812370541175], [56.325832510481234, 58.03222512481679], [56.327725290575586, 58.03271822693901], [56.3278604891544, 58.032972728599674], [56.32725960658436, 58.033513538614045], [56.3266255554131, 58.03386162562484]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_4f3b6789eef03ae3737efff868c73dab = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_52b7069ca39f5dbd6a5aecb47fddccd0 = $(`<div id="html_52b7069ca39f5dbd6a5aecb47fddccd0" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 78,606.0р.</div>`)[0];
+                popup_4f3b6789eef03ae3737efff868c73dab.setContent(html_52b7069ca39f5dbd6a5aecb47fddccd0);
+            
+        
+
+        geo_json_8033238711926f7f1c70c4abffb85e70.bindPopup(popup_4f3b6789eef03ae3737efff868c73dab)
+        ;
+
+        
+    
+    
+        function geo_json_0337c448b18dcee546205ea1acbbd841_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FDC7BA", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_0337c448b18dcee546205ea1acbbd841_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_0337c448b18dcee546205ea1acbbd841 = L.geoJson(null, {
+                onEachFeature: geo_json_0337c448b18dcee546205ea1acbbd841_onEachFeature,
+            
+                style: geo_json_0337c448b18dcee546205ea1acbbd841_styler,
+        });
+
+        function geo_json_0337c448b18dcee546205ea1acbbd841_add (data) {
+            geo_json_0337c448b18dcee546205ea1acbbd841
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_0337c448b18dcee546205ea1acbbd841_add({"features": [{"geometry": {"coordinates": [[[56.22908921992351, 57.99835168399889], [56.225177425277394, 57.99850034725176], [56.22042510869193, 57.99955169411018], [56.217819216529364, 58.00020762973179], [56.21727197917534, 57.99844693326742], [56.217714980843226, 57.996893305657466], [56.217532567804284, 57.99575393565061], [56.2179755694722, 57.99431758756904], [56.21826561698788, 57.993133993902404], [56.2182476804314, 57.99241478266333], [56.22283493383364, 57.99203446745301], [56.22618916499718, 57.99070959001918], [56.22829135202133, 57.98953442114802], [56.229530617203665, 57.98740255692263], [56.229546743314955, 57.98544488692204], [56.23286074178594, 57.985829858096224], [56.23473980677977, 57.98879313194678], [56.23581785450807, 57.99060830363737], [56.2309392801493, 57.99689408377344], [56.22908921992351, 57.99835168399889]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_87fa2db7640a2ede2e8c598e2525559f = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_71f455f51a908c900140a95cd223710a = $(`<div id="html_71f455f51a908c900140a95cd223710a" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 106,104.0р.</div>`)[0];
+                popup_87fa2db7640a2ede2e8c598e2525559f.setContent(html_71f455f51a908c900140a95cd223710a);
+            
+        
+
+        geo_json_0337c448b18dcee546205ea1acbbd841.bindPopup(popup_87fa2db7640a2ede2e8c598e2525559f)
+        ;
+
+        
+    
+    
+        function geo_json_7f296313c2f083567b7c79c53ec64c37_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#F8E8BF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_7f296313c2f083567b7c79c53ec64c37_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_7f296313c2f083567b7c79c53ec64c37 = L.geoJson(null, {
+                onEachFeature: geo_json_7f296313c2f083567b7c79c53ec64c37_onEachFeature,
+            
+                style: geo_json_7f296313c2f083567b7c79c53ec64c37_styler,
+        });
+
+        function geo_json_7f296313c2f083567b7c79c53ec64c37_add (data) {
+            geo_json_7f296313c2f083567b7c79c53ec64c37
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_7f296313c2f083567b7c79c53ec64c37_add({"features": [{"geometry": {"coordinates": [[[56.19699468068083, 58.00323359517935], [56.19573005306745, 58.00339181052547], [56.19460593963515, 58.00287993481777], [56.19602864569842, 58.002349437724604], [56.19746891603526, 58.00111158060156], [56.19861059374108, 57.999454832665435], [56.20023381672797, 57.9966252551755], [56.20214110752127, 57.99434627593044], [56.20543551889199, 57.9930964515394], [56.20748152174255, 57.99375812870963], [56.217423747308544, 57.99523888746819], [56.21767016549501, 57.99687712065406], [56.21716039832748, 57.99849803799074], [56.217745131254645, 58.00018244296268], [56.20847194707835, 58.002100014682526], [56.19699468068083, 58.00323359517935]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_f4d9b01680bedca1d4666a246dda74df = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_ea55efe02c0b1b9c930012dcc6d1fe6e = $(`<div id="html_ea55efe02c0b1b9c930012dcc6d1fe6e" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 98,777.0р.</div>`)[0];
+                popup_f4d9b01680bedca1d4666a246dda74df.setContent(html_ea55efe02c0b1b9c930012dcc6d1fe6e);
+            
+        
+
+        geo_json_7f296313c2f083567b7c79c53ec64c37.bindPopup(popup_f4d9b01680bedca1d4666a246dda74df)
+        ;
+
+        
+    
+    
+        function geo_json_43b085c2d30caab06c73e530b0156780_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FD9A98", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_43b085c2d30caab06c73e530b0156780_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_43b085c2d30caab06c73e530b0156780 = L.geoJson(null, {
+                onEachFeature: geo_json_43b085c2d30caab06c73e530b0156780_onEachFeature,
+            
+                style: geo_json_43b085c2d30caab06c73e530b0156780_styler,
+        });
+
+        function geo_json_43b085c2d30caab06c73e530b0156780_add (data) {
+            geo_json_43b085c2d30caab06c73e530b0156780
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_43b085c2d30caab06c73e530b0156780_add({"features": [{"geometry": {"coordinates": [[[56.21728581942338, 57.99513896184135], [56.207580413705216, 57.9937148292162], [56.19911826244007, 57.99124903284502], [56.20180529625452, 57.98835788295642], [56.21716550447687, 57.986359451780544], [56.227421703229055, 57.9850122436101], [56.22946705732585, 57.985288639427665], [56.22950716230798, 57.98735091013236], [56.22810348792751, 57.989519355388296], [56.22569718898973, 57.99079485009844], [56.22283837923874, 57.99194768896274], [56.21815551557117, 57.99235527893029], [56.21784243503964, 57.994359017522214], [56.21728581942338, 57.99513896184135]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_9707b245e3de9826e7887a2841f3313e = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_f178f992d7d5034e887278d703d19309 = $(`<div id="html_f178f992d7d5034e887278d703d19309" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 111,492.0р.</div>`)[0];
+                popup_9707b245e3de9826e7887a2841f3313e.setContent(html_f178f992d7d5034e887278d703d19309);
+            
+        
+
+        geo_json_43b085c2d30caab06c73e530b0156780.bindPopup(popup_9707b245e3de9826e7887a2841f3313e)
+        ;
+
+        
+    
+    
+        function geo_json_05837257c3e21548e423a04c4566b29d_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FD9A98", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_05837257c3e21548e423a04c4566b29d_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_05837257c3e21548e423a04c4566b29d = L.geoJson(null, {
+                onEachFeature: geo_json_05837257c3e21548e423a04c4566b29d_onEachFeature,
+            
+                style: geo_json_05837257c3e21548e423a04c4566b29d_styler,
+        });
+
+        function geo_json_05837257c3e21548e423a04c4566b29d_add (data) {
+            geo_json_05837257c3e21548e423a04c4566b29d
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_05837257c3e21548e423a04c4566b29d_add({"features": [{"geometry": {"coordinates": [[[56.19431219962155, 58.002855032940744], [56.191618992803825, 57.9998000645451], [56.18964934233287, 57.99744012077346], [56.18876397113817, 57.99686141920287], [56.18795643903917, 57.996117709183835], [56.190310015827976, 57.995643507391776], [56.19210381880217, 57.99494792712946], [56.19257638744591, 57.993744465134995], [56.1937819917062, 57.99211731695715], [56.191471250202284, 57.99179780874198], [56.191571712074165, 57.99026371063326], [56.19497323838672, 57.99046911789691], [56.20527737077026, 57.9930940032867], [56.202012043004885, 57.994370246398944], [56.200308660030885, 57.99634251343025], [56.197335205137506, 58.00110842342767], [56.19598529310079, 58.00228771905918], [56.19431219962155, 58.002855032940744]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_aa93ec47a5cac6c223526c8bacd1f231 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_c96e34260dcf272cfcbad8c93c5e6f69 = $(`<div id="html_c96e34260dcf272cfcbad8c93c5e6f69" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 108,643.0р.</div>`)[0];
+                popup_aa93ec47a5cac6c223526c8bacd1f231.setContent(html_c96e34260dcf272cfcbad8c93c5e6f69);
+            
+        
+
+        geo_json_05837257c3e21548e423a04c4566b29d.bindPopup(popup_aa93ec47a5cac6c223526c8bacd1f231)
+        ;
+
+        
+    
+    
+        function geo_json_6e029e190ccda7a7eb26dad5cff8caea_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FDC7BA", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_6e029e190ccda7a7eb26dad5cff8caea_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_6e029e190ccda7a7eb26dad5cff8caea = L.geoJson(null, {
+                onEachFeature: geo_json_6e029e190ccda7a7eb26dad5cff8caea_onEachFeature,
+            
+                style: geo_json_6e029e190ccda7a7eb26dad5cff8caea_styler,
+        });
+
+        function geo_json_6e029e190ccda7a7eb26dad5cff8caea_add (data) {
+            geo_json_6e029e190ccda7a7eb26dad5cff8caea
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_6e029e190ccda7a7eb26dad5cff8caea_add({"features": [{"geometry": {"coordinates": [[[56.19121635900859, 57.99937776448428], [56.18755983027839, 58.00030215926549], [56.183769117008154, 58.00136873897077], [56.18430585516987, 58.002133101547116], [56.18095123257345, 58.00270191996316], [56.1748626090465, 58.00313741465479], [56.16884345196672, 58.0034346253577], [56.16765618075382, 57.99993975892275], [56.16654670676144, 57.99570725991961], [56.170253062344756, 57.99554356748598], [56.17569677210611, 57.99441816174959], [56.17744890263805, 57.993620874691686], [56.17818903095244, 57.9934356193086], [56.178292551547145, 57.993374419817115], [56.182347623558854, 57.995841399303146], [56.18570854305949, 57.99479469525866], [56.18963450172063, 57.997487321020486], [56.19121635900859, 57.99937776448428]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_dde76cefeeebb3a78863a35e7ff7dd12 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_67b0ffacf7617d6ec1f4f9ba2977626f = $(`<div id="html_67b0ffacf7617d6ec1f4f9ba2977626f" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 105,640.0р.</div>`)[0];
+                popup_dde76cefeeebb3a78863a35e7ff7dd12.setContent(html_67b0ffacf7617d6ec1f4f9ba2977626f);
+            
+        
+
+        geo_json_6e029e190ccda7a7eb26dad5cff8caea.bindPopup(popup_dde76cefeeebb3a78863a35e7ff7dd12)
+        ;
+
+        
+    
+    
+        function geo_json_de12f64a86c31333b77cb4bbcff0a2bf_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#F8E8BF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_de12f64a86c31333b77cb4bbcff0a2bf_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_de12f64a86c31333b77cb4bbcff0a2bf = L.geoJson(null, {
+                onEachFeature: geo_json_de12f64a86c31333b77cb4bbcff0a2bf_onEachFeature,
+            
+                style: geo_json_de12f64a86c31333b77cb4bbcff0a2bf_styler,
+        });
+
+        function geo_json_de12f64a86c31333b77cb4bbcff0a2bf_add (data) {
+            geo_json_de12f64a86c31333b77cb4bbcff0a2bf
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_de12f64a86c31333b77cb4bbcff0a2bf_add({"features": [{"geometry": {"coordinates": [[[56.16646229092734, 57.9956913168011], [56.16876431346691, 58.00344088416094], [56.162801308448024, 58.00367934431239], [56.16270527843656, 58.004797020603434], [56.158038136073856, 58.00526198962004], [56.15433984127765, 58.00701388118807], [56.153744353133305, 58.007030486385105], [56.15341526757942, 58.006623656839594], [56.15128404684975, 58.0062334282365], [56.15195788869818, 58.00456453025194], [56.15355630424489, 58.00381723727662], [56.1537156766949, 58.00341773057784], [56.14787824716501, 58.00090195422362], [56.146445437156245, 58.000782196578], [56.13863251873994, 58.00072016482673], [56.138430685388585, 58.00098268542686], [56.13758665501308, 58.00118686678513], [56.137127942852544, 58.00183829476276], [56.13512795783194, 58.00132298704395], [56.13478341772873, 58.000678690160925], [56.13391595611071, 58.00016447273978], [56.13362190132463, 57.99960349985716], [56.135724393044, 57.99677512770492], [56.13391595611071, 57.99659591202527], [56.13403615105426, 57.99640927073585], [56.134373224099875, 57.99561462452422], [56.13259487320744, 57.995023248456846], [56.131964564566914, 57.99308868626349], [56.134591409676915, 57.99187503714552], [56.1348587434704, 57.99096323308734], [56.136246298433974, 57.99082064917957], [56.13673050140966, 57.99139098745536], [56.139302392515674, 57.992583477310745], [56.14858928902987, 57.992863058969675], [56.15328353351154, 57.99318247148008], [56.15482972085459, 57.99350185090543], [56.16141914989606, 57.99493486186853], [56.16476009867108, 57.99556804375382], [56.16646229092734, 57.9956913168011]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_89f4ef221cd47b255369ecfa34fc1bd3 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_be0e9c2ecf9fcc59fd2f7c5568ee14a1 = $(`<div id="html_be0e9c2ecf9fcc59fd2f7c5568ee14a1" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 98,676.0р.</div>`)[0];
+                popup_89f4ef221cd47b255369ecfa34fc1bd3.setContent(html_be0e9c2ecf9fcc59fd2f7c5568ee14a1);
+            
+        
+
+        geo_json_de12f64a86c31333b77cb4bbcff0a2bf.bindPopup(popup_89f4ef221cd47b255369ecfa34fc1bd3)
+        ;
+
+        
+    
+    
+        function geo_json_ccbbed350b5015d788cb003d856dbb67_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_ccbbed350b5015d788cb003d856dbb67_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_ccbbed350b5015d788cb003d856dbb67 = L.geoJson(null, {
+                onEachFeature: geo_json_ccbbed350b5015d788cb003d856dbb67_onEachFeature,
+            
+                style: geo_json_ccbbed350b5015d788cb003d856dbb67_styler,
+        });
+
+        function geo_json_ccbbed350b5015d788cb003d856dbb67_add (data) {
+            geo_json_ccbbed350b5015d788cb003d856dbb67
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_ccbbed350b5015d788cb003d856dbb67_add({"features": [{"geometry": {"coordinates": [[[56.27825976896, 57.98079875908516], [56.27597158632477, 57.980071371078566], [56.271164579729714, 57.97649472725618], [56.26683628274759, 57.97707297267368], [56.25926228857955, 57.97656320736908], [56.26219495478648, 57.96661370835241], [56.2623426270909, 57.96562547638533], [56.265776771375926, 57.96674303818412], [56.269914963501975, 57.965522031650096], [56.27160340877788, 57.96495494346243], [56.27353516712881, 57.96539688192476], [56.273970181413546, 57.966319850877994], [56.27387433264806, 57.96716639154181], [56.27526124098421, 57.96835527718804], [56.27688646348682, 57.969163391020345], [56.277483224874345, 57.97072569277188], [56.27739434551904, 57.97102871755425], [56.27802736748606, 57.97280253065881], [56.27878919053515, 57.97436467379492], [56.2781543379954, 57.974936993676664], [56.279395211918114, 57.97559082525933], [56.28133592137115, 57.97655943300802], [56.283768800586444, 57.97758968526267], [56.28334516232147, 57.97848757623029], [56.28170634785005, 57.97975068300832], [56.27967894850286, 57.9802612880037], [56.27971273849187, 57.980530024552394], [56.27825976896, 57.98079875908516]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_753fcdcc8e3af7b41dfc23ddfc4ef928 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_d9b937efb03eb5df774a48aa964369cb = $(`<div id="html_d9b937efb03eb5df774a48aa964369cb" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_753fcdcc8e3af7b41dfc23ddfc4ef928.setContent(html_d9b937efb03eb5df774a48aa964369cb);
+            
+        
+
+        geo_json_ccbbed350b5015d788cb003d856dbb67.bindPopup(popup_753fcdcc8e3af7b41dfc23ddfc4ef928)
+        ;
+
+        
+    
+    
+        function geo_json_f5101017b83560a4c7f81fa99470b9c3_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_f5101017b83560a4c7f81fa99470b9c3_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f5101017b83560a4c7f81fa99470b9c3 = L.geoJson(null, {
+                onEachFeature: geo_json_f5101017b83560a4c7f81fa99470b9c3_onEachFeature,
+            
+                style: geo_json_f5101017b83560a4c7f81fa99470b9c3_styler,
+        });
+
+        function geo_json_f5101017b83560a4c7f81fa99470b9c3_add (data) {
+            geo_json_f5101017b83560a4c7f81fa99470b9c3
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_f5101017b83560a4c7f81fa99470b9c3_add({"features": [{"geometry": {"coordinates": [[[56.2960697101353, 57.988626354183566], [56.29308433398239, 57.98703630294884], [56.28236652125588, 57.98656884973542], [56.28068755304119, 57.98596635117414], [56.28166909651381, 57.98371374436073], [56.28526687480061, 57.98357288194913], [56.28467178031087, 57.98145743989011], [56.28529374636673, 57.98094353890011], [56.284939006737744, 57.979980575174096], [56.28626296622872, 57.97977965204191], [56.2870026059106, 57.979708065263566], [56.287096528409705, 57.97946217915228], [56.28929518276257, 57.97875096991396], [56.294040586178795, 57.97823759088871], [56.296909343912404, 57.97837068986078], [56.29701692232706, 57.97804111055038], [56.29795687725286, 57.97803643331835], [56.29772997554895, 57.97914072087329], [56.295890451015254, 57.97908486278712], [56.29555234217602, 57.98147266530148], [56.292302785620734, 57.98133947377465], [56.29180170235662, 57.985720609259005], [56.29370916582445, 57.98581274056207], [56.29646665783994, 57.98603916367355], [56.29671393267691, 57.98646420014563], [56.297485729898284, 57.986873342639655], [56.29721925616988, 57.98699761616038], [56.29664971222968, 57.98737199736897], [56.296769316456846, 57.987676934010835], [56.2977375411557, 57.987855064114996], [56.2960697101353, 57.988626354183566]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_14ba3f0a6976a33d44771ddf7b18db74 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_4b0862e2b0267a753df41c49341dcc01 = $(`<div id="html_4b0862e2b0267a753df41c49341dcc01" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_14ba3f0a6976a33d44771ddf7b18db74.setContent(html_4b0862e2b0267a753df41c49341dcc01);
+            
+        
+
+        geo_json_f5101017b83560a4c7f81fa99470b9c3.bindPopup(popup_14ba3f0a6976a33d44771ddf7b18db74)
+        ;
+
+        
+    
+    
+        function geo_json_b1621876afbbd4e64bc1a24a7c6bc509_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#F8E8BF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_b1621876afbbd4e64bc1a24a7c6bc509_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_b1621876afbbd4e64bc1a24a7c6bc509 = L.geoJson(null, {
+                onEachFeature: geo_json_b1621876afbbd4e64bc1a24a7c6bc509_onEachFeature,
+            
+                style: geo_json_b1621876afbbd4e64bc1a24a7c6bc509_styler,
+        });
+
+        function geo_json_b1621876afbbd4e64bc1a24a7c6bc509_add (data) {
+            geo_json_b1621876afbbd4e64bc1a24a7c6bc509
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_b1621876afbbd4e64bc1a24a7c6bc509_add({"features": [{"geometry": {"coordinates": [[[56.19838324962291, 57.963667621671135], [56.208171567553364, 57.97381191183061], [56.20230897789938, 57.97920329892577], [56.19906443984388, 57.98201829315366], [56.19098069838947, 57.9896003489807], [56.18847355534558, 57.98889677009137], [56.18581893330082, 57.98616049858188], [56.17736181635513, 57.98080969576614], [56.17721043925741, 57.980749806048294], [56.176889822483446, 57.980614696678884], [56.17679924994707, 57.98056716864173], [56.16545277510778, 57.9766333948171], [56.18067412575124, 57.96144087321744], [56.19054977716476, 57.9646252422542], [56.19258450533651, 57.96484736712984], [56.19838324962291, 57.963667621671135]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_e59886c9c0363935d64c7c7313960b10 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_d0cd43ca3ce499e171e022901a032bc7 = $(`<div id="html_d0cd43ca3ce499e171e022901a032bc7" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 99,319.0р.</div>`)[0];
+                popup_e59886c9c0363935d64c7c7313960b10.setContent(html_d0cd43ca3ce499e171e022901a032bc7);
+            
+        
+
+        geo_json_b1621876afbbd4e64bc1a24a7c6bc509.bindPopup(popup_e59886c9c0363935d64c7c7313960b10)
+        ;
+
+        
+    
+    
+        function geo_json_0faa88e772c89157000da492899bbd84_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#B9EABD", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_0faa88e772c89157000da492899bbd84_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_0faa88e772c89157000da492899bbd84 = L.geoJson(null, {
+                onEachFeature: geo_json_0faa88e772c89157000da492899bbd84_onEachFeature,
+            
+                style: geo_json_0faa88e772c89157000da492899bbd84_styler,
+        });
+
+        function geo_json_0faa88e772c89157000da492899bbd84_add (data) {
+            geo_json_0faa88e772c89157000da492899bbd84
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_0faa88e772c89157000da492899bbd84_add({"features": [{"geometry": {"coordinates": [[[56.19114262868419, 57.989600450623186], [56.198933170009354, 57.982058764833624], [56.20830502618699, 57.97385047553544], [56.19863048338365, 57.963610975879334], [56.200012560927206, 57.962786190915665], [56.204849832327454, 57.96248834723781], [56.21214892935453, 57.971789066476504], [56.223530868026955, 57.977532485373445], [56.22953163608679, 57.98520971464902], [56.227225146757576, 57.98493266482066], [56.20520344832681, 57.98791022187635], [56.20177127975239, 57.98830931085669], [56.19889268675425, 57.991267125865164], [56.19114262868419, 57.989600450623186]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_6c18ea7d94239683e53fe2624f76288c = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_3cb8264753de2eb5bbf8a4d5ec43e134 = $(`<div id="html_3cb8264753de2eb5bbf8a4d5ec43e134" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 90,333.0р.</div>`)[0];
+                popup_6c18ea7d94239683e53fe2624f76288c.setContent(html_3cb8264753de2eb5bbf8a4d5ec43e134);
+            
+        
+
+        geo_json_0faa88e772c89157000da492899bbd84.bindPopup(popup_6c18ea7d94239683e53fe2624f76288c)
+        ;
+
+        
+    
+    
+        function geo_json_68f3bbd4488b3aa02bd6092fc3a187d4_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#B9EABD", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_68f3bbd4488b3aa02bd6092fc3a187d4_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_68f3bbd4488b3aa02bd6092fc3a187d4 = L.geoJson(null, {
+                onEachFeature: geo_json_68f3bbd4488b3aa02bd6092fc3a187d4_onEachFeature,
+            
+                style: geo_json_68f3bbd4488b3aa02bd6092fc3a187d4_styler,
+        });
+
+        function geo_json_68f3bbd4488b3aa02bd6092fc3a187d4_add (data) {
+            geo_json_68f3bbd4488b3aa02bd6092fc3a187d4
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_68f3bbd4488b3aa02bd6092fc3a187d4_add({"features": [{"geometry": {"coordinates": [[[56.16544647201525, 57.976605047490324], [56.15731035747328, 57.97340840023975], [56.159308655000046, 57.97430843142635], [56.15278956605641, 57.97680630967707], [56.1503600919161, 57.97572558716084], [56.14967016629083, 57.975228856775374], [56.14961617797675, 57.97384746934455], [56.147331177046425, 57.97233525514133], [56.144390659569865, 57.970381268301225], [56.142931219679326, 57.96863966969846], [56.14326414653274, 57.96790141808657], [56.14535507483956, 57.96647232147234], [56.14964919605805, 57.96813959531676], [56.15051924638084, 57.96782698765216], [56.15216285496774, 57.96623346270738], [56.15565709086178, 57.96716387681974], [56.157186696131475, 57.96683637380619], [56.15794448222843, 57.96672472436779], [56.158211110671175, 57.96644932093284], [56.15496947014407, 57.96531791164915], [56.155643057785966, 57.96446933125361], [56.157018299221534, 57.9649085113343], [56.15690603461485, 57.96535512962765], [56.1584216068087, 57.965801742357456], [56.15808175261205, 57.966297497011396], [56.16084509549543, 57.96712445727081], [56.16186555778327, 57.966313303147416], [56.168252437234656, 57.96391216589845], [56.169456697334056, 57.964100384365565], [56.17006939855762, 57.96374488507433], [56.1628338799234, 57.961571646000195], [56.16694238763284, 57.96028931510891], [56.16986331105977, 57.9599807124183], [56.17282105026411, 57.959913866906234], [56.17552741587252, 57.96015303932083], [56.18046317422836, 57.96152956645893], [56.17606290794676, 57.965832996005744], [56.16544647201525, 57.976605047490324]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_5a943bdd6924344dc2e8512f7f1acbd9 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_24dce9a4069c649bc351c568c88e605e = $(`<div id="html_24dce9a4069c649bc351c568c88e605e" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 93,366.0р.</div>`)[0];
+                popup_5a943bdd6924344dc2e8512f7f1acbd9.setContent(html_24dce9a4069c649bc351c568c88e605e);
+            
+        
+
+        geo_json_68f3bbd4488b3aa02bd6092fc3a187d4.bindPopup(popup_5a943bdd6924344dc2e8512f7f1acbd9)
+        ;
+
+        
+    
+    
+        function geo_json_a48084e5007d4b0d27b1c249b2fbccb6_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#79D5C3", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_a48084e5007d4b0d27b1c249b2fbccb6_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_a48084e5007d4b0d27b1c249b2fbccb6 = L.geoJson(null, {
+                onEachFeature: geo_json_a48084e5007d4b0d27b1c249b2fbccb6_onEachFeature,
+            
+                style: geo_json_a48084e5007d4b0d27b1c249b2fbccb6_styler,
+        });
+
+        function geo_json_a48084e5007d4b0d27b1c249b2fbccb6_add (data) {
+            geo_json_a48084e5007d4b0d27b1c249b2fbccb6
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_a48084e5007d4b0d27b1c249b2fbccb6_add({"features": [{"geometry": {"coordinates": [[[56.127296219712036, 58.00688979679143], [56.124869433503534, 58.00628439214725], [56.12262764893376, 58.00767392472875], [56.120919104384114, 58.00722420639477], [56.12261676648441, 58.00618060746575], [56.121180283168115, 58.00599610062258], [56.11976556475048, 58.007449066268094], [56.11850527471924, 58.00719450481236], [56.11999617028221, 58.00533791392698], [56.11815972173014, 58.00492125995868], [56.11718049264607, 58.006026306906136], [56.11102117919208, 58.00582405221547], [56.10918989362861, 58.00431470274714], [56.10887545752021, 58.00396638529173], [56.107856699736374, 58.00366071435343], [56.10866679628646, 58.002607105158404], [56.105598248746276, 58.00184614589824], [56.108137169990925, 58.00041344699372], [56.10839924426611, 58.000118332995754], [56.113061091832606, 58.00041519829753], [56.119531050492725, 58.000475956756986], [56.12103353639219, 58.000761407352456], [56.120055836725044, 58.00150527697184], [56.12084727727074, 58.00144411705057], [56.11800182786723, 58.00478218460057], [56.120300974126934, 58.00536341187967], [56.1228405524391, 58.00579335469635], [56.12380228623772, 58.00587297316983], [56.12459872203928, 58.0055544982136], [56.1276772966381, 58.006522503099006], [56.127296219712036, 58.00688979679143]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_115fb4d253298ba38a3828d9b195d111 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_bee68bb5f8fb4d76aeda58f5acaaf535 = $(`<div id="html_bee68bb5f8fb4d76aeda58f5acaaf535" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 86,114.0р.</div>`)[0];
+                popup_115fb4d253298ba38a3828d9b195d111.setContent(html_bee68bb5f8fb4d76aeda58f5acaaf535);
+            
+        
+
+        geo_json_a48084e5007d4b0d27b1c249b2fbccb6.bindPopup(popup_115fb4d253298ba38a3828d9b195d111)
+        ;
+
+        
+    
+    
+        function geo_json_ca90c1b2d9ce3ca2adcbda5760b6ac13_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_ca90c1b2d9ce3ca2adcbda5760b6ac13_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_ca90c1b2d9ce3ca2adcbda5760b6ac13 = L.geoJson(null, {
+                onEachFeature: geo_json_ca90c1b2d9ce3ca2adcbda5760b6ac13_onEachFeature,
+            
+                style: geo_json_ca90c1b2d9ce3ca2adcbda5760b6ac13_styler,
+        });
+
+        function geo_json_ca90c1b2d9ce3ca2adcbda5760b6ac13_add (data) {
+            geo_json_ca90c1b2d9ce3ca2adcbda5760b6ac13
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_ca90c1b2d9ce3ca2adcbda5760b6ac13_add({"features": [{"geometry": {"coordinates": [[[56.30298320794515, 58.11846042908314], [56.30189906151662, 58.11798528314719], [56.30277560543814, 58.11686440096901], [56.300820251128755, 58.116773965722246], [56.29726605977177, 58.11662333207525], [56.297295491222826, 58.11649508182421], [56.29689080876946, 58.116277443978134], [56.29670686219916, 58.11630853518051], [56.295625256368766, 58.11573723001007], [56.296751009375754, 58.115092071665316], [56.296646309122195, 58.11382411375382], [56.30278231808509, 58.1140715435518], [56.30336851028784, 58.11398709503379], [56.30362671462598, 58.11207521855965], [56.30206641743581, 58.11203953708488], [56.302284885839754, 58.11052001745213], [56.300899713304744, 58.110533445370265], [56.301026793358034, 58.10927130126305], [56.301166581416624, 58.1089154759666], [56.30119199742737, 58.107733841957355], [56.302437381952984, 58.10806282354196], [56.303991630396155, 58.10799405865495], [56.303912701639774, 58.10674304777456], [56.30724754424588, 58.10535719715824], [56.3071047514471, 58.10663512774332], [56.307778975217474, 58.106690711586964], [56.30804532540037, 58.10713771201921], [56.310082120914785, 58.107170822939565], [56.312049722235884, 58.10880044293822], [56.31217903937366, 58.109565610544735], [56.31434192079038, 58.109568702238306], [56.31527332827807, 58.10989043190489], [56.31430609742554, 58.11042506448862], [56.313786658634484, 58.11061431303898], [56.31240745908411, 58.11054334495043], [56.31027741459192, 58.11138332078977], [56.3130057301546, 58.11218413363025], [56.31681739615968, 58.110924704809406], [56.31934247130948, 58.11296561023073], [56.32068440615748, 58.11455676610046], [56.31909978096337, 58.115816066599905], [56.31190472603305, 58.11546165718585], [56.31073803894236, 58.115673519428924], [56.30963018430589, 58.11531126605743], [56.30804753482374, 58.1155007528954], [56.30609996444318, 58.11495919997736], [56.30549855763928, 58.116447216563046], [56.30298320794515, 58.11846042908314]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_98bc1c22a72fdbf25b60933fd1a04a32 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_d6bd95c883c09f70732008ad20adabc9 = $(`<div id="html_d6bd95c883c09f70732008ad20adabc9" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_98bc1c22a72fdbf25b60933fd1a04a32.setContent(html_d6bd95c883c09f70732008ad20adabc9);
+            
+        
+
+        geo_json_ca90c1b2d9ce3ca2adcbda5760b6ac13.bindPopup(popup_98bc1c22a72fdbf25b60933fd1a04a32)
+        ;
+
+        
+    
+    
+        function geo_json_614cdcde96447bb412e2c7aa41067ec1_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#79D5C3", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_614cdcde96447bb412e2c7aa41067ec1_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_614cdcde96447bb412e2c7aa41067ec1 = L.geoJson(null, {
+                onEachFeature: geo_json_614cdcde96447bb412e2c7aa41067ec1_onEachFeature,
+            
+                style: geo_json_614cdcde96447bb412e2c7aa41067ec1_styler,
+        });
+
+        function geo_json_614cdcde96447bb412e2c7aa41067ec1_add (data) {
+            geo_json_614cdcde96447bb412e2c7aa41067ec1
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_614cdcde96447bb412e2c7aa41067ec1_add({"features": [{"geometry": {"coordinates": [[[56.354572225041835, 58.069058514522254], [56.35001797159063, 58.068178719412856], [56.351110131256064, 58.06752155469479], [56.34805781245447, 58.064258375920275], [56.34635733970123, 58.06416189826834], [56.34366031726702, 58.06115471797179], [56.34275593010602, 58.0604883169749], [56.34186768918531, 58.06053957880738], [56.341528542651645, 58.060462686030775], [56.340656451564655, 58.059369081957016], [56.34093099875881, 58.05889061964592], [56.34088254925416, 58.058497592238865], [56.34267518093162, 58.05807038363082], [56.34563060072395, 58.05797639705136], [56.34575979940303, 58.0576004482607], [56.34742323240141, 58.05730993966708], [56.34785927794431, 58.057318484071175], [56.34840837233256, 58.05790804302001], [56.34815305024392, 58.0555867091544], [56.34411922231021, 58.05556176973772], [56.342455317968444, 58.053260330211884], [56.340319556836306, 58.05354942357738], [56.340331974052106, 58.053128923363346], [56.339872537064196, 58.0524193180303], [56.342225384949074, 58.0516483854465], [56.346171650215354, 58.049146564117535], [56.35291773765823, 58.0500652461036], [56.35406269147734, 58.052364296084136], [56.35517867227031, 58.05443774715181], [56.363434282001464, 58.06381278640916], [56.36402618631964, 58.06459232041688], [56.35940468118453, 58.06554067551852], [56.36000331120898, 58.066705734551334], [56.356733760266096, 58.0694509522298], [56.354572225041835, 58.069058514522254]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_0f1c1a331328cb189541c9ceb5f64f2f = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_c33eba101feeca9cae544d5f36dd7378 = $(`<div id="html_c33eba101feeca9cae544d5f36dd7378" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 85,989.0р.</div>`)[0];
+                popup_0f1c1a331328cb189541c9ceb5f64f2f.setContent(html_c33eba101feeca9cae544d5f36dd7378);
+            
+        
+
+        geo_json_614cdcde96447bb412e2c7aa41067ec1.bindPopup(popup_0f1c1a331328cb189541c9ceb5f64f2f)
+        ;
+
+        
+    
+    
+        function geo_json_318eab0ed913170b0461e3cf07ba38d9_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#41BAC2", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_318eab0ed913170b0461e3cf07ba38d9_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_318eab0ed913170b0461e3cf07ba38d9 = L.geoJson(null, {
+                onEachFeature: geo_json_318eab0ed913170b0461e3cf07ba38d9_onEachFeature,
+            
+                style: geo_json_318eab0ed913170b0461e3cf07ba38d9_styler,
+        });
+
+        function geo_json_318eab0ed913170b0461e3cf07ba38d9_add (data) {
+            geo_json_318eab0ed913170b0461e3cf07ba38d9
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_318eab0ed913170b0461e3cf07ba38d9_add({"features": [{"geometry": {"coordinates": [[[56.09274666081342, 58.04976628380007], [56.09498387074095, 58.05092795919424], [56.09908076142, 58.051075940608996], [56.09895491836019, 58.052141388703376], [56.097165145040606, 58.05210439357083], [56.0971791276026, 58.05380608680903], [56.09368348709134, 58.05371730481798], [56.09358560915737, 58.05284427015462], [56.09017386401814, 58.0509649536659], [56.087405316734674, 58.052400346042845], [56.08375160019679, 58.05029195644835], [56.08208767531508, 58.04937444166717], [56.08208767909625, 58.04502344496541], [56.08011613784862, 58.04503824557966], [56.07993437066196, 58.04227167593925], [56.07614509634871, 58.041894229144845], [56.07638279990272, 58.04145757003721], [56.083038505451924, 58.042079252918654], [56.08735911712114, 58.04237528842506], [56.091093077188475, 58.04175295814011], [56.09155414299681, 58.04204709905946], [56.09780420382529, 58.0407862076689], [56.10688093133618, 58.03872280742493], [56.107221814546875, 58.039099386652], [56.112009000507186, 58.037914717777426], [56.11302309299738, 58.041136461811675], [56.12556829680296, 58.04009175814727], [56.1253159307108, 58.0390422420559], [56.11881432566979, 58.039309689343746], [56.118288970342086, 58.03734749721882], [56.11990884727926, 58.03730995012539], [56.12009893591113, 58.037948548172594], [56.124940052686824, 58.03764135029261], [56.12478314346956, 58.03689696618444], [56.13049349976035, 58.0360742693853], [56.133221099448626, 58.03534726737014], [56.13486353001433, 58.034660298133105], [56.13698215145271, 58.03381071943278], [56.137613257117145, 58.03342102463171], [56.138547501196726, 58.03218601637633], [56.13919445166615, 58.032181634347694], [56.140412006499545, 58.03374910756435], [56.1445891246174, 58.035504693980556], [56.145843269558554, 58.034811958796475], [56.15213013513329, 58.0353048403946], [56.145700250373245, 58.03608302467139], [56.142282952834265, 58.03653281469046], [56.14116783662675, 58.03674552645547], [56.13726942287281, 58.03798390201895], [56.13241177201168, 58.03935323848507], [56.129475111910644, 58.0398071963469], [56.12267502429815, 58.0403787204123], [56.11312302616224, 58.04114526898731], [56.109720569565184, 58.04203237997237], [56.10063029247823, 58.04407398704328], [56.10159998181052, 58.04525742895629], [56.09274666081342, 58.04976628380007]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_43b3237f8b6411ee5159d8fe5e9b0d08 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_f6cee39e3a5f7e5fc4716dd96b97e9b6 = $(`<div id="html_f6cee39e3a5f7e5fc4716dd96b97e9b6" style="width: 100.0%; height: 100.0%;">Средняя стоимость: 82,333.0р.</div>`)[0];
+                popup_43b3237f8b6411ee5159d8fe5e9b0d08.setContent(html_f6cee39e3a5f7e5fc4716dd96b97e9b6);
+            
+        
+
+        geo_json_318eab0ed913170b0461e3cf07ba38d9.bindPopup(popup_43b3237f8b6411ee5159d8fe5e9b0d08)
+        ;
+
+        
+    
+    
+        function geo_json_7afc2aded0421ee73cd2297b9c1e5388_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_7afc2aded0421ee73cd2297b9c1e5388_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_7afc2aded0421ee73cd2297b9c1e5388 = L.geoJson(null, {
+                onEachFeature: geo_json_7afc2aded0421ee73cd2297b9c1e5388_onEachFeature,
+            
+                style: geo_json_7afc2aded0421ee73cd2297b9c1e5388_styler,
+        });
+
+        function geo_json_7afc2aded0421ee73cd2297b9c1e5388_add (data) {
+            geo_json_7afc2aded0421ee73cd2297b9c1e5388
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_7afc2aded0421ee73cd2297b9c1e5388_add({"features": [{"geometry": {"coordinates": [[[56.36738376624942, 58.11411714577423], [56.36589746108376, 58.11154308559412], [56.36505083795433, 58.10844269769629], [56.3695661954182, 58.10677279242702], [56.37767536421612, 58.10497697680074], [56.381784984659305, 58.104108674722255], [56.38643204004879, 58.10242862510208], [56.3876553525437, 58.101656577258325], [56.38986790903104, 58.10277893913735], [56.38773497020716, 58.10522416194328], [56.38436361099011, 58.10676235490621], [56.38403180347916, 58.107661158388396], [56.38269233251529, 58.10898372264819], [56.38367868131553, 58.10911920662619], [56.383409079309246, 58.109563868371424], [56.380545240511026, 58.111448473878994], [56.377059705122406, 58.11370041187428], [56.370716468152125, 58.11467498421257], [56.36902787351309, 58.114519506187605], [56.36738376624942, 58.11411714577423]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_0a5519dbf8250d982d0dc38b5ce7320f = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_d6d5c1c59fb5ad83271f6e09aa2ead8a = $(`<div id="html_d6d5c1c59fb5ad83271f6e09aa2ead8a" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_0a5519dbf8250d982d0dc38b5ce7320f.setContent(html_d6d5c1c59fb5ad83271f6e09aa2ead8a);
+            
+        
+
+        geo_json_7afc2aded0421ee73cd2297b9c1e5388.bindPopup(popup_0a5519dbf8250d982d0dc38b5ce7320f)
+        ;
+
+        
+    
+    
+        function geo_json_01a383b4d65221e1e4b51f35e8d08bae_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_01a383b4d65221e1e4b51f35e8d08bae_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_01a383b4d65221e1e4b51f35e8d08bae = L.geoJson(null, {
+                onEachFeature: geo_json_01a383b4d65221e1e4b51f35e8d08bae_onEachFeature,
+            
+                style: geo_json_01a383b4d65221e1e4b51f35e8d08bae_styler,
+        });
+
+        function geo_json_01a383b4d65221e1e4b51f35e8d08bae_add (data) {
+            geo_json_01a383b4d65221e1e4b51f35e8d08bae
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_01a383b4d65221e1e4b51f35e8d08bae_add({"features": [{"geometry": {"coordinates": [[[56.03838549972943, 58.03917178109711], [56.02426594771785, 58.03894883575995], [56.020315201149685, 58.034251568028736], [56.01598443409566, 58.03266143141329], [56.01457638780437, 58.03383196622448], [56.0135264909417, 58.03360152334534], [56.01377474979225, 58.03309203744351], [56.01117344937353, 58.03221385664392], [56.01139443428295, 58.031029881087704], [56.01664398358466, 58.0328127242272], [56.019504732546295, 58.032235287525594], [56.01640521331629, 58.02789923130297], [56.014661799499095, 58.02815606637523], [56.01343119507098, 58.02779673105289], [56.00999488754232, 58.030437129885996], [55.99957024849377, 58.026887571787995], [55.997753600000834, 58.02607583076889], [55.99717986166422, 58.024964635344844], [56.00221714116583, 58.023773333498866], [56.005208527444296, 58.02114296579333], [56.00732606844832, 58.021685437980636], [56.00969660097144, 58.0221836209748], [56.010524405979396, 58.023578496449176], [56.013281066605515, 58.023100740929436], [56.015337978950015, 58.02593316833628], [56.01806568489212, 58.02542361826676], [56.01634941898854, 58.02328500933322], [56.01778381609151, 58.02259645804949], [56.02006001116618, 58.024952024205305], [56.02105365452175, 58.026180815407685], [56.023023091448295, 58.027201625688605], [56.024627156769185, 58.02803840169793], [56.028596090201916, 58.029983190927624], [56.026640297254716, 58.03133110861074], [56.027853107407054, 58.031967446943185], [56.0302048510155, 58.0311428527103], [56.03213504229055, 58.032422535354385], [56.03451789796969, 58.03256723263675], [56.03769502697082, 58.03388303697466], [56.03763216786413, 58.03641371129618], [56.0382905184764, 58.03645820289907], [56.03838549972943, 58.03917178109711]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_3d774058fadc334df088693b1109582e = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_25eba9685ba10d22115c8d2b0e0d2e81 = $(`<div id="html_25eba9685ba10d22115c8d2b0e0d2e81" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_3d774058fadc334df088693b1109582e.setContent(html_25eba9685ba10d22115c8d2b0e0d2e81);
+            
+        
+
+        geo_json_01a383b4d65221e1e4b51f35e8d08bae.bindPopup(popup_3d774058fadc334df088693b1109582e)
+        ;
+
+        
+    
+    
+        function geo_json_9bddd7db101db44091b05405bedf7615_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_9bddd7db101db44091b05405bedf7615_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_9bddd7db101db44091b05405bedf7615 = L.geoJson(null, {
+                onEachFeature: geo_json_9bddd7db101db44091b05405bedf7615_onEachFeature,
+            
+                style: geo_json_9bddd7db101db44091b05405bedf7615_styler,
+        });
+
+        function geo_json_9bddd7db101db44091b05405bedf7615_add (data) {
+            geo_json_9bddd7db101db44091b05405bedf7615
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_9bddd7db101db44091b05405bedf7615_add({"features": [{"geometry": {"coordinates": [[[55.97516513681367, 58.01997784655347], [55.97226744106911, 58.01862843944565], [55.969357116648325, 58.01770109104538], [55.96209495878895, 58.0162475342602], [55.95945569280127, 58.01560716456157], [55.95663277274738, 58.01395800302288], [55.95870590249834, 58.01254737689982], [55.95290703184719, 58.00941555979054], [55.96484253842496, 58.00428056047261], [55.96563177314977, 58.00457723173878], [55.967100423979645, 58.003955418908134], [55.96948890112995, 58.00497888768763], [55.968039909886954, 58.00567809743052], [55.96323130034375, 58.00930343880003], [55.983657059399974, 58.017256458159835], [55.978236005007034, 58.02089716704839], [55.97516513681367, 58.01997784655347]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_b5b1ecd0d94fbca210d5f76459a4d717 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_87b7ba8a730160e77c59aa596c949d76 = $(`<div id="html_87b7ba8a730160e77c59aa596c949d76" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_b5b1ecd0d94fbca210d5f76459a4d717.setContent(html_87b7ba8a730160e77c59aa596c949d76);
+            
+        
+
+        geo_json_9bddd7db101db44091b05405bedf7615.bindPopup(popup_b5b1ecd0d94fbca210d5f76459a4d717)
+        ;
+
+        
+    
+    
+        function geo_json_c8a73a529c63b7120c76ae6e22ea3245_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_c8a73a529c63b7120c76ae6e22ea3245_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_c8a73a529c63b7120c76ae6e22ea3245 = L.geoJson(null, {
+                onEachFeature: geo_json_c8a73a529c63b7120c76ae6e22ea3245_onEachFeature,
+            
+                style: geo_json_c8a73a529c63b7120c76ae6e22ea3245_styler,
+        });
+
+        function geo_json_c8a73a529c63b7120c76ae6e22ea3245_add (data) {
+            geo_json_c8a73a529c63b7120c76ae6e22ea3245
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_c8a73a529c63b7120c76ae6e22ea3245_add({"features": [{"geometry": {"coordinates": [[[55.965578475065314, 58.0045014129542], [55.96486544175127, 58.004238397855175], [55.95040569144075, 58.010558223530836], [55.93890156498898, 58.00456907259297], [55.942266942668994, 58.002973951304966], [55.93551388575253, 57.99871569757849], [55.934019705888716, 57.99962271994485], [55.93180129145716, 57.99850406246259], [55.93609499250721, 57.99578195480552], [55.94137747309151, 57.99216456179286], [55.943187937962335, 57.99327905322667], [55.945345301094505, 57.99246824797106], [55.95002186037246, 57.99548316071164], [55.967541072040405, 58.0036842522309], [55.965578475065314, 58.0045014129542]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_630393d7906c4a69bd46516cd3a462bb = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_5bd2e5732e96cf1cf4e3da2bf9bc534f = $(`<div id="html_5bd2e5732e96cf1cf4e3da2bf9bc534f" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_630393d7906c4a69bd46516cd3a462bb.setContent(html_5bd2e5732e96cf1cf4e3da2bf9bc534f);
+            
+        
+
+        geo_json_c8a73a529c63b7120c76ae6e22ea3245.bindPopup(popup_630393d7906c4a69bd46516cd3a462bb)
+        ;
+
+        
+    
+    
+        function geo_json_c74ed76b81104134c258ba8c520a97bd_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "", "fillColor": "#FFFFFF", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_c74ed76b81104134c258ba8c520a97bd_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_c74ed76b81104134c258ba8c520a97bd = L.geoJson(null, {
+                onEachFeature: geo_json_c74ed76b81104134c258ba8c520a97bd_onEachFeature,
+            
+                style: geo_json_c74ed76b81104134c258ba8c520a97bd_styler,
+        });
+
+        function geo_json_c74ed76b81104134c258ba8c520a97bd_add (data) {
+            geo_json_c74ed76b81104134c258ba8c520a97bd
+                .addData(data)
+                .addTo(map_da2eec7a261b317172113c4e543b9961);
+        }
+            geo_json_c74ed76b81104134c258ba8c520a97bd_add({"features": [{"geometry": {"coordinates": [[[55.925025039583744, 58.012562853331275], [55.92425919753353, 58.01225712436269], [55.93455701866651, 58.00686658615197], [55.93431517984229, 58.00686658615197], [55.931618677318994, 58.005318114025556], [55.930294974730515, 58.006195679874736], [55.92840367615804, 58.006199478289574], [55.928454996145376, 58.005634375343675], [55.929982854180366, 58.00458222387837], [55.92952239163077, 58.004596476557936], [55.92442987990225, 58.00184047537684], [55.92473144969139, 58.001698223723054], [55.92590917774291, 58.00110102441221], [55.92652230148349, 58.00104963631492], [55.927435928838975, 58.001041682541], [55.929683979585775, 57.99978166103642], [55.93864541191439, 58.004699414206044], [55.94174873121648, 58.00656757085207], [55.9420513914412, 58.00740308089249], [55.94194803900666, 58.00834865200565], [55.9414632608555, 58.00906521654855], [55.93986373105804, 58.009781608507666], [55.93799191310609, 58.00886729982673], [55.9366957669892, 58.00957895076286], [55.93541166369354, 58.01015519924434], [55.9357284320746, 58.01122953914293], [55.925025039583744, 58.012562853331275]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_a8b4f439f89525e92176948ad2121f25 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_7f033c15ea924f91d467bda4c7de6eea = $(`<div id="html_7f033c15ea924f91d467bda4c7de6eea" style="width: 100.0%; height: 100.0%;">Средняя стоимость: nanр.</div>`)[0];
+                popup_a8b4f439f89525e92176948ad2121f25.setContent(html_7f033c15ea924f91d467bda4c7de6eea);
+            
+        
+
+        geo_json_c74ed76b81104134c258ba8c520a97bd.bindPopup(popup_a8b4f439f89525e92176948ad2121f25)
+        ;
+
+        
+    
+</script>
+</html>
